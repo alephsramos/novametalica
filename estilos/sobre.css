@@ -11,8 +11,9 @@
 .sobre-container-div{
     border: 1px solid red;
     width: 100%;
-    height: 80vh;
+    height: 85vh;
     display: flex;
+    gap: 10px;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
@@ -40,12 +41,12 @@
 .sobre-card-top{
     border: 1px solid red;
     width: 100%;
-    height: 10vh;
+    height: 12vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 10px;
+    gap: 15px;
 }
 
 .sobre-card-top i{
@@ -64,7 +65,7 @@
 }
 
 .sobre-card-top h4{
-    height: 3vh;
+    height: 2vh;
     border: 1px solid red;
     width: 100%;
     display: flex;
@@ -76,17 +77,17 @@
 .sobre-card-bottom{
     border: 1px solid red;
     width: 100%;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     display: flex;
-    height: 15vh;
+    height: 12vh;
     padding: 15px;
 }
 
 .sobre-card-bottom p{
     border: 1px solid red;
     width: 100%;
-    height: 12vh;
+    height: 10vh;
 }
 
 .sobre-titles{
