@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300..700&family=Source+Code+Pro:ital,wght@0,200..900;1,200..900&display=swap');
 
 *{
     padding: 0;
@@ -8,7 +8,9 @@
 }
 
 header{
-    background-color: #e0e0e0;
+    background-image: url(../imagens/loja-teste3.jpg);
+    background-position: top;
+    background-size: cover;
     height: 95dvh;
 }
 

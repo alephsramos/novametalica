@@ -180,7 +180,7 @@
         <div class="qualidade-cards-all">
         <div class="qualidade-cards"> <!-- Abertura da div pai para manipular os cards -->
             <div class="qualidade-card-top"> <!-- Abertura da div filho para manipular os itens do card que estão no topo -->
-                <i class="fas fa-instagram"></i>
+                <i class="fa-solid fa-chart-line"></i>
             </div> <!-- Fechamento da div filho do topo -->
             <div class="qualidade-card-bottom"> <!-- Abertura da div filho para manipular os itens do card que estão no final -->
                 <h6>Qualidade Superior</h6>
@@ -189,7 +189,7 @@
         </div> <!-- Fechamento da div pai para manipular os cards -->
         <div class="qualidade-cards"> <!-- Abertura da div pai para manipular os cards -->
             <div class="qualidade-card-top"> <!-- Abertura da div filho para manipular os itens do card que estão no topo -->
-                <i class="fas fa-instagram"></i>
+                <i class="fa-solid fa-user-check"></i>
             </div> <!-- Fechamento da div filho do topo -->
             <div class="qualidade-card-bottom"> <!-- Abertura da div filho para manipular os itens do card que estão no final -->
                 <h6>Atendimento Personalizado</h6>
@@ -199,7 +199,7 @@
         </div> <!-- Fechamento da div pai para manipular os cards -->
         <div class="qualidade-cards"> <!-- Abertura da div pai para manipular os cards -->
             <div class="qualidade-card-top"> <!-- Abertura da div filho para manipular os itens do card que estão no topo -->
-                <i class="fas fa-instagram"></i>
+                <i class="fa-solid fa-globe"></i>
             </div> <!-- Fechamento da div filho do topo -->
             <div class="qualidade-card-bottom"> <!-- Abertura da div filho para manipular os itens do card que estão no final -->
                 <h6>Tecnologia de Ponta</h6>
@@ -209,7 +209,7 @@
         </div> <!-- Fechamento da div pai para manipular os cards -->
         <div class="qualidade-cards"> <!-- Abertura da div pai para manipular os cards -->
             <div class="qualidade-card-top"> <!-- Abertura da div filho para manipular os itens do card que estão no topo -->
-                <i class="fas fa-instagram"></i>
+                <i class="fa-solid fa-handshake"></i>
             </div> <!-- Fechamento da div filho do topo -->
             <div class="qualidade-card-bottom"> <!-- Abertura da div filho para manipular os itens do card que estão no final -->
                 <h6>Parcerias Estratégicas</h6>
@@ -306,7 +306,7 @@
                     <div class="produto-card-btns">
                         <button class="produto-card-btn-left">Comprar</button>
                         <button class="produto-card-btn-right">
-                            <i class="fas fa-instagram"></i>
+                            <i class="fa-regular fa-heart"></i>
                         </button>
                     </div>
                 </div>
@@ -331,7 +331,7 @@
                     <div class="produto-card-btns">
                         <button class="produto-card-btn-left">Comprar</button>
                         <button class="produto-card-btn-right">
-                            <i class="fas fa-instagram"></i>
+                            <i class="fa-regular fa-heart"></i>
                         </button>
                     </div>
                 </div>
@@ -356,7 +356,7 @@
                     <div class="produto-card-btns">
                         <button class="produto-card-btn-left">Comprar</button>
                         <button class="produto-card-btn-right">
-                            <i class="fas fa-instagram"></i>
+                            <i class="fa-regular fa-heart"></i>
                         </button>
                     </div>
                 </div>
@@ -381,13 +381,34 @@
                     <div class="produto-card-btns">
                         <button class="produto-card-btn-left">Comprar</button>
                         <button class="produto-card-btn-right">
-                            <i class="fas fa-instagram"></i>
+                            <i class="fa-regular fa-heart"></i>
                         </button>
+                        
                     </div>
                 </div>
             </div>
         </div>
 </section>
+
+
+<script>
+    // Select all buttons with the class 'produto-card-btn-right'
+    const buttons = document.querySelectorAll('.produto-card-btn-right');
+
+    // Add event listener to each button
+    buttons.forEach(button => {
+        button.addEventListener('click', function() {
+            const icon = this.querySelector('i');
+            if (icon.classList.contains('fa-regular')) {
+                icon.classList.remove('fa-regular');
+                icon.classList.add('fa-solid');
+            } else {
+                icon.classList.remove('fa-solid');
+                icon.classList.add('fa-regular');
+            }
+        });
+    });
+</script>
 
 <section class="projetos-container">
     <div class="projetos-div-container">
@@ -518,13 +539,13 @@
         </div></div>
         <div class="projeto-action">
             <button class="projeto-action-left" id="projeto_left">
-                <i class="fas fa-instagram"></i>
+                <i class="fa-solid fa-circle-chevron-left"></i>
             </button>
             <button class="projeto-action-center">
                 Ver todos
             </button>
             <button class="projeto-action-right" id="projeto_right">
-                <i class="fas fa-instagram"></i>
+                <i class="fa-solid fa-circle-chevron-right"></i>
             </button>
         </div>
     </div>

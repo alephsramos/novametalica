@@ -159,9 +159,34 @@
     height: 3vh;
 }
 
-.produto-card-btn-right{
+.produto-card-btn-right {
     border: 1px solid red;
     width: 40px;
     border-radius: 50%;
     height: 40px;
+    cursor: pointer;
+}
+
+.produto-card-btn-right i{
+    font-size: 20px;
+}
+
+.produto-card-btn-right .fa-heart {
+    transition: all 0.3s ease;
+}
+
+.produto-card-btn-right .fa-heart.active {
+    display: none;
+}
+
+.produto-card-btn-right .fa-heart-filled {
+    display: inline;
+}
+
+.produto-card-btn-right .fa-heart-filled {
+    display: none;
+}
+
+.produto-card-btn-right .fa-heart-filled.active {
+    display: inline;
 }

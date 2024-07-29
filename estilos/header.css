@@ -4,7 +4,7 @@
 }
 
 .header-texts{
-    height: 50vh;
+    height: 60vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -39,11 +39,10 @@
 }
 
 .header-texts-btn button{
-    padding: 15px 30px;
-    border: 1px solid red;
+    padding: 15px 50px;
+    box-shadow: 0 2px 2px rgba(0, 0, 0, 0.4);
     border: none;
-    border: 1px solid #000;
-    border-radius: 0px;
-    background-color: transparent;
+    border-radius: 20px;
+    background-color: #fff;
     color: #000;
 }

@@ -135,6 +135,13 @@
     cursor: pointer;
 }
 
+.projeto-action-left i,
+.projeto-action-right i{
+    font-size: 25px;
+    border: 1px solid red;
+}
+
+
 .projeto-action-center{
     border: 1px solid red;
     height: 5vh;
