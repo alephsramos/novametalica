@@ -63,6 +63,10 @@
     color: #fff;
 }
 
+.qualidade-cards:hover > .qualidade-card-top i{
+    color: #fff;
+}
+
 .qualidade-card-top{
     width: 100%;
     height: 10vh;
