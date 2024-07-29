@@ -50,7 +50,6 @@
 }
 
 .sobre-card-top i{
-    border: 1px solid red;
     width: 50px;
     height: 50px;
     transform: scale(2);
@@ -60,8 +59,11 @@
     position: relative;
     border-radius: 50%;
     font-size: 25px;
-    top: -25%;
+    top: -20%;
     left: 0;
+    color: #000;
+    box-shadow: 0 0 1px 1px rgba(0, 0, 0, 0.8);
+    background-color: #fff;
 }
 
 .sobre-card-top h4{
@@ -71,7 +73,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 1.4rem;
+    font-size: 1.6rem;
 }
 
 .sobre-card-bottom{
