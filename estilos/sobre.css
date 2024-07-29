@@ -1,0 +1,179 @@
+.sobre-container{
+    padding: 0 10%;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.sobre-container-div{
+    border: 1px solid red;
+    width: 100%;
+    height: 80vh;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.sobre-cards{
+    border: 1px solid red;
+    width: 80%;
+    height: 25vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.sobre-card{
+    border: 1px solid red;
+    height: 25vh;
+    width: 32%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    flex-direction: column;
+}
+
+.sobre-card-top{
+    border: 1px solid red;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: flex-start;
+    gap: 10px;
+}
+
+.sobre-card-top i{
+    border: 1px solid red;
+    width: 50px;
+    height: 50px;
+    transform: scale(2);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border-radius: 50%;
+    font-size: 25px;
+    top: -25%;
+    left: 0;
+}
+
+.sobre-card-top h4{
+    height: 3vh;
+    border: 1px solid red;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.4rem;
+}
+
+.sobre-card-bottom{
+    border: 1px solid red;
+    width: 100%;
+    align-items: flex-start;
+    justify-content: center;
+    display: flex;
+    height: 15vh;
+    padding: 15px;
+}
+
+.sobre-card-bottom p{
+    border: 1px solid red;
+    width: 100%;
+    height: 12vh;
+}
+
+.sobre-titles{
+    border: 1px solid red;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 10px;
+    height: 10vh;
+}
+
+.sobre-titles h2{
+    width: 100%;
+    border: 1px solid red;
+    text-align: center;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+}
+
+.sobre-titles p{
+    width: 100%;
+    border: 1px solid red;
+    text-align: center;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 1.2rem;
+}
+
+.sobre-topics{
+    border: 1px solid red;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 25vh;
+}
+
+.sobre-topic{
+    border: 1px solid red;
+    width: 30%;
+    height: 20vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.sobre-topic-left{
+    border: 1px solid red;
+    width: 30%;
+    height: 20vh;
+    align-items: flex-start;
+    display: flex;
+    justify-content: center;
+}
+
+.sobre-topic-left i{
+    border: 1px solid red;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    font-size: 40px;
+}
+
+.sobre-topic-right{
+    border: 1px solid red;
+    width: 70%;
+    height: 20vh;
+    padding: 20px;
+}
+
+.sobre-topic-right h4{
+    border: 1px solid red;
+    width: 100%;
+    height: 5vh;
+}
+
+.sobre-topic-right p{
+    border: 1px solid red;
+    width: 100%;
+    height: 10vh;
+}
