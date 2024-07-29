@@ -72,7 +72,18 @@
         </div> <!-- Fechamento da div "nav-top-all-elements" -->
     </nav> <!-- Fechamento da nav "nav-top" -->
 
-<header> <!-- Abertura do header -->
+<header class="header"> <!-- Abertura do header -->
+
+    <script>
+        window.addEventListener('scroll', function() {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            let header = document.querySelector('.header');
+            let scale = 1 + scrollTop / 1000; // Ajuste esse valor conforme necessário
+    
+            header.style.backgroundSize = scale * 100 + '%';
+        });
+    </script>
+
     <nav class="navbar"> <!-- Abertura da navbar oficial -->
         <div class="nav-all-elements"> <!-- Abertura da div que terá todos os elementos manipulaveis -->
             <div class="nav-image"> <!-- Div para colocar a logo -->

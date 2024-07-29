@@ -11,11 +11,12 @@ html, body{
     scroll-behavior: smooth;
 }
 
-header{
+.header{
     background-image: url(../imagens/loja-teste-4.png);
     background-position: top;
     background-size: cover;
     height: 95dvh;
+    background-attachment: fixed;
 }
 
 .fade-in {
