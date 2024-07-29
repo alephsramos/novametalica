@@ -52,9 +52,9 @@
 }
 
 .header-texts-btn button:hover{
-    background-color: #fff;
+    background-color: #000;
     border: none;
-    color: #000;
+    color: #fff;
     transform: scale(1.05);
     box-shadow: 0 0px 4px rgba(255, 255, 255, 1);
 }
