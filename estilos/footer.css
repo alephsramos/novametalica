@@ -28,6 +28,12 @@
     justify-content: flex-start;
 }
 
+.footer-image img{
+    width: 250px;
+    height: auto;
+    border: 1px solid red;
+}
+
 .footer-text{
     border: 1px solid red;
     height: 10vh;
