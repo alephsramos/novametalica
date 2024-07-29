@@ -44,7 +44,7 @@
                 </div>
                 <div class="nav-link-top">
                 <i class="fa-solid fa-phone"></i>
-                <a href="#">+55 (24) 98110-2030</a> <!-- Número da fábrica -->
+                <a href="#">+55 24 98110-2030</a> <!-- Número da fábrica -->
                 </div>
                 <div class="nav-link-top">
                 <i class="fa-solid fa-location-dot"></i>
@@ -87,7 +87,11 @@
                 <a href="#projetos">Projetos</a>
             </div> <!-- Fechamento da div com os links -->
             <div class="nav-btn"> <!-- Div para o botão -->
-                <button>Contate-nos</button> 
+                <button id="contact_btn">Contate-nos</button> 
+                <script>
+                    document.getElementById('contact_btn').addEventListener('click', function() {
+                    document.getElementById('form').scrollIntoView({ behavior: 'smooth' });});
+                </script>
             </div> <!-- Fechamento da div do botão -->
             <div class="side-bar" id="side_bar" style="display: none;"> <!-- Div para o botão da side-bar para telefone -->
                 &#9776; <!-- ícone de hambúrguer -->
@@ -171,7 +175,7 @@
     </div> <!-- Fechamento da div "info-div-cards" -->
 </section> <!-- Fechamento da seção de informações -->
 
-<section class="qualidades-container">
+<section class="qualidades-container" id="diferencial">
     <div class="qualidades-all-items">
         <div class="qualidade-texts">
             <h2>Por Que Escolher a Nova Metálica?</h2>
@@ -220,7 +224,7 @@
     </div>
 </section>
 
-<section class="profissionais-container">
+<section class="profissionais-container" id="profissionais">
     <div class="profissionais-div-container">
         <div class="profissionais-texts">
             <h2>Titulo principal da seção de profissionais</h2>
@@ -263,7 +267,7 @@
     </div>
 </section>
 
-<section class="produtos-container">
+<section class="produtos-container" id="produtos">
     <div class="produtos-div-container">
         <div class="produtos-texts">
             <h2>Eleve Seus Projetos com Nossos Produtos</h2>
@@ -409,7 +413,7 @@
     });
 </script>
 
-<section class="projetos-container">
+<section class="projetos-container" id="projetos">
     <div class="projetos-div-container">
         <div class="projetos-texts">
             <h2>Titulo de projetos</h2>
@@ -550,7 +554,7 @@
     </div>
 </section>
 
-<section class="form-container">
+<section class="form-container" id="form">
     <div class="form-container-div">
         <div class="form-left">
             <div class="form-text">
@@ -626,11 +630,11 @@
     </div>
 </section>
 
-<section class="local-container">
+<section class="local-container" id="local">
     <div id="map"></div>
   </section>
 
-<footer class="footer-container">
+<footer class="footer-container" id="footer">
     <div class="footer-containver-div">
         <div class="footer-left">
             <div class="footer-image">
