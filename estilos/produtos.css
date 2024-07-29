@@ -190,3 +190,12 @@
 .produto-card-btn-right .fa-heart-filled.active {
     display: inline;
 }
+
+.fa-regular {
+    color: #000;
+}
+
+/* Define a cor dos ícones quando clicados */
+.fa-solid {
+    color: #1f9ad7; /* Altere para a cor desejada */
+}
