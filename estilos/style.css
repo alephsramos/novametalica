@@ -7,6 +7,10 @@
     font-family: Arial, Helvetica, sans-serif;
 }
 
+html, body{
+    scroll-behavior: smooth;
+}
+
 header{
     background-image: url(../imagens/loja-teste-4.png);
     background-position: top;
