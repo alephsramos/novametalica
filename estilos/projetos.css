@@ -1,0 +1,142 @@
+.projetos-container{
+    border: 1px solid red;
+    padding: 0 10%;
+    height: 100vh;
+}
+
+.projetos-div-container{
+    border: 1px solid red;
+    width: 100%;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.projetos-texts{
+    border: 1px solid red;
+    height: 10vh;
+    width: 100%;
+}
+
+.projetos-texts h2{
+    font-size: 3rem;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.projetos-texts p{
+    font-size: 1.2rem;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.projetos-cards-div{
+    border: 1px solid red;
+    display: flex;
+    width: 100%;
+    gap: 80px;
+    height: 60vh;
+    overflow: hidden;
+}
+
+.projetos-cards{
+    border: 1px solid red;
+    width: 1000px;
+    padding: 10px;
+    transition: transform 1s ease-in-out, opacity 1s ease-in-out; /* Adicionar transição suave */
+}
+
+.projetos-cards:nth-child(n+4){
+    display: none;
+}
+
+.projeto-image{
+    height: 30vh;
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projeto-text{
+    border: 1px solid red;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    gap: 5px;
+    flex-direction: column;
+    height: 10vh;
+}
+
+.projeto-text h6{
+    border: 1px solid red;
+    width: 100%;
+    font-size: 1.4rem;
+}
+
+.projeto-text p{
+    font-size: 1rem;
+    border: 1px solid red;
+    width: 100%;
+}
+
+.projeto-parags{
+    border: 1px solid red;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 5px 0;
+}
+
+.projeto-parags p{
+    font-size: 1rem;
+    border: 1px solid red;
+}
+
+.projeto-btn{
+    border: 1px solid red;
+    width: 100%;
+    height: 8vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.projeto-btn button{
+    width: 100%;
+    padding: 12px;
+    background-color: transparent;
+    border: none;
+    border: 1px solid #000;
+    color: #000;
+}
+
+.projeto-action{
+    border: 1px solid red;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 10vh;
+    gap: 10px;
+}
+
+.projeto-action-left,
+.projeto-action-right{
+    border: 1px solid red;
+    height: 5vh;
+    width: 50px;
+    cursor: pointer;
+}
+
+.projeto-action-center{
+    border: 1px solid red;
+    height: 5vh;
+    width: 100px;
+}

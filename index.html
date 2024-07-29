@@ -1,0 +1,645 @@
+<!DOCTYPE html>
+<html lang="pt-br"> <!-- Linguagem oficial da página -->
+<head>
+    <!-- META TAGS -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Aleph Ramos - Desenvolvedor Web"> <!-- criador do site ig: @alephsramos -->
+    <meta name="author" content="Alice Pereira - Copy"> <!-- criador da escrita do site -->
+    <meta name="author" content="Livia Motta - WebDesign"> <!-- criador do design do site -->
+    <meta name="description" content="DESCRIÇÃO BREVE DA PÁGINA"> <!-- uma breve descrição (FALTA COLOCAR) -->
+    <meta name="keywords" content="Nova Metálica, Construção Civil, Fast Drywall, Drywall, SteelFrame, "> <!-- algumas palavras chaves (FALTA COLOCAR) -->
+
+    <!-- LINKS DE REFERÊNCIA -->
+    <link rel="stylesheet" href="estilos/style.css"> <!-- CSS principal da página -->
+    <link rel="stylesheet" href="estilos/navbar.css"> <!-- CSS da navbar -->
+    <link rel="stylesheet" href="estilos/header.css"> <!-- CSS do header -->
+    <link rel="stylesheet" href="estilos/info.css"> <!-- CSS da section de informações -->
+    <link rel="stylesheet" href="estilos/qualidades.css"> <!-- CSS da section de qualidades -->
+    <link rel="stylesheet" href="estilos/profissionais.css"> <!-- CSS da section de profissionais -->
+    <link rel="stylesheet" href="estilos/produtos.css"> <!-- CSS da section de produtos -->
+    <link rel="stylesheet" href="estilos/projetos.css"> <!-- CSS da section de projetos -->
+    <link rel="stylesheet" href="estilos/form.css"> <!-- CSS da section de formulario -->
+    <link rel="stylesheet" href="estilos/local.css"> <!-- CSS da section de local -->
+    <link rel="stylesheet" href="estilos/footer.css"> <!-- CSS do footer -->
+    <link rel="icon" href="#"> <!-- Icone da página (FALTA COLOCAR) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Biblioteca de icons -->
+
+    <!-- CÓDIGOS DO JAVASCRIPT -->
+    <script src="scripts/script.js"></script> <!-- JS principal da página -->
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2F1k7kuY3rKuXXJG-2ylCGY4BLRtgpgE&callback=initMap"></script>
+
+    <title>Nova Metálica</title> <!-- Titulo da página -->
+</head>
+
+
+<body> <!-- Abertura do corpo todo da página -->
+    <nav class="nav-top"> <!-- Elemento pai da navbar que fica no topo -->
+        <div class="nav-top-all-elements"> <!-- Div que controla o container completo -->
+
+            <div class="nav-links-top"> <!-- Div para os links da navbar no topo -->
+                <div class="nav-link-top">
+                <i class="fab fa-instagram"></i>
+                <a href="#">email@gmail.com</a> <!-- Email da fábrica -->
+                </div>
+                <div class="nav-link-top">
+                <i class="fab fa-instagram"></i>
+                <a href="#">+55 (24) 98110-2030</a> <!-- Número da fábrica -->
+                </div>
+                <div class="nav-link-top">
+                <i class="fab fa-instagram"></i>
+                <a href="#">Japeri - RJ</a> <!-- Local da fábrica -->
+                </div>
+            </div> <!-- Fechamento da div "nav-links-top" -->
+
+            <div class="nav-social-top"> <!-- Div para os icons da navbar no topo -->
+                <a href="#"
+                <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" 
+                <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" 
+                <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" 
+                <i class="fab fa-instagram"></i>
+                </a>
+                <a href="#" 
+                <i class="fab fa-instagram"></i>
+                </a>
+            </div> <!-- Fechamento da div "nav-social-top" -->
+        </div> <!-- Fechamento da div "nav-top-all-elements" -->
+    </nav> <!-- Fechamento da nav "nav-top" -->
+
+<header> <!-- Abertura do header -->
+    <nav class="navbar"> <!-- Abertura da navbar oficial -->
+        <div class="nav-all-elements"> <!-- Abertura da div que terá todos os elementos manipulaveis -->
+            <div class="nav-image"> <!-- Div para colocar a logo -->
+                <img src="imagens/logo.svg">
+            </div> <!-- Fechamento da div para colocar a logo -->
+            <div class="nav-links" id="navLinks"> <!-- Div para os links da navbar -->
+                <a href="#">link1</a>
+                <a href="#">link2</a>
+                <a href="#">link3</a>
+                <a href="#">link4</a>
+                <a href="#">link5</a>
+                <a href="#">link6</a>
+            </div> <!-- Fechamento da div com os links -->
+            <div class="nav-btn"> <!-- Div para o botão -->
+                <button>Botão para algo</button> 
+            </div> <!-- Fechamento da div do botão -->
+            <div class="side-bar" id="side_bar" style="display: none;"> <!-- Div para o botão da side-bar para telefone -->
+                &#9776; <!-- ícone de hambúrguer -->
+            </div> <!-- Fechamento da div da side-bar -->
+        </div> <!-- Fechamento da div "nav-all-elements" -->
+    </nav> <!-- Fechamento da navbar -->
+ 
+    <div class="header-div"> <!-- Div para manipular as margens e tamanhos -->
+        <div class="header-texts"> <!-- Div contendo os textos -->
+            <h1>Titulo principal da página</h1>
+            <p>Descrição principal da página, não muito grande</p>
+            <div class="header-texts-btn"> <!-- Div com o botão -->
+            <button>Alguma coisa</button>
+            </div> <!-- Fechamento da div "header-texts-btn" -->
+        </div> <!-- Fechamento da div "header-texts" -->
+    </div> <!-- Fechamento da div "header-div" -->
+
+</header> <!-- Fechamento do header -->
+
+<section class="infos-container"> <!-- Seção com as informações, abaixo do header -->
+    <div class="info-div-texts"> <!-- Div para manipular os textos -->
+        <h2>Texto principal da segunda página</h2>
+        <p class="info-div-texts-p">Descrição da segunda página</p>
+        <div class="info-estatisticas"> <!-- Div pai para manipular as estatisticas -->
+            <div class="estatisticas"> <!-- Div filho para manipular as estatisticas -->
+                <h6>260+</h6>
+                <p>Descrição</p>
+            </div> <!-- Fechamento da div filho para manipular as estatisticas -->
+            <div class="estatisticas"> <!-- Div filho para manipular as estatisticas -->
+                <h6>95%</h6>
+                <p>Descrição</p>
+            </div> <!-- Fechamento da div filho para manipular as estatisticas -->
+            <div class="estatisticas"> <!-- Div filho para manipular as estatisticas -->
+                <h6>200+</h6>
+                <p>Descrição</p>
+            </div> <!-- Fechamento da div filho para manipular as estatisticas -->
+            <div class="estatisticas"> <!-- Div filho para manipular as estatisticas -->
+                <h6>100+</h6>
+                <p>Descrição</p>
+            </div> <!-- Fechamento da div filho para manipular as estatisticas -->
+        </div> <!-- Fechamento da div pai para manipular as estatisticas -->
+    </div> <!-- Fechamento da div "info-div-texts" -->
+
+    <div class="info-div-cards"> <!-- Div para manipular o container do card -->
+        <div class="info-card"> <!-- Div para manipular os cards -->
+            <div class="info-card-left"> <!-- Div filho para manipular a esquerda do card -->
+                <i class="fab fa-instagram"></i>
+            </div> <!-- Fechamento da div "info-card-left" -->
+            <div class="info-card-right"> <!-- Div filho para manipular a direita do card -->
+                <h6>Topico</h6>
+                <p>Descrição</p>
+            </div> <!-- Fechamento da div "info-card-right" -->
+        </div> <!-- Fechamento da div "info-card" -->
+        <div class="info-card"> <!-- Div para manipular os cards -->
+            <div class="info-card-left"> <!-- Div filho para manipular a esquerda do card -->
+                <i class="fab fa-instagram"></i>
+            </div> <!-- Fechamento da div "info-card-left" -->
+            <div class="info-card-right"> <!-- Div filho para manipular a direita do card -->
+                <h6>Topico</h6>
+                <p>Descrição</p>
+            </div> <!-- Fechamento da div "info-card-right" -->
+        </div> <!-- Fechamento da div "info-card" -->
+        <div class="info-card"> <!-- Div para manipular os cards -->
+            <div class="info-card-left"> <!-- Div filho para manipular a esquerda do card -->
+                <i class="fab fa-instagram"></i>
+            </div> <!-- Fechamento da div "info-card-left" -->
+            <div class="info-card-right"> <!-- Div filho para manipular a direita do card -->
+                <h6>Topico</h6>
+                <p>Descrição</p>
+            </div> <!-- Fechamento da div "info-card-right" -->
+        </div> <!-- Fechamento da div "info-card" -->
+        <div class="info-card"> <!-- Div para manipular os cards -->
+            <div class="info-card-left"> <!-- Div filho para manipular a esquerda do card -->
+                <i class="fab fa-instagram"></i>
+            </div> <!-- Fechamento da div "info-card-left" -->
+            <div class="info-card-right"> <!-- Div filho para manipular a direita do card -->
+                <h6>Topico</h6>
+                <p>Descrição</p>
+            </div> <!-- Fechamento da div "info-card-right" -->
+        </div> <!-- Fechamento da div "info-card" -->
+    </div> <!-- Fechamento da div "info-div-cards" -->
+</section> <!-- Fechamento da seção de informações -->
+
+<section class="qualidades-container">
+    <div class="qualidades-all-items">
+        <div class="qualidade-texts">
+            <h2>Texto principal de qualidades</h2>
+            <p>Descrição principal de qualidades</p>
+        </div>
+        <div class="qualidade-cards-all">
+        <div class="qualidade-cards"> <!-- Abertura da div pai para manipular os cards -->
+            <div class="qualidade-card-top"> <!-- Abertura da div filho para manipular os itens do card que estão no topo -->
+                <i class="fas fa-instagram"></i>
+            </div> <!-- Fechamento da div filho do topo -->
+            <div class="qualidade-card-bottom"> <!-- Abertura da div filho para manipular os itens do card que estão no final -->
+                <h6>Qualidade</h6>
+                <p>Descrição</p>
+            </div> <!-- Fechamento da div filho do final -->
+        </div> <!-- Fechamento da div pai para manipular os cards -->
+        <div class="qualidade-cards"> <!-- Abertura da div pai para manipular os cards -->
+            <div class="qualidade-card-top"> <!-- Abertura da div filho para manipular os itens do card que estão no topo -->
+                <i class="fas fa-instagram"></i>
+            </div> <!-- Fechamento da div filho do topo -->
+            <div class="qualidade-card-bottom"> <!-- Abertura da div filho para manipular os itens do card que estão no final -->
+                <h6>Qualidade</h6>
+                <p>Descrição</p>
+            </div> <!-- Fechamento da div filho do final -->
+        </div> <!-- Fechamento da div pai para manipular os cards -->
+        <div class="qualidade-cards"> <!-- Abertura da div pai para manipular os cards -->
+            <div class="qualidade-card-top"> <!-- Abertura da div filho para manipular os itens do card que estão no topo -->
+                <i class="fas fa-instagram"></i>
+            </div> <!-- Fechamento da div filho do topo -->
+            <div class="qualidade-card-bottom"> <!-- Abertura da div filho para manipular os itens do card que estão no final -->
+                <h6>Qualidade</h6>
+                <p>Descrição</p>
+            </div> <!-- Fechamento da div filho do final -->
+        </div> <!-- Fechamento da div pai para manipular os cards -->
+    </div>
+    </div>
+</section>
+
+<section class="profissionais-container">
+    <div class="profissionais-div-container">
+        <div class="profissionais-texts">
+            <h2>Titulo principal da seção de profissionais</h2>
+            <p>Descrição principal da seção de profissionais</p>
+        </div>
+        <div class="profissionais-card-container">
+            <div class="profissionais-cards">
+                <div class="profissionais-card">
+                    <div class="profissionais-card-espaço"></div>
+                    <div class="profissionais-card-texts">
+                    <h6>Descrição principal do card</h6>
+                    <p>Sub descrição do card</p></div>
+                    <div class="profissionais-card-link">
+                    <a href="#">Conhecer melhor</a>
+                    <a href="#"><i class="fas fa-instagram"></i></a>
+                    
+                </div></div>
+                <div class="profissionais-card">
+                    <div class="profissionais-card-espaço"></div>
+                    <div class="profissionais-card-texts">
+                    <h6>Descrição principal do card</h6>
+                    <p>Sub descrição do card</p></div>
+                    <div class="profissionais-card-link">
+                    <a href="#">Conhecer melhor</a>
+                    <a href="#"><i class="fas fa-instagram"></i></a>
+                    
+                </div></div>
+                <div class="profissionais-card">
+                    <div class="profissionais-card-espaço"></div>
+                    <div class="profissionais-card-texts">
+                    <h6>Descrição principal do card</h6>
+                    <p>Sub descrição do card</p></div>
+                    <div class="profissionais-card-link">
+                    <a href="#">Conhecer melhor</a>
+                    <a href="#"><i class="fas fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="produtos-container">
+    <div class="produtos-div-container">
+        <div class="produtos-texts">
+            <h2>Titulos de produtos</h2>
+            <p>Descrição de produtos</p>
+        </div>
+        <div class="produtos-btn">
+            <div class="produtos-topics-div-btn">
+                <button>Topic1</button>
+                <button>Topic2</button>
+                <button>Topic3</button>
+                <button>Topic4</button>
+                <button>Topic5</button>
+                <button>Topic6</button>
+                <button>Topic7</button>
+                <button>Topic8</button>
+            </div>
+        </div>
+    </div>
+        <div class="produtos-container-cards">
+            <div class="produtos-cards">
+                <div class="produtos-card">
+                    <div class="produto-card-img">
+                        <img src="imagens/produto1.jpg" alt="produto1">
+                    </div>
+                    <div class="produto-card-text-top">
+                        <h6>Nome do produto</h6>
+                        <p>Marca</p>
+                    </div>
+                    <div class="produto-card-text-center">
+                        <div class="produto-card-text-center-center">
+                            <h6>Tag</h6>
+                            <p>Valor tag</p>
+                        </div>
+                        <div class="produto-card-text-center-center">
+                            <h6>Tag2</h6>
+                            <p>Valor tag2</p>
+                        </div>
+                    </div>
+                    <div class="produto-card-btns">
+                        <button class="produto-card-btn-left">Comprar</button>
+                        <button class="produto-card-btn-right">
+                            <i class="fas fa-instagram"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="produtos-card">
+                    <div class="produto-card-img">
+                        <img src="imagens/produto1.jpg" alt="produto1">
+                    </div>
+                    <div class="produto-card-text-top">
+                        <h6>Nome do produto</h6>
+                        <p>Marca</p>
+                    </div>
+                    <div class="produto-card-text-center">
+                        <div class="produto-card-text-center-center">
+                            <h6>Tag</h6>
+                            <p>Valor tag</p>
+                        </div>
+                        <div class="produto-card-text-center-center">
+                            <h6>Tag2</h6>
+                            <p>Valor tag2</p>
+                        </div>
+                    </div>
+                    <div class="produto-card-btns">
+                        <button class="produto-card-btn-left">Comprar</button>
+                        <button class="produto-card-btn-right">
+                            <i class="fas fa-instagram"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="produtos-card">
+                    <div class="produto-card-img">
+                        <img src="imagens/produto1.jpg" alt="produto1">
+                    </div>
+                    <div class="produto-card-text-top">
+                        <h6>Nome do produto</h6>
+                        <p>Marca</p>
+                    </div>
+                    <div class="produto-card-text-center">
+                        <div class="produto-card-text-center-center">
+                            <h6>Tag</h6>
+                            <p>Valor tag</p>
+                        </div>
+                        <div class="produto-card-text-center-center">
+                            <h6>Tag2</h6>
+                            <p>Valor tag2</p>
+                        </div>
+                    </div>
+                    <div class="produto-card-btns">
+                        <button class="produto-card-btn-left">Comprar</button>
+                        <button class="produto-card-btn-right">
+                            <i class="fas fa-instagram"></i>
+                        </button>
+                    </div>
+                </div>
+                <div class="produtos-card">
+                    <div class="produto-card-img">
+                        <img src="imagens/produto1.jpg" alt="produto1">
+                    </div>
+                    <div class="produto-card-text-top">
+                        <h6>Nome do produto</h6>
+                        <p>Marca</p>
+                    </div>
+                    <div class="produto-card-text-center">
+                        <div class="produto-card-text-center-center">
+                            <h6>Tag</h6>
+                            <p>Valor tag</p>
+                        </div>
+                        <div class="produto-card-text-center-center">
+                            <h6>Tag2</h6>
+                            <p>Valor tag2</p>
+                        </div>
+                    </div>
+                    <div class="produto-card-btns">
+                        <button class="produto-card-btn-left">Comprar</button>
+                        <button class="produto-card-btn-right">
+                            <i class="fas fa-instagram"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+</section>
+
+<section class="projetos-container">
+    <div class="projetos-div-container">
+        <div class="projetos-texts">
+            <h2>Titulo de projetos</h2>
+            <p>Descrição de projetos</p>
+        </div>
+        <div class="projetos-cards-div" id="projetos-cards-div">
+        <div class="projetos-cards" id="projetos_card_1">
+            <div class="projeto-image">
+                <img src="imagens/"alt="foto1">
+            </div>
+            <div class="projeto-text">
+                <h6>Titulo do projeto1</h6>
+                <p>Descrição do projeto</p>
+            </div>
+            <div class="projeto-parags">
+                <p>Local</p>
+                <p>Nome do local</p>
+            </div>
+            <div class="projeto-parags">
+                <p>Local</p>
+                <p>Nome do local</p>
+            </div>
+            <div class="projeto-parags">
+                <p>Local</p>
+                <p>Nome do local</p>
+            </div>
+            <div class="projeto-btn">
+                <button>Saber mais</button>
+            </div>
+        </div>
+        <div class="projetos-cards" id="projetos_card_2">
+            <div class="projeto-image">
+                <img src="imagens/"alt="foto1">
+            </div>
+            <div class="projeto-text">
+                <h6>Titulo do projeto2</h6>
+                <p>Descrição do projeto</p>
+            </div>
+            <div class="projeto-parags">
+                <p>Local</p>
+                <p>Nome do local</p>
+            </div>
+            <div class="projeto-parags">
+                <p>Local</p>
+                <p>Nome do local</p>
+            </div>
+            <div class="projeto-parags">
+                <p>Local</p>
+                <p>Nome do local</p>
+            </div>
+            <div class="projeto-btn">
+                <button>Saber mais</button>
+            </div>
+        </div>
+        <div class="projetos-cards" id="projetos_card_3">
+            <div class="projeto-image">
+                <img src="imagens/"alt="foto1">
+            </div>
+            <div class="projeto-text">
+                <h6>Titulo do projeto3</h6>
+                <p>Descrição do projeto</p>
+            </div>
+            <div class="projeto-parags">
+                <p>Local</p>
+                <p>Nome do local</p>
+            </div>
+            <div class="projeto-parags">
+                <p>Local</p>
+                <p>Nome do local</p>
+            </div>
+            <div class="projeto-parags">
+                <p>Local</p>
+                <p>Nome do local</p>
+            </div>
+            <div class="projeto-btn">
+                <button>Saber mais</button>
+            </div>
+        </div>
+        <div class="projetos-cards" id="projetos_card_4">
+            <div class="projeto-image">
+                <img src="imagens/"alt="foto1">
+            </div>
+            <div class="projeto-text">
+                <h6>Titulo do projeto4</h6>
+                <p>Descrição do projeto</p>
+            </div>
+            <div class="projeto-parags">
+                <p>Local</p>
+                <p>Nome do local</p>
+            </div>
+            <div class="projeto-parags">
+                <p>Local</p>
+                <p>Nome do local</p>
+            </div>
+            <div class="projeto-parags">
+                <p>Local</p>
+                <p>Nome do local</p>
+            </div>
+            <div class="projeto-btn">
+                <button>Saber mais</button>
+            </div>
+        </div>
+        <div class="projetos-cards" id="projetos_card_5">
+            <div class="projeto-image">
+                <img src="imagens/"alt="foto1">
+            </div>
+            <div class="projeto-text">
+                <h6>Titulo do projeto5</h6>
+                <p>Descrição do projeto</p>
+            </div>
+            <div class="projeto-parags">
+                <p>Local</p>
+                <p>Nome do local</p>
+            </div>
+            <div class="projeto-parags">
+                <p>Local</p>
+                <p>Nome do local</p>
+            </div>
+            <div class="projeto-parags">
+                <p>Local</p>
+                <p>Nome do local</p>
+            </div>
+            <div class="projeto-btn">
+                <button>Saber mais</button>
+            </div>
+        </div></div>
+        <div class="projeto-action">
+            <button class="projeto-action-left" id="projeto_left">
+                <i class="fas fa-instagram"></i>
+            </button>
+            <button class="projeto-action-center">
+                Ver todos
+            </button>
+            <button class="projeto-action-right" id="projeto_right">
+                <i class="fas fa-instagram"></i>
+            </button>
+        </div>
+    </div>
+</section>
+
+<section class="form-container">
+    <div class="form-container-div">
+        <div class="form-left">
+            <div class="form-text">
+                <h2>Titulo contato</h2>
+                <p>Descrição contato</p>
+            </div>
+            <div class="form-contact-div">
+                <div class="form-contact-left">
+                    <i class="fas fa-instagram"></i>
+                </div>
+                <div class="form-contact-right">
+                    <h6>Endereço</h6>
+                    <p>Colocar endereço</p>
+                </div>
+            </div>
+            <div class="form-contact-div">
+                <div class="form-contact-left">
+                    <i class="fas fa-instagram"></i>
+                </div>
+                <div class="form-contact-right">
+                    <h6>Endereço</h6>
+                    <p>Colocar endereço</p>
+                </div>
+            </div>
+            <div class="form-contact-div">
+                <div class="form-contact-left">
+                    <i class="fas fa-instagram"></i>
+                </div>
+                <div class="form-contact-right">
+                    <h6>Endereço</h6>
+                    <p>Colocar endereço</p>
+                </div>
+            </div>
+            <div class="div-linha">
+            <hr class="form-linha">
+            </div>
+            <div class="form-redes">
+                <a href="#">
+                    <i class="fas fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fas fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fas fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fas fa-instagram"></i>
+                </a>
+                <a href="#">
+                    <i class="fas fa-instagram"></i>
+                </a>
+            </div>
+        </div>
+        <div class="form-right">
+            <div class="form-right-text">
+                <h2>Enviar sua mensagem</h2>
+            </div>
+            <div class="form-inputs">
+                <input class="form-input-nome" type="text" placeholder="Nome" id="name">
+                <input class="form-input-email" type="email" placeholder="E-mail" id="email">
+                <input class="form-input-tel" type="tel" placeholder="+55 21 987654321" id="tel">
+            </div>
+            <div class="form-right-direitos">  
+                <p>Descrição de confirmação de segurança</p>
+            </div>
+            <div class="form-submit">
+                <button type="submit" id="submit">Enviar</button>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="local-container">
+    <div id="map"></div>
+  </section>
+
+<footer class="footer-container">
+    <div class="footer-containver-div">
+        <div class="footer-left">
+            <div class="footer-image">
+                <img src="imagens/" alt="logo">
+            </div>
+            <div class="footer-text">
+                <p>Descrições</p>
+                <p>Email@gmail.com</p>
+                <p>Numero 24981422932</p>
+            </div>
+        </div>
+        <div class="footer-links">
+            <p>Topico</p>
+            <a href="#">Link1</a>
+            <a href="#">Link1</a>
+            <a href="#">Link1</a>
+            <a href="#">Link1</a>
+        </div>
+        <div class="footer-links">
+            <p>Topico</p>
+            <a href="#">Link1</a>
+            <a href="#">Link1</a>
+            <a href="#">Link1</a>
+            <a href="#">Link1</a>
+        </div>
+        <div class="footer-links">
+            <p>Topico</p>
+            <a href="#">Link1</a>
+            <a href="#">Link1</a>
+            <a href="#">Link1</a>
+            <a href="#">Link1</a>
+        </div>
+    </div>
+    <div class="footer-final">
+        <p>Copyright submit
+            <a href="#">All right reserved
+        </a>
+        </p>
+        <p>Nova Metálica </p>
+    </div>
+</footer>
+
+</body> <!-- Fechamento do corpo todo da página -->
+
+
+</html>

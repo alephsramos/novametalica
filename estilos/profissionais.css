@@ -1,0 +1,118 @@
+.profissionais-container{
+    padding: 0 10%;
+    border: 1px solid red;
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.profissionais-div-container{
+    border: 1px solid red;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.profissionais-texts{
+    border: 1px solid red;
+    height: 10vh;
+    flex-direction: column;
+}
+
+.profissionais-texts h2{
+    border: 1px solid red;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+    height: 5vh;
+}
+
+.profissionais-texts p{
+    border: 1px solid red;
+    font-size: 1.2rem;
+    display: flex;
+    align-items: center;
+    height: 5vh;
+}
+
+.profissionais-card-container{
+    border: 1px solid red;
+    height: 65vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.profissionais-cards{
+    display: flex;
+    border: 1px solid red;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    gap: 30px;
+}
+
+.profissionais-card{
+    border: 1px solid red;
+    width: 100%;
+    display: flex;
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: rgb(255, 252, 247);
+    padding: 20px;
+    border-radius: 20px;
+}
+
+.profissionais-card-espaço{
+    border: 1px solid red;
+    height: 40vh;
+    width: 100%;
+}
+
+.profissionais-card-texts{
+    border: 1px solid red;
+    width: 100%;
+    height: 10vh;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: center;
+}
+
+.profissionais-card-texts h6{
+    border: 1px solid red;
+    width: 100%;
+    font-size: 2rem;
+}
+
+.profissionais-card-texts p{
+    border: 1px solid red;
+    width: 100%;
+    font-size: 1.2rem;
+}
+
+.profissionais-card-link{
+    border: 1px solid red;
+    height: 5vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 20px;
+}
+
+.profissionais-card-link a{
+    text-decoration: none;
+    color: #000;
+    border: 1px solid red;
+    font-size: 1rem;
+}
+
+.profissionais-card-link i{
+    border: 1px solid red;
+    font-size: 1rem;
+}
