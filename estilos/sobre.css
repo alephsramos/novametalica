@@ -5,13 +5,13 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 100vh;
+    height: 105vh;
 }
 
 .sobre-container-div{
     border: 1px solid red;
     width: 100%;
-    height: 85vh;
+    height: 90vh;
     display: flex;
     gap: 10px;
     align-items: center;
@@ -22,7 +22,7 @@
 .sobre-cards{
     border: 1px solid red;
     width: 80%;
-    height: 25vh;
+    height: 30vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -30,7 +30,7 @@
 
 .sobre-card{
     border: 1px solid red;
-    height: 25vh;
+    height: 30vh;
     width: 32%;
     display: flex;
     align-items: center;
@@ -77,19 +77,19 @@
 }
 
 .sobre-card-bottom{
-    border: 1px solid red;
+    border: 3px solid red;
     width: 100%;
     align-items: center;
     justify-content: center;
     display: flex;
-    height: 12vh;
+    height: 20vh;
     padding: 15px;
 }
 
 .sobre-card-bottom p{
     border: 1px solid red;
     width: 100%;
-    height: 10vh;
+    height: 15vh;
 }
 
 .sobre-titles{
@@ -107,29 +107,20 @@
     width: 100%;
     border: 1px solid red;
     text-align: center;
-    height: 5vh;
+    height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 3rem;
 }
 
-.sobre-titles p{
-    width: 100%;
-    border: 1px solid red;
-    text-align: center;
-    height: 5vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.2rem;
-}
 
 .sobre-topics{
     border: 1px solid red;
     width: 100%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: center;
+    gap: 50px;
     align-items: center;
     height: 25vh;
 }
