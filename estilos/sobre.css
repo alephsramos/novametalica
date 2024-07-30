@@ -4,13 +4,12 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 120vh;
+    height: 115vh;
     background-image: url('');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     clip-path: polygon(0 0%, 100% 0, 100% 97%, 0% 100%);
-    border: 1px solid red;
 
 }
 
@@ -22,7 +21,6 @@
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-    border: 1px solid red;
 }
 
 .sobre-cards{
@@ -31,11 +29,10 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
-    border: 1px solid red;
 }
 
 .sobre-card{
-    height: 40vh;
+    height: 42vh;
     width: 32%;
     display: flex;
     align-items: center;
@@ -43,8 +40,7 @@
     background-color: #fff;
     border-radius: 1cap;
     flex-direction: column;
-    border: 1px solid #000;
-    box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.6);
+    box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.2);
     transition: all .3s;
     cursor: default;
 }
@@ -74,7 +70,6 @@
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;
-    border: 1px solid red;
 }
 
 .sobre-card-top img{
@@ -82,18 +77,14 @@
     align-items: center;
     justify-content: center;
     left: 0;
-    color: #000;
-    background-color: #fff;
-    border: 1px solid #000;
     transition: all .3s;
     width: 100%;
-    height: 24vh;
+    height: 22vh;
     object-fit: cover;
 }
 
 .sobre-card-top h4{
-    height: 5vh;
-    border: 1px solid red;
+    height: 6vh;
     width: 100%;
     display: flex;
     align-items: center;
@@ -110,14 +101,13 @@
     justify-content: center;
     display: flex;
     height: 10vh;
-    border: 1px solid red;
-    padding: 30px;
+    padding: 28px;
     color: #000;
 }
 
 .sobre-card-bottom p{
     width: 100%;
-    border: 1px solid red;
+    text-align: center;
     font-size: 1.1rem;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
@@ -128,9 +118,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    border: 1px solid red;
     flex-direction: column;
-    height: 5vh;
+    height: 10vh;
 }
 
 .sobre-titles h2{
@@ -151,10 +140,9 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 10px;
+    gap: 25px;
     align-items: center;
     height: 23vh;
-    border: 1px solid red;
 }
 
 .sobre-topic{
@@ -166,7 +154,6 @@
     border-radius: 0px;
     gap: 5px;
     transition: all .3s;
-    border: 1px solid red;
 }
 
 .sobre-topic:hover{
@@ -182,7 +169,6 @@
     background-color: #ebebeb;
     border-radius: 10px 0px 0px 10px;
     transition: all .3s;
-    border: 1px solid red;
 }
 
 .sobre-topic-left:hover{
@@ -220,7 +206,6 @@
     padding: 10px;
     transition: all .3s;
     gap: 10px;
-    border: 1px solid red;
 }
 
 .sobre-topic-right h4{
@@ -230,7 +215,6 @@
     color: #000;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
-    border: 1px solid red;
 }
 
 .sobre-topic-right p{
@@ -240,5 +224,4 @@
     color: #000;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
-    border: 1px solid red;
 }
