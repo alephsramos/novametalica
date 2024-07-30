@@ -1,5 +1,4 @@
 .form-container{
-    border: 1px solid red;
     padding: 0 10%;
     height: 70vh;
     display: flex;
@@ -9,14 +8,12 @@
 }
 
 .form-container-div{
-    border: 1px solid red;
     width: 100%;
     display: flex;
     height: 65vh;
 }
 
 .form-left{
-    border: 1px solid red;
     width: 50%;
     display: flex;
     align-items: center;
@@ -26,7 +23,6 @@
 
 .form-text{
     height: 15vh;
-    border: 1px solid red;
     width: 100%;
 }
 
@@ -35,7 +31,6 @@
     display: flex;
     align-items: center;
     height: 7vh;
-    border: 1px solid red;
 }
 
 .form-text p{
@@ -43,11 +38,9 @@
     display: flex;
     align-items: center;
     height: 8vh;
-    border: 1px solid red;
 }
 
 .form-contact-div{
-    border: 1px solid red;
     display: flex;
     justify-content: space-between;
     width: 100%;
@@ -55,7 +48,6 @@
 }
 
 .form-contact-left{
-    border: 1px solid red;
     height: 5vh;
     width: 10%;
     display: flex;
@@ -64,14 +56,12 @@
 
 .form-contact-left i{
     font-size: 35px;
-    border: 1px solid red;
     height: 5vh;
     display: flex;
     align-items: center;
 }
 
 .form-contact-right{
-    border: 1px solid red;
     width: 90%;
     align-items: flex-start;
     justify-content: center;
@@ -82,13 +72,11 @@
 
 .form-contact-right h6{
     font-size: 1.4rem;
-    border: 1px solid red;
     width: 80%;
 }
 
 .form-contact-right p{
     font-size: 1rem;
-    border: 1px solid red;
     width: 80%;
 }
 
@@ -100,13 +88,12 @@
 }
 
 .form-linha{
-    border: 2px solid red;
+    border: 1px solid #000;
     width: 80%;
     float: left;
 }
 
 .form-redes{
-    border: 1px solid red;
     height: 10vh;
     width: 100%;
     display: flex;
@@ -123,7 +110,6 @@
 }
 
 .form-right{
-    border: 1px solid red;
     width: 50%;
     display: flex;
     align-items: center;
@@ -134,7 +120,6 @@
 
 .form-right-text{
     height: 10vh;
-    border: 1px solid red;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -147,7 +132,6 @@
 
 .form-inputs{
     height: 30vh;
-    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -159,13 +143,11 @@
 .form-input-nome,
 .form-input-email,
 .form-input-tel{
-    border: 1px solid red;
     width: 80%;
     padding: 15px;
 }
 
 .form-right-direitos{
-    border: 1px solid red;
     height: 5vh;
     width: 100%;
     display: flex;
@@ -176,13 +158,11 @@
 .form-right-direitos p{
     font-size: 0.8rem;
     opacity: 0.8;
-    border: 1px solid red;
     width: 100%;
     text-align: center;
 }
 
 .form-submit{
-    border: 1px solid red;
     height: 7vh;
     width: 100%;
     display: flex;
@@ -193,6 +173,5 @@
 .form-submit button{
     padding: 15px 80px;
     background-color: transparent;
-    border: 1px solid red;
     color: #000;
 }

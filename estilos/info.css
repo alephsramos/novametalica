@@ -58,6 +58,8 @@
     align-items: center;
     justify-content: center;
     color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
 }
 
 .estatisticas p{
@@ -67,6 +69,8 @@
     align-items: center;
     justify-content: center;
     color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
 }
 
 /* CARDS */
