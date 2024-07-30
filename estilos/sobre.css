@@ -4,13 +4,12 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 115vh;
+    height: 135vh;
     background-image: url('');
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
-    clip-path: polygon(0 0%, 100% 0, 100% 97%, 0% 100%);
-
+    clip-path: polygon(0 0%, 100% 0, 100% 95%, 0% 100%);
 }
 
 .sobre-container-div{
@@ -81,6 +80,7 @@
     width: 100%;
     height: 22vh;
     object-fit: cover;
+    object-position: center;
 }
 
 .sobre-card-top h4{
@@ -119,7 +119,7 @@
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    height: 10vh;
+    height: 20vh;
 }
 
 .sobre-titles h2{
