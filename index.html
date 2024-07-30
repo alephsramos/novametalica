@@ -607,26 +607,51 @@
 <section class="infos-container" id="info"> <!-- Seção com as informações, abaixo do header -->
     <div class="info-div-texts"> <!-- Div para manipular os textos -->
         <div class="info-estatisticas"> <!-- Div pai para manipular as estatisticas -->
-            <div class="estatisticas"> <!-- Div filho para manipular as estatisticas -->
-                <h6>+100</h6>
-                <p>Soluções Personalizadas</p>
-            </div> <!-- Fechamento da div filho para manipular as estatisticas -->
-            <div class="estatisticas"> <!-- Div filho para manipular as estatisticas -->
-                <h6>+500</h6>
-                <p>Clientes Atendidos</p>
-            </div> <!-- Fechamento da div filho para manipular as estatisticas -->
-            <div class="estatisticas"> <!-- Div filho para manipular as estatisticas -->
-                <h6>+100</h6>
-                <p>Profissionais Especializadas</p>
-            </div> <!-- Fechamento da div filho para manipular as estatisticas -->
-            <div class="estatisticas"> <!-- Div filho para manipular as estatisticas -->
-                <h6>100%</h6>
-                <p>de Satisfação</p>
-            </div> <!-- Fechamento da div filho para manipular as estatisticas -->
-        </div> <!-- Fechamento da div pai para manipular as estatisticas -->
+            <div class="estatisticas">
+                <h6 class="animatedCounter" data-target="260">0+</h6>
+                <p>Descrição</p>
+            </div>
+            <div class="estatisticas">
+                <h6 class="animatedCounter" data-target="95">0%</h6>
+                <p>Descrição</p>
+            </div>
+            <div class="estatisticas">
+                <h6 class="animatedCounter" data-target="200">0+</h6>
+                <p>Descrição</p>
+            </div>
+            <div class="estatisticas">
+                <h6 class="animatedCounter" data-target="100">0+</h6>
+                <p>Descrição</p>
+            </div>
+        </div> <!-- Fechamento da div pai para manipular as estatisticas -->
     </div> <!-- Fechamento da div "info-div-texts" -->
 
 </section> <!-- Fechamento da seção de informações -->
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+    const counters = document.querySelectorAll('.animatedCounter');
+    const duration = 2000; // Duração da animação em milissegundos
+
+    counters.forEach(counter => {
+        const target = +counter.getAttribute('data-target'); // Obtém o número alvo do atributo data-target
+        const increment = target / (duration / 16); // Incremento por frame (assumindo 60fps)
+        let currentNumber = 0;
+
+        function updateCounter() {
+            currentNumber += increment;
+            if (currentNumber < target) {
+                counter.innerText = Math.floor(currentNumber) + (counter.innerText.includes('%') ? '%' : '+');
+                requestAnimationFrame(updateCounter);
+            } else {
+                counter.innerText = target + (counter.innerText.includes('%') ? '%' : '+');
+            }
+        }
+
+        updateCounter();
+    });
+});
+</script>
 
 <section class="form-container" id="form">
     <div class="form-container-div">
