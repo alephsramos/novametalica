@@ -87,3 +87,8 @@
     align-items: center;
     padding: 20px;
 }
+
+.prof-right-links a{
+    font-size: 30px;
+    transform: rotate(-45deg);
+}
