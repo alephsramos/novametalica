@@ -660,8 +660,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const observerCallback = (entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
+                entry.target.innerText = entry.target.getAttribute('data-target').includes('%') ? '0%' : '0+'; // Reinicia o texto do contador
                 animateCounter(entry.target);
-                observer.unobserve(entry.target); // Remove a observação após iniciar a animação
             }
         });
     };
@@ -672,6 +672,7 @@ document.addEventListener('DOMContentLoaded', () => {
         observer.observe(counter);
     });
 });
+
 </script>
 
 <section class="form-container" id="form">
