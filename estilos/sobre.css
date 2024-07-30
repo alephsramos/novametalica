@@ -42,7 +42,6 @@
 
 .sobre-card:hover{
     background-color: #fff;
-    transform: scale(1.05);
 }
 
 .sobre-card:hover > .sobre-card-top i{
@@ -139,7 +138,6 @@
     gap: 25px;
     align-items: center;
     height: 30vh;
-    transform: scale(0.95);
 }
 
 .sobre-topic{
@@ -154,7 +152,6 @@
 }
 
 .sobre-topic:hover{
-    transform: scale(1.02);
     gap: 0px;
 }
 
