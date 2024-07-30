@@ -97,6 +97,13 @@
     justify-content: center;
 }
 
+.produto-card-img img{
+    width: 100%;
+    height: 30vh;
+    object-fit: contain;
+    object-position: center;
+}
+
 .produto-card-text-top{
     border: 1px solid red;
     width: 100%;
