@@ -116,8 +116,10 @@
 }
 
 .form-redes i{
-    font-size: 40px;
-    border: 1px solid red;
+    font-size: 30px;
+    width: 30px;
+    height: 30px;
+    color: #000;
 }
 
 .form-right{
