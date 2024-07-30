@@ -1,7 +1,6 @@
 .infos-container{
     padding: 0 10%;
-    border: 1px solid red;
-    height: 55vh;
+    height: 20vh;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -10,16 +9,17 @@
 }
 
 .info-div-texts{
-    border: 1px solid red;
-    height: 25vh;
+    height: 20vh;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .info-div-texts h2{
     font-size: 3rem;
     display: flex;
     align-items: center;
-    border: 1px solid red;
     height: 5vh;
 }
 
@@ -27,93 +27,41 @@
     display: flex;
     align-items: center;
     font-size: 1.2rem;
-    border: 1px solid red;
     height: 5vh;
 }
 
 .info-estatisticas{
-    border: 1px solid red;
     display: flex;
-    justify-content: space-evenly;
-    height: 15vh;
+    justify-content: space-between;
+    height: 10vh;
     width: 100%;
     gap: 20px;
     align-items: center;
 }
 
 .estatisticas{
-    border: 1px solid red;
-    width: 100%;
+    width: 30%;
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
+    align-items: center;
     justify-content: center;
     gap: 5px;
 }
 
 .estatisticas h6{
     font-size: 3rem;
-    border: 1px solid red;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 .estatisticas p{
-    border: 1px solid red;
     font-size: 1.2rem;
     width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
 /* CARDS */
-
-.info-div-cards{
-    border: 1px solid red;   
-    width: 100%;
-    height: 15vh;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 20px;
-}
-
-.info-card{
-    border: 1px solid red;
-    display: flex;
-    height: 10vh;
-    width: 100%;
-    gap: 10px;
-}
-
-.info-card-left{
-    border: 1px solid red;
-    width: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.info-card-left i{
-    font-size: 40px;
-    border: 1px solid red;
-}
-
-.info-card-right{
-    display: flex;
-    flex-direction: column;
-    width: 80%;
-    align-items: flex-start;
-    justify-content: center;
-    border: 1px solid red;
-    gap: 10px;
-}
-
-.info-card-right h6{
-    font-size: 2rem;
-    border: 1px solid red;
-    width: 100%;
-}
-
-.info-card-right p{
-    border: 1px solid red;
-    font-size: 1.2rem;
-    width: 100%;
-}
