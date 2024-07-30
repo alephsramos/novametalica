@@ -15,8 +15,9 @@ html, body{
     background-image: url(../imagens/loja-teste-4.png);
     background-position: top;
     background-size: cover;
-    height: 95dvh;
+    height: 105dvh;
     background-attachment: fixed;
+    border-radius: 0 0 5% 5% / 5% 5%;
 }
 
 .fade-in {

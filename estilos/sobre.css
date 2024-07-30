@@ -4,75 +4,104 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    height: 110vh;
-    background-color: #ffffff;
+    height: 120vh;
+    background-image: url('');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    clip-path: polygon(0 0%, 100% 0, 100% 97%, 0% 100%);
+    border: 1px solid red;
+
 }
 
 .sobre-container-div{
     width: 100%;
-    height: 90vh;
+    height: 100vh;
     display: flex;
     gap: 10px;
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
+    border: 1px solid red;
 }
 
 .sobre-cards{
-    width: 80%;
-    height: 30vh;
+    width: 100%;
+    height: 40vh;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    border: 1px solid red;
 }
 
 .sobre-card{
-    height: 30vh;
+    height: 40vh;
     width: 32%;
     display: flex;
     align-items: center;
     justify-content: flex-start;
-    background-color: #1f9ad7;
-    border-radius: 30px;
+    background-color: #fff;
+    border-radius: 1cap;
     flex-direction: column;
-    box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.1);
+    border: 1px solid #000;
+    box-shadow: 0 0px 5px 0px rgba(0, 0, 0, 0.6);
+    transition: all .3s;
+    cursor: default;
+}
+
+.sobre-card:hover{
+    background-color: #fff;
+    transform: scale(1.05);
+}
+
+.sobre-card:hover > .sobre-card-top i{
+    color: #fff;
+    background-color: #000;
+}
+
+.sobre-card:hover > .sobre-card-top h4{
+    color: #000;
+}
+
+.sobre-card:hover > .sobre-card-bottom{
+    color: #000;
 }
 
 .sobre-card-top{
     width: 100%;
-    height: 12vh;
+    height: 28vh;
     display: flex;
     align-items: center;
     flex-direction: column;
     justify-content: flex-start;
-    gap: 15px;
+    border: 1px solid red;
 }
 
-.sobre-card-top i{
-    width: 50px;
-    height: 50px;
-    transform: scale(2);
+.sobre-card-top img{
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative;
-    border-radius: 50%;
-    font-size: 25px;
-    top: -25%;
     left: 0;
-    color: #1f9ad7;
+    color: #000;
     background-color: #fff;
-    border: 1px solid #1f9ad7;
+    border: 1px solid #000;
+    transition: all .3s;
+    width: 100%;
+    height: 24vh;
+    object-fit: cover;
 }
 
 .sobre-card-top h4{
-    height: 4vh;
+    height: 5vh;
+    border: 1px solid red;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 2rem;
-    color: #fff;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
 }
 
 .sobre-card-bottom{
@@ -80,15 +109,18 @@
     align-items: center;
     justify-content: center;
     display: flex;
-    height: 20vh;
+    height: 10vh;
+    border: 1px solid red;
     padding: 30px;
-    color: #fff;
+    color: #000;
 }
 
 .sobre-card-bottom p{
     width: 100%;
-    height: 15vh;
-    font-size: 1.2rem;
+    border: 1px solid red;
+    font-size: 1.1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
 }
 
 .sobre-titles{
@@ -96,19 +128,22 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid red;
     flex-direction: column;
-    gap: 10px;
-    height: 10vh;
+    height: 5vh;
 }
 
 .sobre-titles h2{
     width: 100%;
     text-align: center;
-    height: 10vh;
+    height: 5vh;
     display: flex;
     align-items: center;
     justify-content: center;
     font-size: 3rem;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
 }
 
 
@@ -116,34 +151,42 @@
     width: 100%;
     display: flex;
     justify-content: center;
-    gap: 50px;
+    gap: 10px;
     align-items: center;
-    height: 25vh;
+    height: 23vh;
+    border: 1px solid red;
 }
 
 .sobre-topic{
     width: 30%;
-    height: 20vh;
+    height: 22vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    border-radius: 30px;
+    border-radius: 0px;
     gap: 5px;
+    transition: all .3s;
+    border: 1px solid red;
+}
+
+.sobre-topic:hover{
+    transform: scale(1.02);
 }
 
 .sobre-topic-left{
     width: 30%;
-    height: 20vh;
+    height: 22vh;
     align-items: center;
     display: flex;
     justify-content: center;
     background-color: #ebebeb;
-    border-radius: 30px 0px 0px 30px;
+    border-radius: 10px 0px 0px 10px;
     transition: all .3s;
+    border: 1px solid red;
 }
 
 .sobre-topic-left:hover{
-    background-color: #1f9ad7;
+    background-color: #000;
 }
 
 .sobre-topic-left:hover > i{
@@ -151,7 +194,7 @@
 }
 
 .sobre-topic-left:hover + .sobre-topic-right{
-    border-color: #1f9ad7;
+    border-color: #000;
 }
 
 .sobre-topic-left i{
@@ -166,26 +209,36 @@
 
 .sobre-topic-right{
     width: 70%;
-    height: 20vh;
+    height: 22vh;
     padding: 10px;
     align-items: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     border: 2px solid #ebebeb;
-    border-radius: 0px 30px 30px 0px;
-    padding: 20px;
+    border-radius: 0px 10px 10px 0px;
+    padding: 10px;
     transition: all .3s;
+    gap: 10px;
+    border: 1px solid red;
 }
 
 .sobre-topic-right h4{
     width: 100%;
-    height: 5vh;
-    font-size: 2rem;
+    height: 3vh;
+    font-size: 1.6rem;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    border: 1px solid red;
 }
 
 .sobre-topic-right p{
     width: 100%;
-    height: 10vh;
-    font-size: 1.2rem;
+    height: 12vh;
+    font-size: 1.1rem;
+    color: #000;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    border: 1px solid red;
 }
