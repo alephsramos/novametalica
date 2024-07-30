@@ -17,7 +17,7 @@ html, body{
     background-size: cover;
     height: 105dvh;
     background-attachment: fixed;
-    border-radius: 0 0 5% 5% / 5% 5%;
+    clip-path: polygon(0 2%, 100% 0, 100% 100%, 0 95%);
 }
 
 .fade-in {
