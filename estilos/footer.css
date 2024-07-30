@@ -1,28 +1,27 @@
 .footer-container{
     padding: 0 10%;
-    border: 1px solid red;
     height: 50vh;
+    background-color: #353535;
 }
 
 .footer-containver-div{
     width: 100%;
     height: 40vh;
-    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: space-evenly;
+    padding: 40px;
 }
 
 .footer-left{
-    border: 1px solid red;
     height: 20vh;
     width: 25%;
+    
 }
 
 .footer-image{
     width: 100%;
     height: 10vh;
-    border: 1px solid red;
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -31,29 +30,27 @@
 .footer-image img{
     width: 250px;
     height: auto;
-    border: 1px solid red;
 }
 
 .footer-text{
-    border: 1px solid red;
     height: 10vh;
     align-items: flex-start;
     width: 100%;
     justify-content: center;
     flex-direction: column;
-    
 }
 
 .footer-text p{
-    border: 1px solid red;
     display: flex;
     margin: 8px 0;
     font-size: 1rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #fff;
 }
 
 .footer-links{
     display: flex;
-    border: 1px solid red;
     width: 25%;
     flex-direction: column;
     height: 40vh;
@@ -64,27 +61,35 @@
 
 .footer-links p{
     height: 8vh;
-    border: 1px solid red;
     font-size: 1.2rem;
-    width: 100%;
+    width: 50%;
     display: flex;
     align-items: center;
     justify-content: center;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    color: #fff;
 }
 
 .footer-links a{
     height: 2vh;
-    border: 1px solid red;
     font-size: 1rem;
     width: 100%;
     display: flex;
     align-items: center;
     justify-content: center;
     text-decoration: none;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    color: #fff;
+
+}
+
+.footer-links a:hover{
+    opacity: 0.6;
 }
 
 .footer-final{
-    border: 1px solid red;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -92,12 +97,19 @@
 }
 
 .footer-final p{
-    border: 1px solid red;
     font-size: 0.8rem;
+    font-family: "Poppins", sans-serif;
+    font-weight: 200;
+    color: #fff;
 }
 
 .footer-final a{
     font-size: 0.8rem;
-    color: #000;
+    color: #fff;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+}
 
+.footer-final a:hover{
+    opacity: 0.6;
 }
