@@ -28,6 +28,8 @@
     height: 7vh;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
+    width: 100%;
+    justify-content: center;
 }
 
 .produtos-texts p{
@@ -37,6 +39,8 @@
     font-size: 1.2rem;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
+    width: 100%;
+    justify-content: center;
 }
 
 .produtos-btn{
