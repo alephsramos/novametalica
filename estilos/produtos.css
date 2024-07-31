@@ -303,3 +303,135 @@
     align-items: center;
     justify-content: center;
 }
+
+
+/* MODAL */
+
+/* Estilo do modal */
+.modal {
+    display: none; /* Escondido por padrão */
+    position: fixed; /* Fica fixo na tela */
+    z-index: 10; /* Fica acima do conteúdo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto; /* Permite rolagem se necessário */
+    background-color: rgb(0,0,0); /* Cor de fundo preta */
+    background-color: rgba(0,0,0,0.4); /* Cor de fundo preta com opacidade */
+}
+
+/* Estilo do conteúdo do modal */
+.modal-content {
+    background-color: #fefefe;
+    margin: 10% auto; 
+    width: 80%;
+    height: 60vh;
+    display: flex;
+    border-radius: 15px;
+}
+
+/* Estilo do botão de fechar */
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 30px;
+    font-weight: bold;
+    width: 50px;
+    height: 50px;
+    position: absolute;
+    z-index: 11;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    border-radius: 15px 0px 15px 0px;
+}
+
+.close i{
+    color: #000;
+    transition: all .3s;
+}
+
+.close i:hover,
+.close i:focus {
+    color: #880000;
+    text-decoration: none;
+    cursor: pointer;
+    transform: rotate(90deg);
+}
+
+.modal-img-left{
+    width: 40%;
+    height: 60vh;
+
+}
+
+.modal-img-left img{
+    width: 100%;
+    height: 60vh;
+    object-fit: cover;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.modal-all-right{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    height: 60vh;
+    padding: 30px;
+}
+
+.modal-titles-right{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    height: 35vh;
+    gap: 10px;
+
+}
+
+.modal-all-right h2{
+    font-size: 3rem;
+    height: 5vh;
+    align-items: center;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.modal-all-right p{
+    height: 30vh;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+.modal-texts-right{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    height: 6vh;
+    align-items: center;
+}
+
+.modal-texts-right p{
+    height: 5vh;
+    width: 35%;
+    align-items: center;
+    display: flex;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+}
+
+.modal-texts-right h6{
+    height: 5vh;
+    width: 35%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+    font-size: 1rem;
+}

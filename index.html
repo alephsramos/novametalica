@@ -524,9 +524,50 @@
                 <p>3 meses</p>
             </div>
             <div class="projeto-btn">
-                <button>Veja mais</button>
+                <button class="openModal" data-modal="modal1">Veja mais</button>
             </div>
         </div>
+
+        <script>
+// Função para abrir o modal
+function openModal(modalId) {
+    var modal = document.getElementById(modalId);
+    if (modal) {
+        modal.style.display = "block";
+    }
+}
+
+// Função para fechar o modal
+function closeModal(modal) {
+    if (modal) {
+        modal.style.display = "none";
+    }
+}
+
+// Configura os eventos de clique para os botões
+document.querySelectorAll(".openModal").forEach(function(button) {
+    button.addEventListener("click", function() {
+        var modalId = this.getAttribute("data-modal");
+        openModal(modalId);
+    });
+});
+
+// Configura os eventos de clique para os botões de fechar
+document.querySelectorAll(".close").forEach(function(span) {
+    span.addEventListener("click", function() {
+        closeModal(this.closest(".modal"));
+    });
+});
+
+// Fecha o modal quando o usuário clica fora dele
+window.addEventListener("click", function(event) {
+    if (event.target.classList.contains("modal")) {
+        closeModal(event.target);
+    }
+});
+
+        </script>
+
         <div class="projetos-cards" id="projetos_card_2">
             <div class="projeto-image">
                 <img src="imagens/loja-teste-4.png"alt="foto1">
@@ -548,7 +589,7 @@
                 <p>3 meses</p>
             </div>
             <div class="projeto-btn">
-                <button>Veja mais</button>
+                <button class="openModal" data-modal="modal2">Veja mais</button>
             </div>
         </div>
         <div class="projetos-cards" id="projetos_card_3">
@@ -572,7 +613,7 @@
                 <p>3 meses</p>
             </div>
             <div class="projeto-btn">
-                <button>Veja mais</button>
+                <button class="openModal" data-modal="modal3">Veja mais</button>
             </div>
         </div>
         <div class="projetos-cards" id="projetos_card_4">
@@ -596,7 +637,7 @@
                 <p>3 meses</p>
             </div>
             <div class="projeto-btn">
-                <button>Veja mais</button>
+                <button class="openModal" data-modal="modal4">Veja mais</button>
             </div>
         </div>
         <div class="projetos-cards" id="projetos_card_5">
@@ -620,7 +661,7 @@
                 <p>3 meses</p>
             </div>
             <div class="projeto-btn">
-                <button>Veja mais</button>
+                <button class="openModal" data-modal="modal5">Veja mais</button>
             </div>
         </div>
         <div class="projetos-cards" id="projetos_card_6">
@@ -628,7 +669,7 @@
                 <img src="imagens/loja-teste-4.png"alt="foto1">
             </div>
             <div class="projeto-text">
-                <h6>Pousada LeAnge Mar</h6>
+                <h6>ALTERAR</h6>
                 <p>Residencial</p>
             </div>
             <div class="projeto-parags">
@@ -644,7 +685,7 @@
                 <p>3 meses</p>
             </div>
             <div class="projeto-btn">
-                <button>Veja mais</button>
+                <button class="openModal" data-modal="modal6">Veja mais</button>
             </div>
         </div>
     </div>
@@ -660,6 +701,199 @@
             </button>
         </div>
     </div>
+
+     <div id="modal1" class="modal"> <!-- MODAL SERRA -->
+        <div class="modal-content">
+            <span class="close">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+            <div class="modal-img-left">
+                <img src="imagens/loja-teste-4.png">
+            </div>
+            <div class="modal-all-right">
+            <div class="modal-titles-right">
+                <h2>Nome da obra</h2>
+                <p>Descrição completa</p>
+            </div>
+            <div class="modal-texts-right">
+                <p>Dados</p>
+                <h6>Valor do dado</h6>
+            </div>
+            <div class="modal-texts-right">
+                <p>Dados</p>
+                <h6>Valor do dado</h6>
+            </div>
+            <div class="modal-texts-right">
+                <p>Dados</p>
+                <h6>Valor do dado</h6>
+            </div>
+            <div class="modal-texts-right">
+                <p>Dados</p>
+                <h6>Valor do dado</h6>
+            </div>
+        </div></div>
+    </div>
+
+    <div id="modal2" class="modal"> <!-- MODAL ARCOS -->
+        <div class="modal-content">
+            <span class="close">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+            <div class="modal-img-left">
+                <img src="imagens/loja-teste-4.png">
+            </div>
+            <div class="modal-all-right">
+            <div class="modal-titles-right">
+                <h2>Nome da obra</h2>
+                <p>Descrição completa</p>
+            </div>
+            <div class="modal-texts-right">
+                <p>Dados</p>
+                <h6>Valor do dado</h6>
+            </div>
+            <div class="modal-texts-right">
+                <p>Dados</p>
+                <h6>Valor do dado</h6>
+            </div>
+            <div class="modal-texts-right">
+                <p>Dados</p>
+                <h6>Valor do dado</h6>
+            </div>
+            <div class="modal-texts-right">
+                <p>Dados</p>
+                <h6>Valor do dado</h6>
+            </div>
+        </div></div>
+    </div>
+
+    <div id="modal3" class="modal"> <!-- MODAL GALPÃO -->
+        <div class="modal-content">
+            <span class="close">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+            <div class="modal-img-left">
+                <img src="imagens/loja-teste-4.png">
+            </div>
+            <div class="modal-all-right">
+            <div class="modal-titles-right">
+                <h2>Nome da obra</h2>
+                <p>Descrição completa</p>
+            </div>
+            <div class="modal-texts-right">
+                <p>Dados</p>
+                <h6>Valor do dado</h6>
+            </div>
+            <div class="modal-texts-right">
+                <p>Dados</p>
+                <h6>Valor do dado</h6>
+            </div>
+            <div class="modal-texts-right">
+                <p>Dados</p>
+                <h6>Valor do dado</h6>
+            </div>
+            <div class="modal-texts-right">
+                <p>Dados</p>
+                <h6>Valor do dado</h6>
+            </div>
+        </div></div>
+    </div>
+
+    <div id="modal4" class="modal"> <!-- MODAL MAR -->
+        <div class="modal-content">
+            <span class="close">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+            <div class="modal-img-left">
+                <img src="imagens/loja-teste-4.png">
+            </div>
+            <div class="modal-all-right">
+            <div class="modal-titles-right">
+                <h2>Nome da obra</h2>
+                <p>Descrição completa</p>
+            </div>
+            <div class="modal-texts-right">
+                <p>Dados</p>
+                <h6>Valor do dado</h6>
+            </div>
+            <div class="modal-texts-right">
+                <p>Dados</p>
+                <h6>Valor do dado</h6>
+            </div>
+            <div class="modal-texts-right">
+                <p>Dados</p>
+                <h6>Valor do dado</h6>
+            </div>
+            <div class="modal-texts-right">
+                <p>Dados</p>
+                <h6>Valor do dado</h6>
+            </div>
+        </div></div>
+    </div>
+
+    <div id="modal5" class="modal"> <!-- MODAL ESCOLA -->
+        <div class="modal-content">
+            <span class="close">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+            <div class="modal-img-left">
+                <img src="imagens/loja-teste-4.png">
+            </div>
+            <div class="modal-all-right">
+            <div class="modal-titles-right">
+                <h2>Nome da obra</h2>
+                <p>Descrição completa</p>
+            </div>
+            <div class="modal-texts-right">
+                <p>Dados</p>
+                <h6>Valor do dado</h6>
+            </div>
+            <div class="modal-texts-right">
+                <p>Dados</p>
+                <h6>Valor do dado</h6>
+            </div>
+            <div class="modal-texts-right">
+                <p>Dados</p>
+                <h6>Valor do dado</h6>
+            </div>
+            <div class="modal-texts-right">
+                <p>Dados</p>
+                <h6>Valor do dado</h6>
+            </div>
+        </div></div>
+    </div>
+
+    <div id="modal6" class="modal"> <!-- MODAL ALTERAR -->
+        <div class="modal-content">
+            <span class="close">
+                <i class="fa-solid fa-xmark"></i>
+            </span>
+            <div class="modal-img-left">
+                <img src="imagens/loja-teste-4.png">
+            </div>
+            <div class="modal-all-right">
+            <div class="modal-titles-right">
+                <h2>Nome da obra</h2>
+                <p>Descrição completa</p>
+            </div>
+            <div class="modal-texts-right">
+                <p>Dados</p>
+                <h6>Valor do dado</h6>
+            </div>
+            <div class="modal-texts-right">
+                <p>Dados</p>
+                <h6>Valor do dado</h6>
+            </div>
+            <div class="modal-texts-right">
+                <p>Dados</p>
+                <h6>Valor do dado</h6>
+            </div>
+            <div class="modal-texts-right">
+                <p>Dados</p>
+                <h6>Valor do dado</h6>
+            </div>
+        </div></div>
+    </div>
+
 </section>
 
 <section class="infos-container" id="info"> <!-- Seção com as informações, abaixo do header -->
