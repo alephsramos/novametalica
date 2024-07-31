@@ -1,4 +1,5 @@
-.produtos-container{
+/* Container principal dos produtos */
+.produtos-container {
     padding: 0 10%;
     height: 105vh;
     display: flex;
@@ -20,7 +21,8 @@
     z-index: -1; /* Para garantir que o fundo fique atrás do conteúdo */
 }
 
-.produtos-div-container{
+/* Div container dos produtos */
+.produtos-div-container {
     height: 30vh;
     width: 100%;
     display: flex;
@@ -29,12 +31,13 @@
     flex-direction: column;
 }
 
-.produtos-texts{
+/* Textos dos produtos */
+.produtos-texts {
     height: 10vh;
     width: 100%;
 }
 
-.produtos-texts h2{
+.produtos-texts h2 {
     display: flex;
     align-items: center;
     font-size: 2.5rem;
@@ -45,7 +48,7 @@
     justify-content: center;
 }
 
-.produtos-texts p{
+.produtos-texts p {
     display: flex;
     align-items: center;
     height: 3vh;
@@ -56,7 +59,8 @@
     justify-content: center;
 }
 
-.produtos-btn{
+/* Botões dos produtos */
+.produtos-btn {
     height: 20vh;
     display: flex;
     align-items: center;
@@ -64,7 +68,7 @@
     width: 100%;
 }
 
-.produtos-topics-div-btn{
+.produtos-topics-div-btn {
     width: 100%;
     height: 10vh;
     display: flex;
@@ -74,7 +78,7 @@
     flex-wrap: wrap;
 }
 
-.produtos-topics-div-btn button{
+.produtos-topics-div-btn button {
     padding: 15px 30px;
     background-color: transparent;
     border-radius: 20px;
@@ -84,34 +88,36 @@
     transition: all .3s;
 }
 
-.produtos-topics-div-btn button:hover{
+.produtos-topics-div-btn button:hover {
     background-color: #000;
     color: #fff;
 }
 
-.produtos-container-cards{
+/* Container e layout dos cards de produtos */
+.produtos-container-cards {
     width: 100%;
     height: 55vh;
 }
 
-.produtos-cards{
+.produtos-cards {
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 20px;
 }
 
-.produtos-card{
+.produtos-card {
     width: 100%;
     height: 55vh;
     padding: 20px;
     border: 1px solid #000;
     border-radius: 10px;
     background-color: #fff;
-    box-shadow: 4px 4px 6px  rgba(0, 0, 0, 0.2);
+    box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
 }
 
-.produto-card-img{
+/* Imagem do card do produto */
+.produto-card-img {
     width: 100%;
     height: 30vh;
     margin-bottom: 10px;
@@ -123,15 +129,15 @@
     transition: all .3s;
 }
 
-.produto-card-img:hover{
+.produto-card-img:hover {
     background-color: #cfcfcf;
 }
 
-.produto-card-img:hover > img{
+.produto-card-img:hover > img {
     transform: rotate(-10deg) scale(1.1);
 }
 
-.produto-card-img img{
+.produto-card-img img {
     width: 100%;
     height: 30vh;
     object-fit: contain;
@@ -139,23 +145,25 @@
     transition: all .3s;
 }
 
-.produto-card-text-top{
+/* Texto do card do produto */
+.produto-card-text-top {
     width: 100%;
 }
 
-.produto-card-text-top h6{
+.produto-card-text-top h6 {
     font-size: 1.4rem;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
 }
 
-.produto-card-text-top p{
+.produto-card-text-top p {
     font-size: 1rem;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
 }
 
-.produto-card-text-center{
+/* Texto do card do produto - centro */
+.produto-card-text-center {
     display: flex;
     width: 100%;
     justify-content: center;
@@ -165,20 +173,20 @@
     align-items: center;
 }
 
-.produto-card-text-center-center{
+.produto-card-text-center-center {
     display: flex;
     justify-content: space-between;
     width: 100%;
 }
 
-.produto-card-text-center-center h6{
+.produto-card-text-center-center h6 {
     font-size: 1rem;
     width: 50%;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
 }
 
-.produto-card-text-center-center p{
+.produto-card-text-center-center p {
     font-size: 1rem;
     width: 50%;
     text-align: right;
@@ -186,7 +194,8 @@
     font-weight: 300;
 }
 
-.produto-card-btns{
+/* Botões do card do produto */
+.produto-card-btns {
     height: 5vh;
     width: 100%;
     display: flex;
@@ -195,8 +204,7 @@
     gap: 10px;
 }
 
-
-.produto-card-btn-left{
+.produto-card-btn-left {
     width: 85%;
     height: 4vh;
     background-color: transparent;
@@ -434,4 +442,139 @@
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     font-size: 1rem;
+}
+
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -100%;
+    width: 350px;
+    height: 100vh;
+    background-color: #fff;
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
+    transition: right 0.3s;
+    display: flex;
+    flex-direction: column;
+    z-index: 15;
+}
+
+.sidebar-header {
+    height: 5vh;
+    padding: 20px;
+    width: 80%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #f1f1f1;
+}
+
+.sidebar-header span{
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+.sidebar-content {
+    flex: 1;
+    overflow-y: auto;
+    padding: 20px;
+    height: 85vh;
+}
+
+.sidebar-products {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.sidebar-footer {
+    padding: 20px;
+    background-color: #f1f1f1;
+    box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
+    height: 10vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.sidebar-footer button {
+    width: 80%;
+    padding: 15px;
+    background-color: transparent;
+    border: 1px solid #000;
+    border-radius: 10px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    transition: all .3s;
+    cursor: pointer;
+}
+
+.sidebar-footer button:hover{
+    background-color: #000;
+    color: #fff;
+}
+
+.sidebar-product {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    background-color: #ebebeb;
+    border-radius: 15px;
+}
+
+.sidebar-product img {
+    width: 40%;
+    height: auto;
+    object-fit: cover;
+    border-radius: 15px;
+    background-color: #fff;
+}
+
+.sidebar-product-details {
+    flex: 1;
+    height: 7vh;
+}
+
+.sidebar-product-details h6{
+    font-size: 1.2rem;
+    height: 2vh;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+}
+
+.sidebar-product-details p{
+    height: 5vh;
+    font-size: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    font-family: "Poppins", sans-serif;
+    font-weight: 300;
+}
+
+.sidebar-product-name {
+    font-size: 1.2rem; /* Ajuste o tamanho do nome aqui */
+    margin: 0;
+}
+
+.sidebar-product-description {
+    font-size: 1rem; /* Ajuste o tamanho da descrição aqui */
+    margin: 0;
+}
+
+.sidebar-close {
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    border: none;
+    width: 15%;
+    height: 5vh;
+    font-size: 20px;
+    cursor: pointer;
+    color: #000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }

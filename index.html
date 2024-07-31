@@ -362,13 +362,13 @@
     </div>
         <div class="produtos-container-cards">
             <div class="produtos-cards">
-                <div class="produtos-card">
+                <div class="produtos-card" data-id="produto1">
                     <div class="produto-card-img">
                         <img src="imagens/produto1.svg" alt="produto1">
                     </div>
                     <div class="produto-card-text-top">
                         <h6>Guia 70</h6>
-                        <p>Pefil Steel Frame</p>
+                        <p>Perfil Steel Frame</p>
                     </div>
                     <div class="produto-card-text-center">
                         <div class="produto-card-text-center-center">
@@ -387,7 +387,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="produtos-card">
+                <div class="produtos-card" data-id="produto2">
                     <div class="produto-card-img">
                         <img src="imagens/produto2.svg" alt="produto1">
                     </div>
@@ -412,7 +412,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="produtos-card">
+                <div class="produtos-card" data-id="produto3">
                     <div class="produto-card-img">
                         <img src="imagens/produto1.svg" alt="produto1">
                     </div>
@@ -437,7 +437,7 @@
                         </button>
                     </div>
                 </div>
-                <div class="produtos-card">
+                <div class="produtos-card" data-id="produto4">
                     <div class="produto-card-img">
                         <img src="imagens/produto2.svg" alt="produto1">
                     </div>
@@ -465,6 +465,7 @@
                 </div>
             </div>
         </div>
+        
         <span class="produto-action-left left">
             <button id="produto_btn_left">
                 <i class="fa-solid fa-circle-arrow-right"></i>
@@ -475,27 +476,111 @@
                 <i class="fa-solid fa-circle-arrow-right"></i>
             </button>
         </span>
+
+<!-- Sidebar -->
+<div class="sidebar">
+    <div class="sidebar-header">
+        <i class="fa-solid fa-heart"></i>
+        <span>Produtos salvos</span>
+    </div>
+    <div class="sidebar-content">
+        <div class="sidebar-products"></div>
+    </div>
+    <div class="sidebar-footer">
+        <button id="quote-button">Fazer orçamento agora</button>
+    </div>
+    <button class="sidebar-close">
+        <i class="fa-solid fa-xmark"></i>
+    </button> <!-- Botão para fechar a sidebar -->
+</div>
+<div class="sidebar-overlay"></div>
+
 </section>
 
-
 <script>
-    // Select all buttons with the class 'produto-card-btn-right'
-    const buttons = document.querySelectorAll('.produto-card-btn-right');
+document.addEventListener('DOMContentLoaded', function () {
+    const heartButtons = document.querySelectorAll('.produto-card-btn-right');
+    const sidebar = document.querySelector('.sidebar');
+    const sidebarProductsContainer = document.querySelector('.sidebar-products');
+    const closeSidebarButton = document.querySelector('.sidebar-close');
+    const quoteButton = document.getElementById('quote-button');
+    const sidebarOverlay = document.querySelector('.sidebar-overlay'); // Adicione uma camada de sobreposição se necessário
 
-    // Add event listener to each button
-    buttons.forEach(button => {
-        button.addEventListener('click', function() {
-            const icon = this.querySelector('i');
-            if (icon.classList.contains('fa-regular')) {
-                icon.classList.remove('fa-regular');
-                icon.classList.add('fa-solid');
+    heartButtons.forEach(button => {
+        button.addEventListener('click', function () {
+            const productCard = this.closest('.produtos-card');
+            const productId = productCard.getAttribute('data-id');
+            const heartIcon = this.querySelector('i');
+
+            if (heartIcon.classList.contains('fa-regular')) {
+                heartIcon.classList.remove('fa-regular');
+                heartIcon.classList.add('fa-solid');
+                addProductToSidebar(productCard, productId);
             } else {
-                icon.classList.remove('fa-solid');
-                icon.classList.add('fa-regular');
+                heartIcon.classList.remove('fa-solid');
+                heartIcon.classList.add('fa-regular');
+                removeProductFromSidebar(productId);
             }
         });
     });
+
+    function addProductToSidebar(productCard, productId) {
+        if (!sidebarProductsContainer.querySelector(`[data-id="${productId}"]`)) {
+            const productImage = productCard.querySelector('.produto-card-img img').cloneNode(true);
+            const productTextTop = productCard.querySelector('.produto-card-text-top').cloneNode(true);
+
+            const sidebarProduct = document.createElement('div');
+            sidebarProduct.classList.add('sidebar-product');
+            sidebarProduct.setAttribute('data-id', productId);
+
+            const sidebarProductDetails = document.createElement('div');
+            sidebarProductDetails.classList.add('sidebar-product-details');
+
+            sidebarProductDetails.appendChild(productTextTop.querySelector('h6').cloneNode(true));
+            sidebarProductDetails.appendChild(productTextTop.querySelector('p').cloneNode(true));
+
+            sidebarProduct.appendChild(productImage);
+            sidebarProduct.appendChild(sidebarProductDetails);
+            sidebarProductsContainer.appendChild(sidebarProduct);
+
+            openSidebar();
+        }
+    }
+
+    function removeProductFromSidebar(productId) {
+        const sidebarProduct = sidebarProductsContainer.querySelector(`[data-id="${productId}"]`);
+        if (sidebarProduct) {
+            sidebarProductsContainer.removeChild(sidebarProduct);
+        }
+
+        if (sidebarProductsContainer.children.length === 0) {
+            closeSidebar();
+        }
+    }
+
+    function openSidebar() {
+        sidebar.style.right = '0';
+        sidebarOverlay.style.display = 'block'; // Exibe a sobreposição
+    }
+
+    function closeSidebar() {
+        sidebar.style.right = '-100%';
+        sidebarOverlay.style.display = 'none'; // Oculta a sobreposição
+    }
+
+    closeSidebarButton.addEventListener('click', closeSidebar);
+    quoteButton.addEventListener('click', () => alert('Orçamento solicitado!'));
+
+    // Fecha a sidebar ao clicar fora dela
+    document.addEventListener('click', function (event) {
+        if (!sidebar.contains(event.target) && !sidebarOverlay.contains(event.target) && !event.target.closest('.produto-card-btn-right')) {
+            closeSidebar();
+        }
+    });
+});
+
 </script>
+
 
 <section class="projetos-container" id="projetos">
     <div class="projetos-div-container">
