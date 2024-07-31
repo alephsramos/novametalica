@@ -253,3 +253,53 @@
 .fa-solid {
     color: #a8a7a7; /* Altere para a cor desejada */
 }
+
+.produto-action-left {
+    position: absolute; /* Posicionamento absoluto */
+    top: 50%; /* Centraliza verticalmente */
+    transform: translateY(-50%); /* Ajusta a posição verticalmente */
+    padding: 10px; /* Espaçamento opcional */
+}
+
+.produto-action-left.left {
+    left: 5%; /* Alinha à esquerda com margem */
+    width: 5%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.produto-action-left.left button,
+.produto-action-left.right button{
+    height: 100%;
+    width: 100%;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+}
+
+.produto-action-left.left i,
+.produto-action-left.right i{
+    font-size: 40px;
+    color: #cfcfcf;
+    transition: all .3s;
+}
+
+.produto-action-left.left i:hover,
+.produto-action-left.right i:hover{
+    color: #353535;
+}
+
+.produto-action-left.left i{
+    transform: rotate(180deg);
+}
+
+.produto-action-left.right {
+    right: 5%;
+    width: 5%;
+    height: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
