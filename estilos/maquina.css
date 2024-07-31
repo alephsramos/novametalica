@@ -115,4 +115,12 @@
 
 .maquina-right-btn i{
     font-size: 30px;
+    transform: rotate(0deg);
+    transition: all .3s;
+    color: #cfcfcf;
+}
+
+.maquina-right-btn i:hover{
+    transform: rotate(90deg);
+    color: #353535;
 }
