@@ -105,4 +105,14 @@
 .prof-right-links a{
     font-size: 30px;
     transform: rotate(-45deg);
+    transition: all .4s;
+}
+
+.prof-right-links a:hover{
+    transform: rotate(45deg) scale(1.05);
+    opacity: 0.8;
+}
+
+.prof-right-links a:active{
+    transform: rotate(90deg);
 }

@@ -94,6 +94,7 @@
     justify-content: space-between;
     align-items: center;
     height: 5vh;
+    border-top: 1px solid rgba(255, 255, 255, 0.4);
 }
 
 .footer-final p{

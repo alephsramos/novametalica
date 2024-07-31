@@ -1,0 +1,108 @@
+.maquina-container{
+    height: 60vh;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    padding: 0 10%;
+    position: relative;
+    width: 100%;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-left: none;
+}
+
+
+.maquina-container::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #353535; /* Aqui você pode definir a cor ou imagem de fundo desejada */
+    clip-path: polygon(0 0, 55% 0, 55% 100%, 0% 100%);
+    z-index: -1; /* Para garantir que o fundo fique atrás do conteúdo */
+}
+
+.maquina-div-container {
+    width: 100%;
+    height: 55vh;
+    display: flex;
+    gap: 10px;
+
+}
+
+.maquina-video{
+    width: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 55vh;
+}
+
+.maquina-container-right{
+    width: 40%;
+    padding: 20px;
+    display: flex;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 55vh;
+
+}
+
+.maquina-right-texts{
+    height: 20vh;
+    width: 100%;
+}
+
+.maquina-right-texts h2{
+    height: 5vh;
+    font-size: 3rem;
+    display: flex;
+    align-items: center;
+}
+
+.maquina-right-texts p{
+    height: 15vh;
+    padding-top: 10px;
+}
+
+.maquina-right-img{
+    height: 25vh;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.maquina-right-img img{
+    width: 100%;
+    height: 25vh;
+}
+
+.maquina-right-btn{
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.maquina-right-btn p{
+    width: 90%;
+    display: flex;
+    align-items: center;
+}
+
+.maquina-right-btn a{
+    width: 10%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    font-size: 0;
+    height: 5vh;
+    text-decoration: none;
+}
+
+.maquina-right-btn i{
+    font-size: 30px;
+}
