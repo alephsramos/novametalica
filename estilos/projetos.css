@@ -139,6 +139,13 @@
 .projeto-action-right i{
     font-size: 25px;
     border: 1px solid red;
+    color: #cfcfcf;
+    transition: all .3s;
+}
+
+.projeto-action-left i:hover,
+.projeto-action-right i:hover{
+    color: #353535;
 }
 
 
