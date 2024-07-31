@@ -18,7 +18,7 @@
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: #353535; /* Aqui você pode definir a cor ou imagem de fundo desejada */
+    background-color: #cfcfcf; /* Aqui você pode definir a cor ou imagem de fundo desejada */
     clip-path: polygon(0 0, 55% 0, 55% 100%, 0% 100%);
     z-index: -1; /* Para garantir que o fundo fique atrás do conteúdo */
 }
@@ -72,6 +72,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
 .maquina-right-img img{
