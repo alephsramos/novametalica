@@ -467,7 +467,7 @@
     display: flex;
     flex-direction: column;
     z-index: 15;
-    border-radius: 25px 0px 0px 25px;
+    border-radius: 10px 0px 0px 10px;
 }
 
 .sidebar-header {
@@ -477,13 +477,18 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background-color: #f1f1f1;
-    border-radius: 25px 0px 0px;
+    background-color: #353535;
+    border-radius: 10px 0px 0px;
 }
 
 .sidebar-header span{
     font-family: "Poppins", sans-serif;
     font-weight: 300;
+    color: #fff;
+}
+
+.sidebar-header i{
+    color: #fff;
 }
 
 .sidebar-content {
@@ -501,31 +506,32 @@
 
 .sidebar-footer {
     padding: 20px;
-    background-color: #f1f1f1;
+    background-color: #353535;
     box-shadow: 0 -2px 5px rgba(0, 0, 0, 0.1);
     height: 10vh;
     display: flex;
     align-items: center;
     justify-content: center;
     width: 100%;
-    border-radius: 0px 0px 0px 25px;
+    border-radius: 0px 0px 0px 10px;
 }
 
 .sidebar-footer button {
     width: 80%;
     padding: 15px;
     background-color: transparent;
-    border: 1px solid #000;
+    border: 1px solid #ffffff;
     border-radius: 10px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     transition: all .3s;
     cursor: pointer;
+    color: #fff;
 }
 
 .sidebar-footer button:hover{
-    background-color: #000;
-    color: #fff;
+    background-color: #ffffff;
+    color: #353535;
 }
 
 .sidebar-product {
@@ -533,15 +539,15 @@
     align-items: center;
     gap: 10px;
     padding: 10px;
-    background-color: #ebebeb;
-    border-radius: 15px;
+    background-color: #353535;
+    border-radius: 7px;
 }
 
 .sidebar-product img {
     width: 40%;
     height: auto;
     object-fit: cover;
-    border-radius: 15px;
+    border-radius: 5px;
     background-color: #fff;
 }
 
@@ -556,6 +562,7 @@
     height: 2vh;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
+    color: #fff;
 }
 
 .sidebar-product-details p{
@@ -566,6 +573,7 @@
     justify-content: flex-start;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
+    color: #fff;
 }
 
 .sidebar-product-name {
@@ -590,19 +598,24 @@
     color: #000;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-end;
+    background-color: #353535;
+    padding: 20px;
+}
+
+.sidebar-close i{
+    color: #fff;
 }
 
 .floating-button {
     position: fixed;
     bottom: 20px;
     right: 20px;
-    background-color: #8d8d8d;
-    color: #353535;
+    background-color: #757575;
     width: 100px;
     height: 100px;
     border-radius: 50%;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.4);
     cursor: pointer;
     z-index: 20;
     display: flex;
@@ -621,7 +634,7 @@
     justify-content: center;
     width: 100px;
     height: 100px;
-    color: #353535;
+    color: #ffffff;
 }
 
 .floating-button .badge {
@@ -633,10 +646,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 14px;
+    font-size: 18px;
     position: absolute;
-    top: -5px; /* Ajuste o valor conforme necessário */
-    right: -5px; /* Ajuste o valor conforme necessário */
+    top: -2px; /* Ajuste o valor conforme necessário */
+    right: -2px; /* Ajuste o valor conforme necessário */
 }
 
 .floating-button.visible {
@@ -651,13 +664,14 @@
     font-size: 18px;
     position: relative;
     height: 10vh;
+    width: 2vh;
     display: flex;
     align-items: flex-start;
     justify-content: flex-start;
 }
 
 .sidebar-product-remove i{
-    color: #000000;
+    color: #ffffff;
 }
 
 .sidebar-product-remove:hover {
