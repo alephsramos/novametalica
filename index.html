@@ -988,7 +988,6 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 
     closeSidebarButton.addEventListener('click', closeSidebar);
-    quoteButton.addEventListener('click', () => alert('Orçamento solicitado!'));
 
     floatingButton.addEventListener('click', openSidebar);
 
@@ -997,6 +996,17 @@ document.addEventListener('DOMContentLoaded', function () {
             closeSidebar();
         }
     });
+});
+
+document.getElementById("quote-button").addEventListener("click", function() {
+    // Seleciona o elemento com ID 'form'
+    const formElement = document.getElementById("form");
+    
+    // Verifica se o elemento existe
+    if (formElement) {
+        // Rola suavemente até o elemento
+        formElement.scrollIntoView({ behavior: "smooth" });
+    }
 });
 
 const filterButtons = document.querySelectorAll('.produtos-topics-div-btn button');
