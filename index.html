@@ -926,6 +926,7 @@ document.addEventListener('DOMContentLoaded', function () {
     const itemsPerPage = 4;
     let currentPage = 0;
     let filteredCards = productCards; // Cards filtrados inicialmente são todos os produtos
+    let savedProductsCount = 0; // Inicializa a contagem de produtos salvos
 
     const leftButton = document.getElementById('produto_btn_left');
     const rightButton = document.getElementById('produto_btn_right');
@@ -1008,6 +1009,7 @@ document.addEventListener('DOMContentLoaded', function () {
             badge.textContent = savedProductsCount;
         } else {
             floatingButton.classList.remove('visible');
+            badge.textContent = ''; // Limpa o conteúdo da badge quando não há produtos
         }
     }
 
