@@ -166,13 +166,17 @@
     transition: all .3s;
 }
 
+.sobre-topic-left img{
+    width: 50%;
+}
+
 
 .sobre-topic-left:hover{
     background-color: #000;
 }
 
-.sobre-topic-left:hover > i{
-    color: #fff;
+.sobre-topic-left:hover > img{
+    filter: invert(100%);
 }
 
 .sobre-topic-left:hover + .sobre-topic-right{
