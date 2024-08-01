@@ -1,3 +1,23 @@
+fetch('produtos.json')
+  .then(response => response.json())
+  .then(data => {
+    const produtos = data.produtos;
+    const container = document.getElementById('produtos-container');
+
+    produtos.forEach(produto => {
+      const button = document.createElement('button');
+      button.innerText = produto.nome;
+
+      button.addEventListener('click', () => {
+        window.location.href = produto.pagina;
+      });
+
+      container.appendChild(button);
+    });
+  })
+  .catch(error => console.error('Erro ao carregar o JSON:', error));
+
+
 document.addEventListener('DOMContentLoaded', function() {
     const cardsContainer = document.getElementById('projetos-cards-div');
     const cards = document.querySelectorAll('.projetos-cards');
