@@ -93,6 +93,11 @@
     color: #fff;
 }
 
+.produtos-topics-div-btn button.active{
+    background-color: #000;
+    color: #fff;
+}
+
 /* Container e layout dos cards de produtos */
 .produtos-container-cards {
     width: 100%;

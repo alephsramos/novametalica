@@ -360,7 +360,7 @@
                 <button data-category="tabica">Tabica</button>
                 <button data-category="cantoneira">Cantoneira</button>
                 <button data-category="forros">Forros</button>
-                <button data-category="all">Todos os Produtos</button>
+                <button data-category="all" class="active">Todos os Produtos</button>
             </div>
         </div>
     </div>
@@ -1102,6 +1102,19 @@ document.addEventListener('DOMContentLoaded', function () {
                 }
             });
         });
+    });
+});
+
+ // Seleciona todos os botões
+ const buttons = document.querySelectorAll('.produtos-topics-div-btn button');
+
+// Adiciona evento de clique a cada botão
+buttons.forEach(button => {
+    button.addEventListener('click', () => {
+        // Remove a classe 'active' de todos os botões
+        buttons.forEach(btn => btn.classList.remove('active'));
+        // Adiciona a classe 'active' ao botão clicado
+        button.classList.add('active');
     });
 });
 </script>
