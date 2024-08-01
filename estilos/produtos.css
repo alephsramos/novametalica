@@ -81,7 +81,7 @@
 .produtos-topics-div-btn button {
     padding: 15px 30px;
     background-color: transparent;
-    border-radius: 20px;
+    border-radius: 5px;
     font-size: 1rem;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
@@ -89,7 +89,7 @@
 }
 
 .produtos-topics-div-btn button:hover {
-    background-color: #000;
+    background-color: #353535;
     color: #fff;
 }
 
@@ -557,17 +557,17 @@
 }
 
 .sidebar-product-details h6{
-    font-size: 0.9rem;
-    line-height: 15px;
-    height: 2vh;
+    font-size: 1.1rem;
+    line-height: 20px;
+    height: 4vh;
     font-family: "Poppins", sans-serif;
-    font-weight: 500;
+    font-weight: 600;
     color: #fff;
 }
 
 .sidebar-product-details p{
-    height: 5vh;
-    font-size: 0.7rem;
+    height: 3vh;
+    font-size: 0.9rem;
     display: flex;
     align-items: center;
     justify-content: flex-start;
