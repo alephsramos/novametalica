@@ -382,7 +382,7 @@
                         </div>
                     </div>
                     <div class="produto-card-btns">
-                        <button class="produto-card-btn-left">Ver detalhes</button>
+                        <button class="produto-card-btn-left" onclick="window.location.href='produtos.html';">Ver detalhes</button>
                         <button class="produto-card-btn-right">
                             <i class="fa-regular fa-heart"></i>
                         </button>
@@ -1095,6 +1095,7 @@ const filterButtons = document.querySelectorAll('.produtos-topics-div-btn button
             });
         });
     });
+    
 </script>
 
 
@@ -1639,6 +1640,21 @@ document.addEventListener('DOMContentLoaded', () => {
             </div>
         </div>
     </div>
+    
+    <script>
+        window.addEventListener('load', function() {
+            // Verificar se há uma âncora na URL
+            const hash = window.location.hash;
+            if (hash === '#form') {
+                // Rolar suavemente até o elemento com id "form"
+                const formElement = document.getElementById('form');
+                if (formElement) {
+                    formElement.scrollIntoView({ behavior: 'smooth' });
+                }
+            }
+        });
+        </script>
+
 </section>
 
 <section class="local-container" id="local">
