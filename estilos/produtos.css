@@ -262,6 +262,7 @@
     color: #a8a7a7; /* Altere para a cor desejada */
 }
 
+
 .produto-action-left {
     position: absolute; /* Posicionamento absoluto */
     top: 50%; /* Centraliza verticalmente */
@@ -632,4 +633,28 @@
 .floating-button.visible {
     opacity: 1;
     visibility: visible;
+}
+
+.sidebar-product-remove {
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    font-size: 18px;
+    position: relative;
+    height: 10vh;
+    display: flex;
+    align-items: flex-start;
+    justify-content: flex-start;
+}
+
+.sidebar-product-remove i{
+    color: #000000;
+}
+
+.sidebar-product-remove:hover {
+    color: #ff0000; /* Cor ao passar o mouse */
+}
+
+.sidebar-product-remove i {
+    font-size: 18px;
 }

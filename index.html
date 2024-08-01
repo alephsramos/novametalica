@@ -899,7 +899,6 @@
     </button> <!-- Botão para fechar a sidebar -->
 </div>
 <div class="sidebar-overlay"></div>
-
 </section>
 
 <script>
@@ -915,6 +914,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
     let savedProductsCount = 0;
 
+    // Atualiza os eventos para os botões de coração
     heartButtons.forEach(button => {
         button.addEventListener('click', function () {
             const productCard = this.closest('.produtos-card');
@@ -948,8 +948,28 @@ document.addEventListener('DOMContentLoaded', function () {
             sidebarProductDetails.appendChild(productTextTop.querySelector('h6').cloneNode(true));
             sidebarProductDetails.appendChild(productTextTop.querySelector('p').cloneNode(true));
 
+            // Adiciona o botão de remoção
+            const removeButton = document.createElement('button');
+            removeButton.classList.add('sidebar-product-remove');
+            removeButton.innerHTML = '<i class="fa-solid fa-xmark"></i>';
+
+            // Adiciona evento ao botão de remoção
+            removeButton.addEventListener('click', function (event) {
+                event.stopPropagation(); // Impede que o clique no botão de remover feche a sidebar
+                removeProductFromSidebar(productId);
+
+                // Atualiza o coração do produto original
+                const heartButton = document.querySelector(`.produto-card-btn-right[data-id="${productId}"]`);
+                if (heartButton) {
+                    const heartIcon = heartButton.querySelector('i');
+                    heartIcon.classList.remove('fa-solid');
+                    heartIcon.classList.add('fa-regular');
+                }
+            });
+
             sidebarProduct.appendChild(productImage);
             sidebarProduct.appendChild(sidebarProductDetails);
+            sidebarProduct.appendChild(removeButton);
             sidebarProductsContainer.appendChild(sidebarProduct);
 
             savedProductsCount++;
@@ -996,18 +1016,19 @@ document.addEventListener('DOMContentLoaded', function () {
             closeSidebar();
         }
     });
+
+    // Adiciona funcionalidade ao botão de orçamento
+    quoteButton.addEventListener('click', function() {
+        closeSidebar(); // Fecha a sidebar
+
+        // Rola suavemente até o formulário
+        const formElement = document.getElementById("form");
+        if (formElement) {
+            formElement.scrollIntoView({ behavior: "smooth" });
+        }
+    });
 });
 
-document.getElementById("quote-button").addEventListener("click", function() {
-    // Seleciona o elemento com ID 'form'
-    const formElement = document.getElementById("form");
-    
-    // Verifica se o elemento existe
-    if (formElement) {
-        // Rola suavemente até o elemento
-        formElement.scrollIntoView({ behavior: "smooth" });
-    }
-});
 
 const filterButtons = document.querySelectorAll('.produtos-topics-div-btn button');
     const productCards = Array.from(document.querySelectorAll('.produtos-card')); // Converte NodeList para Array
