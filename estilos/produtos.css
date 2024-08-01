@@ -543,7 +543,8 @@
 }
 
 .sidebar-product-details h6{
-    font-size: 1.2rem;
+    font-size: 0.9rem;
+    line-height: 15px;
     height: 2vh;
     font-family: "Poppins", sans-serif;
     font-weight: 500;
@@ -551,7 +552,7 @@
 
 .sidebar-product-details p{
     height: 5vh;
-    font-size: 1rem;
+    font-size: 0.7rem;
     display: flex;
     align-items: center;
     justify-content: flex-start;
