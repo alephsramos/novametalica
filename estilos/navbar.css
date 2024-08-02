@@ -168,10 +168,11 @@
 
 .nav-sidebar {
     position: fixed;
-    top: 0;
+    top: 2.5dvh;
+    border-radius: 10px 0px 0px 10px;
     right: -100%;
     width: 250px;
-    height: 100dvh;
+    height: 95dvh;
     background: #333;
     transition: right 0.3s ease;
     z-index: 1000;
@@ -189,13 +190,14 @@
     height: 5vh;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
+    justify-content: flex-start;
     padding: 10px;
     align-self: flex-end; /* Alinha o botão de fechar no topo direito */
 }
 
 .nav-sidebar-logo{
     height: 10dvh;
+    margin-bottom: 25px;
     width: 100%;
     display: flex;
     align-items: center;
@@ -219,7 +221,7 @@
 .nav-sidebar-links {
     display: flex;
     flex-direction: column;
-    height: 40dvh;
+    height: 35dvh;
     align-items: center;
     justify-content: space-evenly;
     width: 100%; /* Para que os links ocupem a largura total */
