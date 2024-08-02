@@ -253,9 +253,10 @@
 .nav-sidebar-btn button {
     width: 80%; /* Define a largura do botão */
     padding: 10px;
-    background: #f00;
+    background: transparent;
     color: #fff;
-    border: none;
+    border: 1px solid #fff;
+    border-radius: 5px;
     cursor: pointer;
 }
 
