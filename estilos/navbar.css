@@ -253,7 +253,14 @@
         display: none;
     }
 
+
     .nav-hamburger {
         display: flex;
     }
+}
+
+@media (min-width: 800px){
+.nav-header{
+    display: none;
+}
 }
