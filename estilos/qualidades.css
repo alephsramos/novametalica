@@ -215,5 +215,6 @@
         justify-content: center;
         display: flex;
         height: 15vh;
+        text-align: justify;
     }
 }
