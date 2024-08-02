@@ -62,6 +62,16 @@
 
 @media (max-width: 768px){
     
+    .header{
+        background-image: url(../imagens/loja-teste-4.png);
+        background-position: top;
+        background-size: cover;
+        height: 105dvh;
+        background-attachment: fixed;
+        background-repeat: no-repeat;
+        clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 97%);
+    }
+
     .header-div{
         padding: 0 0%;
     }
