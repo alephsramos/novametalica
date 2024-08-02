@@ -122,8 +122,82 @@
     color: #353535;
 }
 
-@media (min-width: 768px){
+@media (max-width: 768px){
     .profissionais-container{
-        display: none;
+        padding: 0 10%;
+        height: 160vh;
+        width: 100%;
+    }
+    
+    .profissionais-div-container{
+        width: 100%;
+        gap: 10px;
+    }
+    
+    .profissionais-texts{
+        height: 10vh;
+    }
+    
+    .profissionais-texts h2{
+        font-size: 1.6rem;
+        height: 5vh;
+    }
+    
+    .profissionais-texts p{
+        font-size: 0.7rem;
+        height: 5vh;
+    }
+    
+    .profissionais-card-container{
+        height: 65vh;
+        width: 100%;
+    }
+    
+    .profissionais-cards{
+        width: 100%;
+        gap: 30px;
+        display: flex;
+        align-items: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .prof-left{
+        width: 100%;
+        height: 20vh;
+    }
+    
+    .prof-left img{
+        width: 100%;
+        height: 20vh;
+    }
+    
+    .prof-right{
+        width: 100%;
+        height: 40vh;
+        padding: 30px;
+    }
+    
+    .prof-right-text h2{
+        font-size: 1.4rem;
+        height: 5vh;
+        width: 100%;
+    }
+    
+    .prof-right-text p{
+        height: 20vh;
+        font-size: 0.5rem; /* MUDAR O TAMANHO E DIMINUIR O TEXTO PARA CELULAR */
+    }
+    
+    .prof-right-links{
+        height: 5vh;
+    }
+    
+    .prof-right-links p{
+        font-size: 0.8rem;
+    }
+    
+    .prof-right-links a{
+        font-size: 20px;
     }
 }
