@@ -61,7 +61,44 @@
 
 
 @media (max-width: 768px){
+    
+    .header-div{
+        padding: 0 0%;
+    }
+    
+
+    .header-texts{
+        height: 70dvh;
+        width: 100%;
+        justify-content: space-evenly;
+        align-items: center;
+        display: flex;
+        padding: 0%;
+    }
+    
     .header-texts h1{
-        font-size: 1rem;
+        font-size: 1.8rem;
+        height: 20vh;
+        line-height: 30px;
+        text-align: center;
+    }
+    
+    .header-texts p{
+        font-size: 1.1rem;
+        width: 100%;
+        text-align: center;
+        height: 30vh;
+    }
+    
+    .header-texts-btn{
+        height: 10vh;
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .header-texts-btn button{
+        padding: 10px 30px;
     }
 }

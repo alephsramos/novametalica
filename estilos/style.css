@@ -17,6 +17,7 @@ html, body{
     background-size: cover;
     height: 105dvh;
     background-attachment: fixed;
+    background-repeat: no-repeat;
     clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 97%);
 }
 
