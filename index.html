@@ -30,7 +30,6 @@
     <!-- CÓDIGOS DO JAVASCRIPT -->
     <script src="scripts/script.js"></script> <!-- JS principal da página -->
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2F1k7kuY3rKuXXJG-2ylCGY4BLRtgpgE&callback=initMap"></script>
-    <script src="scripts/script.js" defer></script>
 
     <title>Nova Metálica | Soluções construtivas e inovadoras</title> <!-- Titulo da página -->
 </head>
@@ -78,6 +77,7 @@
 <header class="header"> <!-- Abertura do header -->
 
     <script>
+        
         window.addEventListener('scroll', function() {
             let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
             let header = document.querySelector('.header');
@@ -87,34 +87,39 @@
         });
     </script>
 
-    <nav class="navbar"> <!-- Abertura da navbar oficial -->
-        <div class="nav-all-elements"> <!-- Abertura da div que terá todos os elementos manipulaveis -->
-            <div class="nav-image"> <!-- Div para colocar a logo -->
-                <img src="imagens/logo.svg">
-            </div> <!-- Fechamento da div para colocar a logo -->
-            <div class="nav-links" id="navLinks"> <!-- Div para os links da navbar -->
+<nav class="navbar">
+    <!-- Versão Desktop -->
+    <div class="nav-desktop">
+        <div class="nav-all-elements">
+            <div class="nav-image">
+                <img src="imagens/logo.svg" alt="Logo">
+            </div>
+            <div class="nav-links">
                 <a href="#home">Ínicio</a>
                 <a href="#sobre">Sobre nós</a>
                 <a href="#diferencial">Diferencial</a>
                 <a href="#profs">Profissionais</a>
                 <a href="#produtos">Produtos</a>
                 <a href="#projetos">Projetos</a>
-            </div> <!-- Fechamento da div com os links -->
-            <div class="nav-btn"> <!-- Div para o botão -->
-                <button id="contact_btn">Peça seu orçamento</button> 
+            </div>
+            <div class="nav-btn">
+                <button id="contact_btn">Peça seu orçamento</button>
                 <script>
                     document.getElementById('contact_btn').addEventListener('click', function() {
-                    document.getElementById('form').scrollIntoView({ behavior: 'smooth' });});
+                        document.getElementById('form').scrollIntoView({ behavior: 'smooth' });
+                    });
                 </script>
-            </div> <!-- Fechamento da div do botão -->
-        </div> <!-- Fechamento da div "nav-all-elements" -->
-    </nav> <!-- Fechamento da navbar -->
-
+            </div>
+        </div>
+    </div>
 
 <!-- Versão Sidebar -->
 <div class="nav-sidebar" id="navSidebar">
     <div class="nav-sidebar-close" id="closeSidebar">&times;</div>
     <div class="nav-sidebar-content">
+        <div class="nav-sidebar-logo">
+            <img src="imagens/logo.svg" alt="Logo">
+        </div>
         <div class="nav-sidebar-links">
             <a href="#home">Ínicio</a>
             <a href="#sobre">Sobre nós</a>
@@ -129,46 +134,56 @@
     </div>
 </div>
 
-<div class="nav-hamburger" id="hamburgerMenu">
-    <span class="bar"></span>
-    <span class="bar"></span>
-    <span class="bar"></span>
+<div class="nav-header">
+    <div class="nav-logo">
+        <img src="imagens/logo.svg" alt="Logo">
+    </div>
+    <div class="nav-hamburger" id="hamburgerMenu">
+        <span class="bar"></span>
+        <span class="bar"></span>
+        <span class="bar"></span>
+    </div>
 </div>
-</nav>
 
 <script>
-     const hamburgerMenu = document.getElementById('hamburgerMenu');
-    const navSidebar = document.getElementById('navSidebar');
-    const closeSidebar = document.getElementById('closeSidebar');
-    const navLinks = document.querySelectorAll('.nav-sidebar-links a');
+    document.addEventListener('DOMContentLoaded', () => {
+        const hamburgerMenu = document.getElementById('hamburgerMenu');
+        const navSidebar = document.getElementById('navSidebar');
+        const closeSidebar = document.getElementById('closeSidebar');
+        const navLinks = document.querySelectorAll('.nav-sidebar-links a');
 
-    const toggleSidebar = () => {
-        navSidebar.classList.toggle('show');
-        hamburgerMenu.classList.toggle('active');
-    };
-
-    // Abre ou fecha a sidebar
-    hamburgerMenu.addEventListener('click', toggleSidebar);
-    closeSidebar.addEventListener('click', toggleSidebar);
-
-    // Fecha a sidebar ao clicar fora dela
-    window.addEventListener('click', (event) => {
-        if (!navSidebar.contains(event.target) && !hamburgerMenu.contains(event.target) && !hamburgerMenu.contains(event.target)) {
-            navSidebar.classList.remove('show');
-            hamburgerMenu.classList.remove('active');
+        // Função para abrir a sidebar
+        function openSidebar() {
+            navSidebar.classList.add('show');
+            document.body.style.overflow = 'hidden'; // Impede o scroll da página
         }
-    });
 
-    // Fecha a sidebar ao clicar em qualquer link dentro dela
-    navLinks.forEach(link => {
-        link.addEventListener('click', () => {
+        // Função para fechar a sidebar
+        function closeSidebarFunc() {
             navSidebar.classList.remove('show');
-            hamburgerMenu.classList.remove('active');
+            document.body.style.overflow = ''; // Restaura o scroll da página
+        }
+
+        // Abre a sidebar ao clicar no menu hamburger
+        hamburgerMenu.addEventListener('click', openSidebar);
+
+        // Fecha a sidebar ao clicar no botão X
+        closeSidebar.addEventListener('click', closeSidebarFunc);
+
+        // Fecha a sidebar ao clicar fora dela
+        window.addEventListener('click', (event) => {
+            if (!navSidebar.contains(event.target) && !hamburgerMenu.contains(event.target)) {
+                closeSidebarFunc();
+            }
+        });
+
+        // Fecha a sidebar ao clicar em qualquer link dentro dela
+        navLinks.forEach(link => {
+            link.addEventListener('click', closeSidebarFunc);
         });
     });
-    </script>
+</script>
 
-</nav>
 
 
     <div class="header-div" id="home"> <!-- Div para manipular as margens e tamanhos -->
@@ -1740,34 +1755,6 @@ document.addEventListener('DOMContentLoaded', () => {
     </div>
     
     <script>
-document.getElementById('submit').addEventListener('click', function(event) {
-    event.preventDefault(); // Impede o envio do formulário para validação
-
-    // Seleciona todos os campos do formulário
-    const inputs = document.querySelectorAll('.form-inputs input');
-    const submitButton = document.getElementById('submit');
-
-    let allFilled = true;
-
-    // Verifica se todos os campos estão preenchidos
-    inputs.forEach(input => {
-        if (input.value.trim() === '') {
-            allFilled = false;
-        }
-    });
-
-    // Exibe um alerta para verificar o estado de 'allFilled'
-    alert('Campos preenchidos: ' + allFilled);
-
-    // Adiciona a classe correspondente ao botão de envio
-    if (allFilled) {
-        submitButton.classList.add('correct');
-        submitButton.classList.remove('incorrect');
-    } else {
-        submitButton.classList.add('incorrect');
-        submitButton.classList.remove('correct');
-    }
-});
 
         window.addEventListener('load', function() {
             // Verificar se há uma âncora na URL
