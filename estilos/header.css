@@ -78,12 +78,13 @@
     
 
     .header-texts{
-        height: 70dvh;
+        height: 90dvh;
         width: 100%;
         justify-content: space-evenly;
         align-items: center;
         display: flex;
         padding: 0%;
+        border: 1px solid red;
     }
     
     .header-texts h1{
@@ -94,7 +95,7 @@
     }
     
     .header-texts p{
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         width: 100%;
         text-align: center;
         height: 30vh;
