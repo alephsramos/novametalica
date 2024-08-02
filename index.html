@@ -107,12 +107,70 @@
                     document.getElementById('form').scrollIntoView({ behavior: 'smooth' });});
                 </script>
             </div> <!-- Fechamento da div do botão -->
-            <div class="side-bar" id="side_bar" style="display: none;"> <!-- Div para o botão da side-bar para telefone -->
-                &#9776; <!-- ícone de hambúrguer -->
-            </div> <!-- Fechamento da div da side-bar -->
         </div> <!-- Fechamento da div "nav-all-elements" -->
     </nav> <!-- Fechamento da navbar -->
- 
+
+
+<!-- Versão Sidebar -->
+<div class="nav-sidebar" id="navSidebar">
+    <div class="nav-sidebar-close" id="closeSidebar">&times;</div>
+    <div class="nav-sidebar-content">
+        <div class="nav-sidebar-links">
+            <a href="#home">Ínicio</a>
+            <a href="#sobre">Sobre nós</a>
+            <a href="#diferencial">Diferencial</a>
+            <a href="#profs">Profissionais</a>
+            <a href="#produtos">Produtos</a>
+            <a href="#projetos">Projetos</a>
+        </div>
+        <div class="nav-sidebar-btn">
+            <button id="contact_btn_sidebar">Peça seu orçamento</button>
+        </div>
+    </div>
+</div>
+
+<div class="nav-hamburger" id="hamburgerMenu">
+    <span class="bar"></span>
+    <span class="bar"></span>
+    <span class="bar"></span>
+</div>
+</nav>
+
+<script>
+     const hamburgerMenu = document.getElementById('hamburgerMenu');
+    const navSidebar = document.getElementById('navSidebar');
+    const closeSidebar = document.getElementById('closeSidebar');
+    const navLinks = document.querySelectorAll('.nav-sidebar-links a');
+
+    const toggleSidebar = () => {
+        navSidebar.classList.toggle('show');
+        hamburgerMenu.classList.toggle('active');
+    };
+
+    // Abre ou fecha a sidebar
+    hamburgerMenu.addEventListener('click', toggleSidebar);
+    closeSidebar.addEventListener('click', toggleSidebar);
+
+    // Fecha a sidebar ao clicar fora dela
+    window.addEventListener('click', (event) => {
+        if (!navSidebar.contains(event.target) && !hamburgerMenu.contains(event.target) && !hamburgerMenu.contains(event.target)) {
+            navSidebar.classList.remove('show');
+            hamburgerMenu.classList.remove('active');
+        }
+    });
+
+    // Fecha a sidebar ao clicar em qualquer link dentro dela
+    navLinks.forEach(link => {
+        link.addEventListener('click', () => {
+            navSidebar.classList.remove('show');
+            hamburgerMenu.classList.remove('active');
+        });
+    });
+    </script>
+
+</nav>
+
+
     <div class="header-div" id="home"> <!-- Div para manipular as margens e tamanhos -->
         <div class="header-texts"> <!-- Div contendo os textos -->
             <h1>Sua Parceira Nº 1 em Soluções para Steel Frame</h1>
