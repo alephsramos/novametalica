@@ -125,8 +125,90 @@
     color: #353535;
 }
 
-@media (min-width: 768px){
+@media (max-width: 768px){
     .maquina-container{
-        display: none;
+        height: 110vh;
+        padding: 0 10%;
+        width: 100%;
     }
+
+    .maquina-container::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: #cfcfcf; /* Aqui você pode definir a cor ou imagem de fundo desejada */
+        clip-path: polygon(0 0, 100% 0, 100% 30%, 0 30%);
+        z-index: -1; /* Para garantir que o fundo fique atrás do conteúdo */
+    }
+    
+    
+    .maquina-div-container {
+        width: 100%;
+        height: 100vh;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+    
+    .maquina-video{
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+    }
+
+    
+    .maquina-container-right{
+        width: 100%;
+        padding: 0px;
+        height: 40vh;
+    }
+    
+    .maquina-right-texts{
+        height: 40vh;
+        width: 100%;
+        padding-left: 0px;
+    }
+    
+    .maquina-right-texts h2{
+        height: 10vh;
+        font-size: 1.1rem;
+        line-height: 20px;
+        width: 100%;
+    }
+    
+    .maquina-right-texts h4{
+        height: 5vh;
+        font-size: 1rem;
+    }
+    
+    .maquina-right-texts p{
+        height: 20vh;
+        padding-top: 10px;
+        font-size: 0.6rem; 
+    }
+    
+    
+    .maquina-right-btn{
+        height: 10vh;
+        width: 100%;
+        padding-left: 0px;
+    }
+    
+    .maquina-right-btn p{
+        width: 90%;
+        font-size: 0.8rem;
+    }
+    
+    .maquina-right-btn a{
+        width: 10%;
+        font-size: 0;
+        height: 5vh;
+    }
+    
+    .maquina-right-btn i{
+        font-size: 25px;
+    }
+    
 }
