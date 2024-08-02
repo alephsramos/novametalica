@@ -219,7 +219,10 @@
     color: #fff;
 }
 
-.form-submit button:focus{
-    background-color: #f3f3f3;
-    color: #000;
+.form-submit button.correct::after {
+    background-image: url('../imagens/avatar.png'); /* Substitua pelo caminho do ícone de check */
+}
+
+.form-submit button.incorrect::after {
+    background-image: url('x-icon.png'); /* Substitua pelo caminho do ícone de X */
 }

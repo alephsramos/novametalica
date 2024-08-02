@@ -1662,27 +1662,55 @@ document.addEventListener('DOMContentLoaded', () => {
                 </a>
             </div>
         </div>
-        <div class="form-right">
+        <form class="form-right">
             <div class="form-right-text">
                 <h2>Contate-nos</h2>
             </div>
             <div class="form-inputs">
-                <input class="form-input-nome" type="text" placeholder="Nome" id="name">
-                <input class="form-input-email" type="email" placeholder="E-mail" id="email">
-                <input class="form-input-tel" type="tel" placeholder="+55 21 987654321" id="tel">
+                <input class="form-input-nome" required type="text" placeholder="Nome" id="name">
+                <input class="form-input-email" required type="email" placeholder="E-mail" id="email">
+                <input class="form-input-tel" required type="tel" placeholder="+55 21 987654321" id="tel">
                 <textarea id="selectedProducts" name="selectedProducts" style="display: none;"></textarea>
             </div>
-            <div class="form-right-direitos">  
-                <p>Suas informações são seguras e usadas apenas para responder à sua solicitação. Garantimos total confidencialidade.
-                </p>
+            <div class="form-right-direitos">
+                <p>Suas informações são seguras e usadas apenas para responder à sua solicitação. Garantimos total confidencialidade.</p>
             </div>
             <div class="form-submit">
                 <button type="submit" id="submit">Enviar</button>
             </div>
-        </div>
+        </form>
     </div>
     
     <script>
+document.getElementById('submit').addEventListener('click', function(event) {
+    event.preventDefault(); // Impede o envio do formulário para validação
+
+    // Seleciona todos os campos do formulário
+    const inputs = document.querySelectorAll('.form-inputs input');
+    const submitButton = document.getElementById('submit');
+
+    let allFilled = true;
+
+    // Verifica se todos os campos estão preenchidos
+    inputs.forEach(input => {
+        if (input.value.trim() === '') {
+            allFilled = false;
+        }
+    });
+
+    // Exibe um alerta para verificar o estado de 'allFilled'
+    alert('Campos preenchidos: ' + allFilled);
+
+    // Adiciona a classe correspondente ao botão de envio
+    if (allFilled) {
+        submitButton.classList.add('correct');
+        submitButton.classList.remove('incorrect');
+    } else {
+        submitButton.classList.add('incorrect');
+        submitButton.classList.remove('correct');
+    }
+});
+
         window.addEventListener('load', function() {
             // Verificar se há uma âncora na URL
             const hash = window.location.hash;
