@@ -1135,17 +1135,17 @@
     }
 
     function generateQuoteText() {
-        const products = Array.from(sidebarProductsContainer.children);
-        let text = "Produtos selecionados para orçamento:\n\n";
+    const products = Array.from(sidebarProductsContainer.children);
+    let text = "Produtos selecionados:\n\n";
 
-        products.forEach(product => {
-            const productName = product.querySelector('.sidebar-product-details h6').textContent;
-            const productThickness = product.querySelector('.sidebar-product-details p').textContent;
-            text += `Nome: ${productName}\nEspessura: ${productThickness}\n\n`;
-        });
+    products.forEach(product => {
+        const productName = product.querySelector('.sidebar-product-details h6').textContent;
+        const productThickness = product.querySelector('.sidebar-product-details p').textContent;
+        text += `Produto: ${productName}\nEspessura: ${productThickness}\n\n\n`; // Adiciona uma quebra de linha extra entre os produtos
+    });
 
-        return text;
-    }
+    return text;
+}
 
     function showPage(pageIndex) {
         filteredCards.forEach((card, index) => {
@@ -1785,7 +1785,7 @@ document.addEventListener('DOMContentLoaded', function () {
                     source: "site_nova_metalica"
                 },
                 custom_fields: {
-                    "Nome do campo 1": selectedProducts
+                    selectedProducts
                 }
             }]
         };
