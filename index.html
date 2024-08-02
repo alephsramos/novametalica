@@ -992,16 +992,31 @@
     const floatingButton = document.getElementById('floating-button');
     const badge = floatingButton.querySelector('.badge');
     const filterButtons = document.querySelectorAll('.produtos-topics-div-btn button');
-    const productCards = Array.from(document.querySelectorAll('.produtos-card')); // Converte NodeList para Array
-    const itemsPerPage = 4;
+    const productCards = Array.from(document.querySelectorAll('.produtos-card'));
+    let itemsPerPage = 4; // Default for larger screens
     let currentPage = 0;
-    let filteredCards = productCards; // Cards filtrados inicialmente são todos os produtos
-    let savedProductsCount = 0; // Inicializa a contagem de produtos salvos
+    let filteredCards = productCards;
+    let savedProductsCount = 0;
 
     const leftButton = document.getElementById('produto_btn_left');
     const rightButton = document.getElementById('produto_btn_right');
 
-    // Atualiza os eventos para os botões de coração
+    // Function to update itemsPerPage based on screen size
+    function updateItemsPerPage() {
+        if (window.matchMedia("(max-width: 768px)").matches) {
+            itemsPerPage = 1; // Smaller screens
+        } else {
+            itemsPerPage = 4; // Larger screens
+        }
+        currentPage = 0;
+        showPage(currentPage); // Refresh the display after updating
+    }
+
+    // Listen for changes in the screen size
+    window.addEventListener('resize', updateItemsPerPage);
+    updateItemsPerPage(); // Initial check
+
+    // Update heart button events
     heartButtons.forEach(button => {
         button.addEventListener('click', function () {
             const productCard = this.closest('.produtos-card');
@@ -1023,8 +1038,8 @@
     function addProductToSidebar(productCard, productId) {
         if (!sidebarProductsContainer.querySelector(`[data-id="${productId}"]`)) {
             const productImage = productCard.querySelector('.produto-card-img img').cloneNode(true);
-            const productName = productCard.querySelector('.produto-card-text-top h6').cloneNode(true); // Nome do produto
-            const productThickness = productCard.querySelector('.produto-card-text-center-center p').cloneNode(true); // Espessura do produto
+            const productName = productCard.querySelector('.produto-card-text-top h6').cloneNode(true);
+            const productThickness = productCard.querySelector('.produto-card-text-center-center p').cloneNode(true);
 
             const sidebarProduct = document.createElement('div');
             sidebarProduct.classList.add('sidebar-product');
@@ -1036,17 +1051,14 @@
             sidebarProductDetails.appendChild(productName);
             sidebarProductDetails.appendChild(productThickness);
 
-            // Adiciona o botão de remoção
             const removeButton = document.createElement('button');
             removeButton.classList.add('sidebar-product-remove');
             removeButton.innerHTML = '<i class="fa-solid fa-xmark"></i>';
 
-            // Adiciona evento ao botão de remoção
             removeButton.addEventListener('click', function (event) {
-                event.stopPropagation(); // Impede que o clique no botão de remover feche a sidebar
+                event.stopPropagation();
                 removeProductFromSidebar(productId);
 
-                // Atualiza o coração do produto original
                 const heartButton = document.querySelector(`.produto-card-btn-right[data-id="${productId}"]`);
                 if (heartButton) {
                     const heartIcon = heartButton.querySelector('i');
@@ -1080,20 +1092,20 @@
             badge.textContent = savedProductsCount;
         } else {
             floatingButton.classList.remove('visible');
-            badge.textContent = ''; // Limpa o conteúdo da badge quando não há produtos
+            badge.textContent = '';
         }
     }
 
     function openSidebar() {
         sidebar.style.right = '0';
         sidebarOverlay.style.display = 'block';
-        floatingButton.style.display = 'none'; // Esconde o botão flutuante
+        floatingButton.style.display = 'none';
     }
 
     function closeSidebar() {
         sidebar.style.right = '-100%';
         sidebarOverlay.style.display = 'none';
-        floatingButton.style.display = 'block'; // Mostra o botão flutuante novamente
+        floatingButton.style.display = 'block';
     }
 
     closeSidebarButton.addEventListener('click', closeSidebar);
@@ -1106,26 +1118,21 @@
         }
     });
 
-    // Adiciona funcionalidade ao botão de orçamento
-    quoteButton.addEventListener('click', function() {
-        closeSidebar(); // Fecha a sidebar
+    quoteButton.addEventListener('click', function () {
+        closeSidebar();
 
-        // Rola suavemente até o formulário
         const formElement = document.getElementById("form");
         if (formElement) {
             formElement.scrollIntoView({ behavior: "smooth" });
         }
 
-        // Insere o texto no textarea do formulário
         const textArea = document.getElementById("quote-textarea");
         if (textArea) {
             textArea.value = generateQuoteText();
         }
     });
 
-    // Função para gerar o texto que será inserido no textarea
     function generateQuoteText() {
-        // Aqui você pode personalizar o texto como quiser
         const products = Array.from(sidebarProductsContainer.children);
         let text = "Produtos selecionados para orçamento:\n\n";
 
@@ -1138,21 +1145,18 @@
         return text;
     }
 
-    // Função para exibir produtos da página atual
     function showPage(pageIndex) {
         filteredCards.forEach((card, index) => {
             if (index >= pageIndex * itemsPerPage && index < (pageIndex + 1) * itemsPerPage) {
-                card.style.display = 'block'; // Mostra o produto
+                card.style.display = 'block';
             } else {
-                card.style.display = 'none'; // Oculta o produto
+                card.style.display = 'none';
             }
         });
     }
 
-    // Inicializa a exibição
     showPage(currentPage);
 
-    // Botão de navegação à direita
     rightButton.addEventListener('click', function () {
         const totalPages = Math.ceil(filteredCards.length / itemsPerPage);
         if (currentPage < totalPages - 1) {
@@ -1161,7 +1165,6 @@
         }
     });
 
-    // Botão de navegação à esquerda
     leftButton.addEventListener('click', function () {
         if (currentPage > 0) {
             currentPage--;
@@ -1169,7 +1172,6 @@
         }
     });
 
-    // Adiciona eventos aos botões de filtro
     filterButtons.forEach(button => {
         button.addEventListener('click', function () {
             const category = this.getAttribute('data-category');
@@ -1177,20 +1179,19 @@
                 return category === 'all' || card.getAttribute('data-category') === category;
             });
 
-            currentPage = 0; // Reseta para a primeira página ao mudar o filtro
+            currentPage = 0;
 
             filteredCards.forEach((card, index) => {
                 if (index < itemsPerPage) {
-                    card.style.display = 'block'; // Mostra os produtos na primeira página
+                    card.style.display = 'block';
                 } else {
-                    card.style.display = 'none'; // Oculta os demais
+                    card.style.display = 'none';
                 }
             });
 
-            // Oculta os produtos que não fazem parte do filtro
             productCards.forEach(card => {
                 if (!filteredCards.includes(card)) {
-                    card.style.display = 'none'; // Oculta os produtos não filtrados
+                    card.style.display = 'none';
                 }
             });
         });
@@ -1203,13 +1204,10 @@ const buttons = document.querySelectorAll('.produtos-topics-div-btn button');
 // Adiciona evento de clique a cada botão
 buttons.forEach(button => {
     button.addEventListener('click', () => {
-        // Remove a classe 'active' de todos os botões
         buttons.forEach(btn => btn.classList.remove('active'));
-        // Adiciona a classe 'active' ao botão clicado
         button.classList.add('active');
     });
 });
-
     </script>
 
 <section class="projetos-container" id="projetos">
