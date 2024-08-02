@@ -200,3 +200,9 @@
     background-color: #000;
     color: #fff;
 }
+
+@media (min-width: 768px){
+    .projetos-container{
+        display: none;
+    }
+}

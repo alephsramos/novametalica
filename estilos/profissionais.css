@@ -121,3 +121,9 @@
     transform: rotate(90deg);
     color: #353535;
 }
+
+@media (min-width: 768px){
+    .profissionais-container{
+        display: none;
+    }
+}
