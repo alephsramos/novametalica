@@ -248,6 +248,7 @@
         flex: 0 0 100%; /* Ocupa 100% da largura do contêiner por padrão */
         opacity: 1;
         filter: brightness(100%);
+        border-radius: 5px;
     }
     
     
