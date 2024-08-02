@@ -1882,8 +1882,8 @@ document.getElementById('submit').addEventListener('click', function(event) {
             sendToGoogleSheets(data);
         }
 
-        // Enviar dados a cada 5 minutos
-        const intervalId = setInterval(collectAndSendData, 5 * 60 * 1000);
+        // // Enviar dados a cada 5 minutos
+        // const intervalId = setInterval(collectAndSendData, 5 * 60 * 1000);
 
         // Registrar dados ao sair
         window.addEventListener("beforeunload", function () {
