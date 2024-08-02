@@ -77,14 +77,16 @@
 <header class="header"> <!-- Abertura do header -->
 
     <script>
-        
         window.addEventListener('scroll', function() {
-            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-            let header = document.querySelector('.header');
-            let scale = 1 + scrollTop / 1000; // Ajuste esse valor conforme necessário
-    
-            header.style.backgroundSize = scale * 100 + '%';
-        });
+    // Verifica se a largura da janela é maior que 768px
+    if (window.innerWidth > 768) {
+        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        let header = document.querySelector('.header');
+        let scale = 1 + scrollTop / 1000; // Ajuste esse valor conforme necessário
+        
+        header.style.backgroundSize = scale * 100 + '%';
+    }
+});
     </script>
 
 <nav class="navbar">
