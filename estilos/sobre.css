@@ -255,12 +255,12 @@
         display: flex;
         align-items: center;
         flex-direction: column;
-        justify-content: space-between;
+        justify-content: space-around;
     }
     
     .sobre-card-top{
         width: 100%;
-        height: 25vh;
+        height: 30vh;
         padding: 0px;
     }
     
@@ -274,6 +274,7 @@
         height: 5vh;
         width: 100%;
         font-size: 1.2rem;
+        padding-top: 20px;
     }
     
     .sobre-card-bottom{
