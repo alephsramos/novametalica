@@ -861,6 +861,11 @@
     font-size: 25px;
 }
 
+.produto-action-left.left i:hover,
+.produto-action-left.right i:hover{
+    color: #fff;
+}
+
 .produto-action-left.right {
     right: 0%;
     width: 10%;
