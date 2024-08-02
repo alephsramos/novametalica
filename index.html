@@ -1003,7 +1003,6 @@
     const leftButton = document.getElementById('produto_btn_left');
     const rightButton = document.getElementById('produto_btn_right');
 
-    // Function to update itemsPerPage based on screen size
     function updateItemsPerPage() {
         if (window.matchMedia("(max-width: 768px)").matches) {
             itemsPerPage = 1; // Smaller screens
@@ -1014,11 +1013,9 @@
         showPage(currentPage); // Refresh the display after updating
     }
 
-    // Listen for changes in the screen size
     window.addEventListener('resize', updateItemsPerPage);
     updateItemsPerPage(); // Initial check
 
-    // Update heart button events
     heartButtons.forEach(button => {
         button.addEventListener('click', function () {
             const productCard = this.closest('.produtos-card');
@@ -1076,6 +1073,7 @@
 
             savedProductsCount++;
             updateFloatingButton();
+            updateTextarea(); // Atualiza o textarea quando um produto é adicionado
         }
     }
 
@@ -1085,6 +1083,7 @@
             sidebarProductsContainer.removeChild(sidebarProduct);
             savedProductsCount--;
             updateFloatingButton();
+            updateTextarea(); // Atualiza o textarea quando um produto é removido
         }
     }
 
@@ -1111,7 +1110,6 @@
     }
 
     closeSidebarButton.addEventListener('click', closeSidebar);
-
     floatingButton.addEventListener('click', openSidebar);
 
     document.addEventListener('click', function (event) {
@@ -1123,24 +1121,26 @@
     quoteButton.addEventListener('click', function () {
         closeSidebar();
 
-        const formElement = document.getElementById("form");
+        const formElement = document.getElementById("contactForm");
         if (formElement) {
             formElement.scrollIntoView({ behavior: "smooth" });
         }
+    });
 
-        const textArea = document.getElementById("quote-textarea");
+    function updateTextarea() {
+        const textArea = document.getElementById("selectedProducts");
         if (textArea) {
             textArea.value = generateQuoteText();
         }
-    });
+    }
 
     function generateQuoteText() {
         const products = Array.from(sidebarProductsContainer.children);
         let text = "Produtos selecionados para orçamento:\n\n";
 
         products.forEach(product => {
-            const productName = product.querySelector('.produto-card-text-top h6').textContent;
-            const productThickness = product.querySelector('.produto-card-text-center-center p').textContent;
+            const productName = product.querySelector('.sidebar-product-details h6').textContent;
+            const productThickness = product.querySelector('.sidebar-product-details p').textContent;
             text += `Nome: ${productName}\nEspessura: ${productThickness}\n\n`;
         });
 
@@ -1198,16 +1198,14 @@
             });
         });
     });
-});
 
-// Seleciona todos os botões
-const buttons = document.querySelectorAll('.produtos-topics-div-btn button');
+    const buttons = document.querySelectorAll('.produtos-topics-div-btn button');
 
-// Adiciona evento de clique a cada botão
-buttons.forEach(button => {
-    button.addEventListener('click', () => {
-        buttons.forEach(btn => btn.classList.remove('active'));
-        button.classList.add('active');
+    buttons.forEach(button => {
+        button.addEventListener('click', () => {
+            buttons.forEach(btn => btn.classList.remove('active'));
+            button.classList.add('active');
+        });
     });
 });
     </script>
@@ -1735,14 +1733,14 @@ document.addEventListener('DOMContentLoaded', () => {
                 </a>
             </div>
         </div>
-        <form class="form-right">
+        <form class="form-right" id="contactForm">
             <div class="form-right-text">
                 <h2>Contate-nos</h2>
             </div>
             <div class="form-inputs">
-                <input class="form-input-nome" required type="text" placeholder="Nome" id="name">
-                <input class="form-input-email" required type="email" placeholder="E-mail" id="email">
-                <input class="form-input-tel" required type="tel" placeholder="+55 21 987654321" id="tel">
+                <input class="form-input-nome" required type="text" placeholder="Nome" id="name" name="name">
+                <input class="form-input-email" required type="email" placeholder="E-mail" id="email" name="email">
+                <input class="form-input-tel" required type="tel" placeholder="+55 21 987654321" id="tel" name="tel">
                 <textarea id="selectedProducts" name="selectedProducts" style="display: none;"></textarea>
             </div>
             <div class="form-right-direitos">
@@ -1756,17 +1754,89 @@ document.addEventListener('DOMContentLoaded', () => {
     
     <script>
 
-        window.addEventListener('load', function() {
-            // Verificar se há uma âncora na URL
-            const hash = window.location.hash;
-            if (hash === '#form') {
-                // Rolar suavemente até o elemento com id "form"
-                const formElement = document.getElementById('form');
-                if (formElement) {
-                    formElement.scrollIntoView({ behavior: 'smooth' });
+document.addEventListener('DOMContentLoaded', function () {
+    const formElement = document.getElementById('contactForm');
+    const textArea = document.getElementById('selectedProducts');
+
+    formElement.addEventListener('submit', function (event) {
+        // Previne o envio padrão do formulário
+        event.preventDefault();
+        
+        // Preenche o textarea com os dados dos produtos selecionados
+        textArea.value = generateQuoteText();
+
+        // Captura os valores dos campos do formulário
+        const name = document.getElementById('name').value;
+        const email = document.getElementById('email').value;
+        const tel = document.getElementById('tel').value;
+        const selectedProducts = textArea.value;
+
+        // Monta o payload conforme necessário para o PipeRun
+        const payload = {
+            leads: [{
+                id: "site_nova_metalica",
+                user: name,
+                title: name,
+                email: email,
+                name: name,
+                personal_phone: tel,
+                mobile_phone: tel,
+                last_conversion: {
+                    source: "site_nova_metalica"
+                },
+                custom_fields: {
+                    "Nome do campo 1": selectedProducts
                 }
-            }
+            }]
+        };
+
+        // Envia a requisição para o endpoint do PipeRun
+        fetch('https://app.pipe.run/webservice/integradorJson?hash=56c50ba8-44e9-42fd-ba51-93207130106f', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(payload)
+        })
+        .then(response => response.json())
+        .then(data => {
+            console.log('Success:', data);
+            alert('Formulário enviado com sucesso!');
+            // Limpa o formulário após o envio
+            formElement.reset();
+            textArea.value = ''; // Limpa o textarea
+        })
+        .catch((error) => {
+            console.error('Error:', error);
+            alert('Houve um erro ao enviar o formulário.');
         });
+    });
+
+    function generateQuoteText() {
+        const sidebarProducts = document.querySelectorAll('.sidebar-product');
+        let text = "Produtos selecionados:\n";
+
+        sidebarProducts.forEach(product => {
+            const productName = product.querySelector('.sidebar-product-details h6').textContent;
+            const productThickness = product.querySelector('.sidebar-product-details p').textContent;
+            text += `Nome: ${productName}\nEspessura: ${productThickness}\n\n`;
+        });
+
+        return text;
+    }
+
+    // Verifica se há uma âncora na URL e rola suavemente até o formulário
+    window.addEventListener('load', function() {
+        const hash = window.location.hash;
+        if (hash === '#form') {
+            const formElement = document.getElementById('form');
+            if (formElement) {
+                formElement.scrollIntoView({ behavior: 'smooth' });
+            }
+        }
+    });
+});
+
         </script>
 
 </section>
