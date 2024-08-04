@@ -1307,7 +1307,7 @@
 
 <section class="form-container" id="form">
     <div class="form-container-div">
-        <div class="form-left">
+        <div class="form-left animate animate-left">
             <div class="form-text">
                 <h2>Contato</h2>
                 <p>Estamos à disposição para esclarecer suas dúvidas e ajudá-lo a encontrar a melhor solução para seu projeto.
@@ -1355,7 +1355,7 @@
                 </a>
             </div>
         </div>
-        <form class="form-right" id="contactForm">
+        <form class="form-right animate animate-right" id="contactForm">
             <div class="form-right-text">
                 <h2>Contate-nos</h2>
             </div>
@@ -1374,102 +1374,17 @@
         </form>
     </div>
     
-    <script>
-
-document.addEventListener('DOMContentLoaded', function () {
-    const formElement = document.getElementById('contactForm');
-    const textArea = document.getElementById('selectedProducts');
-
-    formElement.addEventListener('submit', function (event) {
-        // Previne o envio padrão do formulário
-        event.preventDefault();
-        
-        // Preenche o textarea com os dados dos produtos selecionados
-        textArea.value = generateQuoteText();
-
-        // Captura os valores dos campos do formulário
-        const name = document.getElementById('name').value;
-        const email = document.getElementById('email').value;
-        const tel = document.getElementById('tel').value;
-        const selectedProducts = textArea.value;
-
-        // Monta o payload conforme necessário para o PipeRun
-        const payload = {
-            leads: [{
-                id: "site_nova_metalica",
-                user: name,
-                title: name,
-                email: email,
-                name: name,
-                personal_phone: tel,
-                mobile_phone: tel,
-                last_conversion: {
-                    source: "site_nova_metalica"
-                },
-                custom_fields: {
-                    selectedProducts
-                }
-            }]
-        };
-
-        // Envia a requisição para o endpoint do PipeRun
-        fetch('https://app.pipe.run/webservice/integradorJson?hash=56c50ba8-44e9-42fd-ba51-93207130106f', {
-            method: 'POST',
-            headers: {
-                'Content-Type': 'application/json'
-            },
-            body: JSON.stringify(payload)
-        })
-        .then(response => response.json())
-        .then(data => {
-            console.log('Success:', data);
-            alert('Formulário enviado com sucesso!');
-            // Limpa o formulário após o envio
-            formElement.reset();
-            textArea.value = ''; // Limpa o textarea
-        })
-        .catch((error) => {
-            console.error('Error:', error);
-            alert('Houve um erro ao enviar o formulário.');
-        });
-    });
-
-    function generateQuoteText() {
-        const sidebarProducts = document.querySelectorAll('.sidebar-product');
-        let text = "Produtos selecionados:\n";
-
-        sidebarProducts.forEach(product => {
-            const productName = product.querySelector('.sidebar-product-details h6').textContent;
-            const productThickness = product.querySelector('.sidebar-product-details p').textContent;
-            text += `Nome: ${productName}\nEspessura: ${productThickness}\n\n`;
-        });
-
-        return text;
-    }
-
-    // Verifica se há uma âncora na URL e rola suavemente até o formulário
-    window.addEventListener('load', function() {
-        const hash = window.location.hash;
-        if (hash === '#form') {
-            const formElement = document.getElementById('form');
-            if (formElement) {
-                formElement.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-    });
-});
-
-        </script>
+    <script src="scripts/form.js"></script>
 
 </section>
 
-<section class="local-container" id="local">
+<section class="local-container animate animate-fade-in" id="local">
     <div id="map"></div>
   </section>
 
 <footer class="footer-container" id="footer">
     <div class="footer-containver-div">
-        <div class="footer-left">
+        <div class="footer-left animate animate-left">
             <div class="footer-image">
                 <img src="imagens/logo-white.png" alt="logo">
             </div>
@@ -1479,21 +1394,21 @@ document.addEventListener('DOMContentLoaded', function () {
                 <p>24 1234-5678</p>
             </div>
         </div>
-        <div class="footer-links">
+        <div class="footer-links animate animate-fade-in">
             <p>Menu</p>
             <a href="#">Home</a>
             <a href="#">Sobre</a>
             <a href="#">Produtos</a>
             <a href="#">Contato</a>
         </div>
-        <div class="footer-links">
+        <div class="footer-links animate animate-fade-in">
             <p>Parcerias</p>
             <a href="#">CSN Siderúrgica</a>
             <a href="#">Arcellor Mital</a>
             <a href="#">Saint Gobain</a>
             <a href="#">Grupo STO Brasil</a>
         </div>
-        <div class="footer-links">
+        <div class="footer-links animate animate-fade-in">
             <p>Siga-nos</p>
             <a href="#">Instagram</a>
             <a href="#">Facebook</a>
@@ -1501,7 +1416,7 @@ document.addEventListener('DOMContentLoaded', function () {
             <a href="#"></a>
         </div>
     </div>
-    <div class="footer-final">
+    <div class="footer-final animate animate-down">
         <p>© 2024 Nova Metálica | Todos os direitos reservados |
             <a href="#">Política de Privacidade
         </a>
