@@ -473,24 +473,15 @@
     
     .sobre-topics{
         width: 100%;
-        gap: 0px;
-        height: 50vh;
-        justify-content: center;
-        border: 1px solid red;
-    }
-
-    .sobre-topics:last-child{
-        height: 35vh;
-        gap: 0px;
-        border: 1px solid red;
-        justify-content: center;
+        gap: 5px;
+        height: 90vh;
+        justify-content: space-between;
     }
     
     .sobre-topic{
         width: 100%;
         height: 15vh;
         border-radius: 0px;
-        border: 1px solid red;
     }
     
     .sobre-topic:hover{
@@ -526,7 +517,7 @@
     
     .sobre-topic-right h4{
         width: 100%;
-        height: 3vh;
+        height: 4vh;
         font-size: 1.4rem;
         display: flex;
         align-items: center;
@@ -536,8 +527,8 @@
     
     .sobre-topic-right p{
         width: 100%;
-        height: 12vh;
-        font-size: 0.9rem;
+        height: 11vh;
+        font-size: 0.85rem;
         display: flex;
         align-items: center;
         justify-content: flex-start;
