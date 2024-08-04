@@ -188,3 +188,853 @@ html, body{
     color: #000;
     border: none;
 }
+
+@media (max-width: 576px){
+    .fundo-produtos{
+        height: 95vh;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .nav-top{
+        display: none;
+    }
+
+    .nav-image{
+        width: 100px;
+    }
+    
+    .fundo-produtos::before {
+        clip-path: polygon(0 0%, 40% 0%, 60% 100%, 0% 100%);
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .navbar{
+    width: 80%;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.nav-image{
+    width: 40%;
+}
+
+.nav-btn{
+    width: 50%;
+}
+.nav-btn button{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 0.7rem;
+}
+
+    .nav-all-elements{
+    width: 100vw;
+}
+
+    
+    .produto-pag-container{
+        height: 80vh;
+        padding: 0 10%;
+    }
+    
+    .produto-pag-container-div{
+        width: 100%;
+        height: 70vh;
+        padding: 10px;
+        flex-direction: column;
+    }
+    
+    .produto-pag-img {
+        width: 100%;
+        height: 40vh;
+    }
+    
+    .produto-pag-img img {
+        width: 100%;
+        height: 30vh;
+
+    }
+    
+    .produto-pag-texts{
+        width: 100%;
+        height: 60vh;
+        padding: 0px;
+    }
+    
+    .produto-pag-titles{
+        height: 20vh;
+        width: 90%;
+        gap: 10px;
+    }
+    
+    .produto-pag-titles h2{
+        height: 5vh;
+        font-size: 1.2rem;
+        width: 100%;
+    }
+    
+    .produto-pag-titles p{
+        height: 25vh;
+        font-size: 0.8rem;
+        width: 100%;
+    }
+    
+    .produto-pag-ctas{
+        height: 5vh;
+        width: 100%;
+        display: none;
+    }
+    
+    .produto-pag-ctas h4{
+        display: none;
+    }
+    
+    .produto-pag-btn{
+        height: 10vh;
+        width: 100%;
+    }
+    
+    .produto-pag-btn-left{
+        height: 15vh;
+        width: 50%;
+        display: none;
+    }
+    
+    .produto-pag-btn-left i{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+    
+    .produto-pag-btn-right{
+        height: 15vh;
+        margin-left: 5%;
+        width: 90%;
+    }
+    
+    .produto-pag-btn-right button{
+        height: 5vh;
+        width: 100%;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 769px){
+    .fundo-produtos{
+        height: 95vh;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .nav-top{
+        display: none;
+    }
+
+    .nav-image{
+        width: 80px;
+    }
+    
+    .fundo-produtos::before {
+        clip-path: polygon(0 0%, 40% 0%, 60% 100%, 0% 100%);
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .navbar{
+    width: 80%;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.nav-image{
+    width: 30%;
+}
+
+.nav-btn{
+    width: 50%;
+}
+.nav-btn button{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+}
+
+    .nav-all-elements{
+    width: 100vw;
+}
+
+    
+    .produto-pag-container{
+        height: 80vh;
+        padding: 0 10%;
+    }
+    
+    .produto-pag-container-div{
+        width: 100%;
+        height: 70vh;
+        padding: 10px;
+        flex-direction: column;
+    }
+    
+    .produto-pag-img {
+        width: 100%;
+        height: 40vh;
+    }
+    
+    .produto-pag-img img {
+        width: 100%;
+        height: 30vh;
+
+    }
+    
+    .produto-pag-texts{
+        width: 100%;
+        height: 60vh;
+        padding: 0px;
+    }
+    
+    .produto-pag-titles{
+        height: 20vh;
+        width: 90%;
+        gap: 10px;
+    }
+    
+    .produto-pag-titles h2{
+        height: 5vh;
+        font-size: 1.6rem;
+        width: 100%;
+    }
+    
+    .produto-pag-titles p{
+        height: 25vh;
+        font-size: 1rem;
+        width: 100%;
+    }
+    
+    .produto-pag-ctas{
+        height: 5vh;
+        width: 100%;
+        display: none;
+    }
+    
+    .produto-pag-ctas h4{
+        display: none;
+    }
+    
+    .produto-pag-btn{
+        height: 10vh;
+        width: 100%;
+    }
+    
+    .produto-pag-btn-left{
+        height: 15vh;
+        width: 50%;
+        display: none;
+    }
+    
+    .produto-pag-btn-left i{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+    
+    .produto-pag-btn-right{
+        height: 15vh;
+        margin-left: 5%;
+        width: 90%;
+    }
+    
+    .produto-pag-btn-right button{
+        height: 5vh;
+        width: 100%;
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px){
+    .fundo-produtos{
+        height: 95vh;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .nav-top{
+        display: none;
+    }
+
+    .nav-image{
+        width: 80px;
+    }
+    
+    .fundo-produtos::before {
+        clip-path: polygon(0 0%, 40% 0%, 60% 100%, 0% 100%);
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .navbar{
+    width: 80%;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+
+.nav-image{
+    width: 35%;
+}
+
+.nav-btn{
+    width: 50%;
+}
+.nav-btn button{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 1rem;
+    padding: 15px;
+}
+
+    .nav-all-elements{
+    width: 100vw;
+}
+
+    
+    .produto-pag-container{
+        height: 80vh;
+        padding: 0 10%;
+    }
+    
+    .produto-pag-container-div{
+        width: 100%;
+        height: 70vh;
+        padding: 10px;
+        flex-direction: column;
+    }
+    
+    .produto-pag-img {
+        width: 100%;
+        height: 40vh;
+    }
+    
+    .produto-pag-img img {
+        width: 100%;
+        height: 30vh;
+
+    }
+    
+    .produto-pag-texts{
+        width: 100%;
+        height: 60vh;
+        padding: 0px;
+    }
+    
+    .produto-pag-titles{
+        height: 20vh;
+        width: 90%;
+        gap: 10px;
+    }
+    
+    .produto-pag-titles h2{
+        height: 5vh;
+        font-size: 1.7rem;
+        width: 100%;
+    }
+    
+    .produto-pag-titles p{
+        height: 25vh;
+        font-size: 1.1rem;
+        width: 100%;
+    }
+    
+    .produto-pag-ctas{
+        height: 5vh;
+        width: 100%;
+        display: none;
+    }
+    
+    .produto-pag-ctas h4{
+        display: none;
+    }
+    
+    .produto-pag-btn{
+        height: 10vh;
+        width: 100%;
+    }
+    
+    .produto-pag-btn-left{
+        height: 15vh;
+        width: 50%;
+        display: none;
+    }
+    
+    .produto-pag-btn-left i{
+        width: 45px;
+        height: 45px;
+        border-radius: 50%;
+    }
+    
+    .produto-pag-btn-right{
+        height: 15vh;
+        margin-left: 5%;
+        width: 90%;
+    }
+    
+    .produto-pag-btn-right button{
+        height: 5vh;
+        width: 100%;
+        font-size: 1.1rem;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+    .fundo-produtos{
+        height: 95vh;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .nav-top{
+        display: none;
+    }
+
+    .nav-image{
+        width: 80px;
+    }
+    
+    .fundo-produtos::before {
+        clip-path: polygon(0 0%, 40% 0%, 60% 100%, 0% 100%);
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .navbar{
+    width: 80%;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 10vh;
+}
+
+.nav-image{
+    width: 20%;
+}
+
+.nav-btn{
+    width: 20%;
+}
+.nav-btn button{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+    padding: 10px;
+}
+
+    .nav-all-elements{
+    width: 100vw;
+}
+
+    
+    .produto-pag-container{
+        height: 80vh;
+        padding: 0 10%;
+    }
+    
+    .produto-pag-container-div{
+        width: 100%;
+        height: 70vh;
+        padding: 10px;
+    }
+    
+    .produto-pag-img {
+        width: 100%;
+        height: 70vh;
+    }
+    
+    .produto-pag-img img {
+        width: 100%;
+        height: 70vh;
+
+    }
+    
+    .produto-pag-texts{
+        width: 100%;
+        height: 70vh;
+        padding: 0px;
+    }
+    
+    .produto-pag-titles{
+        height: 45vh;
+        width: 90%;
+        gap: 10px;
+    }
+    
+    .produto-pag-titles h2{
+        height: 5vh;
+        font-size: 1.5rem;
+        width: 100%;
+    }
+    
+    .produto-pag-titles p{
+        height: 40vh;
+        font-size: 0.8rem;
+        width: 100%;
+    }
+    
+    .produto-pag-ctas{
+        height: 5vh;
+        width: 100%;
+    }
+    
+    .produto-pag-ctas h4{
+        font-size: 0.8rem;
+    }
+    
+    .produto-pag-btn{
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        justify-items: center;
+    }
+    
+    .produto-pag-btn-left{
+        height: 10vh;
+        width: 50%;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 15px;
+    }
+    
+    .produto-pag-btn-left i{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    
+    .produto-pag-btn-right{
+        height: 10vh;
+        margin-left: 5%;
+        width: 50%;
+        padding-right: 15px;
+    }
+    
+    .produto-pag-btn-right button{
+        height: 5vh;
+        width: 80%;
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1800px){
+    .fundo-produtos{
+        height: 95vh;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .nav-top{
+        display: none;
+    }
+
+    .nav-image{
+        width: 80px;
+    }
+    
+    .fundo-produtos::before {
+        clip-path: polygon(0 0%, 40% 0%, 60% 100%, 0% 100%);
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .navbar{
+    width: 80%;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 10vh;
+}
+
+.nav-image{
+    width: 20%;
+}
+
+.nav-btn{
+    width: 20%;
+}
+.nav-btn button{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 0.8rem;
+    padding: 10px;
+}
+
+    .nav-all-elements{
+    width: 100vw;
+}
+
+    
+    .produto-pag-container{
+        height: 80vh;
+        padding: 0 10%;
+    }
+    
+    .produto-pag-container-div{
+        width: 100%;
+        height: 70vh;
+        padding: 10px;
+    }
+    
+    .produto-pag-img {
+        width: 100%;
+        height: 70vh;
+    }
+    
+    .produto-pag-img img {
+        width: 100%;
+        height: 70vh;
+
+    }
+    
+    .produto-pag-texts{
+        width: 100%;
+        height: 70vh;
+        padding: 0px;
+    }
+    
+    .produto-pag-titles{
+        height: 45vh;
+        width: 90%;
+        gap: 10px;
+    }
+    
+    .produto-pag-titles h2{
+        height: 5vh;
+        font-size: 1.8rem;
+        width: 100%;
+    }
+    
+    .produto-pag-titles p{
+        height: 40vh;
+        font-size: 1rem;
+        width: 100%;
+    }
+    
+    .produto-pag-ctas{
+        height: 5vh;
+        width: 100%;
+    }
+    
+    .produto-pag-ctas h4{
+        font-size: 0.9rem;
+    }
+    
+    .produto-pag-btn{
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        justify-items: center;
+    }
+    
+    .produto-pag-btn-left{
+        height: 10vh;
+        width: 50%;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 15px;
+    }
+    
+    .produto-pag-btn-left i{
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+    }
+    
+    .produto-pag-btn-right{
+        height: 10vh;
+        margin-left: 5%;
+        width: 50%;
+        padding-right: 15px;
+    }
+    
+    .produto-pag-btn-right button{
+        height: 5vh;
+        width: 80%;
+        font-size: 0.8rem;
+    }
+}
+
+@media (min-width: 1801px){
+    .fundo-produtos{
+        height: 95vh;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .nav-top{
+        display: none;
+    }
+
+    .nav-image{
+        width: 80px;
+    }
+    
+    .fundo-produtos::before {
+        clip-path: polygon(0 0%, 40% 0%, 40% 100%, 0% 100%);
+    }
+
+    .nav-links{
+        display: none;
+    }
+
+    .navbar{
+    width: 80%;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    height: 10vh;
+}
+
+.nav-image{
+    width: 20%;
+}
+
+.nav-btn{
+    width: 20%;
+}
+.nav-btn button{
+    width: 100%;
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    font-size: 1.2rem;
+    padding: 20px;
+}
+
+    .nav-all-elements{
+    width: 100vw;
+}
+
+    
+    .produto-pag-container{
+        height: 80vh;
+        padding: 0 10%;
+    }
+    
+    .produto-pag-container-div{
+        width: 100%;
+        height: 70vh;
+        padding: 10px;
+    }
+    
+    .produto-pag-img {
+        width: 100%;
+        height: 70vh;
+    }
+    
+    .produto-pag-img img {
+        width: 100%;
+        height: 70vh;
+
+    }
+    
+    .produto-pag-texts{
+        width: 100%;
+        height: 70vh;
+        padding: 0px;
+    }
+    
+    .produto-pag-titles{
+        height: 45vh;
+        width: 90%;
+        gap: 10px;
+    }
+    
+    .produto-pag-titles h2{
+        height: 5vh;
+        font-size: 2.2rem;
+        width: 100%;
+    }
+    
+    .produto-pag-titles p{
+        height: 40vh;
+        font-size: 1.4rem;
+        width: 100%;
+    }
+    
+    .produto-pag-ctas{
+        height: 5vh;
+        width: 100%;
+    }
+    
+    .produto-pag-ctas h4{
+        font-size: 1.2rem;
+    }
+    
+    .produto-pag-btn{
+        height: 10vh;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        justify-items: center;
+    }
+    
+    .produto-pag-btn-left{
+        height: 10vh;
+        width: 50%;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 15px;
+    }
+    
+    .produto-pag-btn-left i{
+        width: 70px;
+        height: 70px;
+        border-radius: 50%;
+        font-size: 30px;
+    }
+    
+    .produto-pag-btn-right{
+        height: 10vh;
+        margin-left: 5%;
+        width: 50%;
+        padding-right: 15px;
+    }
+    
+    .produto-pag-btn-right button{
+        height: 5vh;
+        width: 80%;
+        font-size: 1.2rem;
+    }   
+}
