@@ -1816,11 +1816,767 @@
 }
 
 @media (min-width: 992px) and (max-width: 1200px){
+ /* Container principal dos produtos */
+ .produtos-container {
+    padding: 0 10%;
+    height: 105vh;
+}
+
+.produtos-container::before {
+    clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+}
+
+/* Div container dos produtos */
+.produtos-div-container {
+    height: 25vh;
+    width: 100%;
+}
+
+/* Textos dos produtos */
+.produtos-texts {
+    height: 15vh;
+    width: 100%;
+}
+
+.produtos-texts h2 {
+    font-size: 1.8rem;
+    height: 7vh;
+    width: 100%;
+    line-height: 25px;
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.produtos-texts p {
+    height: 8vh;
+    font-size: 1.1rem;
+    width: 100%;
+}
+
+/* Botões dos produtos */
+.produtos-btn {
+    height: 10vh;
+    width: 100%;
+    padding: 0;
+}
+
+.produtos-topics-div-btn {
+    width: 100%;
+    height: 10vh;
+    gap: 10px 10px;
+    align-items: center;
+}
+
+.produtos-topics-div-btn button {
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+/* Container e layout dos cards de produtos */
+.produtos-container-cards {
+    width: 100%;
+    height: 55vh;
+    flex-wrap: nowrap;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.produtos-cards {
+    gap: 10px;
+    width: 100%;
+    overflow-x: hidden;
 
 }
 
-@media (min-width: 1200px) and (max-width: 1800px){
+.produtos-card {
+    width: 100%;
+    height: 50vh;
+    padding: 5px;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+}
 
+/* Imagem do card do produto */
+.produto-card-img {
+    width: 100%;
+    height: 22vh;
+    margin-bottom: 10px;
+}
+
+.produto-card-img:hover > img {
+    transform: rotate(-2deg) scale(1);
+}
+
+.produto-card-img img {
+    width: 100%;
+    height: 22vh;
+}
+
+/* Texto do card do produto */
+.produto-card-text-top {
+    width: 100%;
+}
+
+.produto-card-text-top h6 {
+    font-size: 0.8rem;
+    margin-left: 10px;
+}
+
+.produto-card-text-top p {
+    font-size: 0.7rem;
+    margin-left: 10px;
+}
+
+/* Texto do card do produto - centro */
+.produto-card-text-center {
+    width: 100%;
+    gap: 5px;   
+    height: 10vh;
+}
+
+.produto-card-text-center-center {
+    width: 100%;
+    height: 2vh;
+    padding-bottom: 5px;    
+}
+
+.produto-card-text-center-center h6 {
+    font-size: 0.8rem;
+    margin-left: 10px;
+    width: 50%;
+}
+
+.produto-card-text-center-center p {
+    font-size: 0.8rem;
+    margin-right: 10px;
+    width: 50%;
+}
+
+/* Botões do card do produto */
+.produto-card-btns {
+    height: 10vh;
+    width: 100%;
+    gap: 10px;
+}
+
+.produto-card-btn-left {
+    width: 85%;
+    height: 5vh;
+    margin-left: 10px;  
+}
+
+.produto-card-btn-right {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.produto-card-btn-right i{
+    font-size: 15px;
+}
+
+.produto-action-left {
+    top: 70%; /* Centraliza verticalmente */
+    padding: 0px; /* Espaçamento opcional */
+}
+
+.produto-action-left.left {
+    left: 0%; /* Alinha à esquerda com margem */
+    width: 10%;
+    height: 10%;
+}
+
+.produto-action-left.left button,
+.produto-action-left.right button{
+    height: 100%;
+    width: 100%;
+}
+
+.produto-action-left.left i,
+.produto-action-left.right i{
+    font-size: 35px;
+}
+
+.produto-action-left.left i:hover,
+.produto-action-left.right i:hover{
+    color: #fff;
+}
+
+.produto-action-left.right {
+    right: 0%;
+    width: 10%;
+    height: 10%;
+}
+
+
+/* MODAL */
+
+/* Estilo do modal */
+.modal {
+    z-index: 10; /* Fica acima do conteúdo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilo do conteúdo do modal */
+.modal-content {
+    margin: 10% auto; 
+    width: 80%;
+    height: 60vh;
+}
+
+/* Estilo do botão de fechar */
+.close {
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+}
+
+.modal-img-left{
+    width: 40%;
+    height: 60vh;
+}
+
+.modal-img-left img{
+    width: 100%;
+    height: 60vh;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.modal-all-right{
+    width: 60%;
+    height: 60vh;
+    padding: 30px;
+}
+
+.modal-titles-right{
+    width: 100%;
+    height: 35vh;
+    gap: 10px;
+}
+
+.modal-all-right h2{
+    font-size: 3rem;
+    height: 5vh;
+}
+
+.modal-all-right p{
+    height: 30vh;
+}
+
+.modal-texts-right{
+    width: 100%;
+    height: 6vh;
+}
+
+.modal-texts-right p{
+    height: 5vh;
+    width: 35%;
+    font-size: 1rem;
+}
+
+.modal-texts-right h6{
+    height: 5vh;
+    width: 35%;
+    font-size: 1rem;
+}
+
+
+.sidebar {
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 95dvh;
+    top: 2.5vh;
+}
+
+.sidebar-header {
+    height: 5vh;
+    padding: 20px;
+    width: 70%;
+}
+
+.sidebar-content {
+    padding: 20px;
+    height: 85vh;
+}
+
+.sidebar-products {
+    gap: 10px;
+}
+
+.sidebar-footer {
+    padding: 20px;
+    height: 10vh;
+    width: 100%;
+}
+
+.sidebar-footer button {
+    width: 80%;
+    padding: 10px;
+}
+
+.sidebar-product {
+    gap: 10px;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.sidebar-product img {
+    width: 40%;
+}
+
+.sidebar-product-details {
+    height: 7vh;
+}
+
+.sidebar-product-details h6{
+    font-size: 0.9rem;
+    line-height: 15px;
+    height: 4vh;
+    margin-bottom: 5px;
+}
+
+.sidebar-product-details p{
+    height: 3vh;
+    font-size: 0.7rem;
+}
+
+.sidebar-product-name {
+    font-size: 1.2rem; /* Ajuste o tamanho do nome aqui */
+}
+
+.sidebar-product-description {
+    font-size: 1rem; /* Ajuste o tamanho da descrição aqui */
+}
+
+.sidebar-close {
+    top: 0px;
+    right: 0px;
+    width: 35%;
+    height: 5vh;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.floating-button {
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+}
+
+.floating-button .fa-cart-shopping {
+    font-size: 20px;
+    width: 70px;
+    height: 70px;
+}
+
+.floating-button .badge {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    top: -2px; /* Ajuste o valor conforme necessário */
+    right: -2px; /* Ajuste o valor conforme necessário */
+}
+
+.sidebar-product-remove {
+    font-size: 18px;
+    height: 10vh;
+    width: 2vh;
+}
+
+.sidebar-product-remove i {
+    font-size: 18px;
+}
+}
+
+@media (min-width: 1200px) and (max-width: 1800px){
+ /* Container principal dos produtos */
+ .produtos-container {
+    padding: 0 10%;
+    height: 105vh;
+}
+
+.produtos-container::before {
+    clip-path: polygon(0 60%, 100% 60%, 100% 100%, 0 100%);
+}
+
+/* Div container dos produtos */
+.produtos-div-container {
+    height: 25vh;
+    width: 100%;
+}
+
+/* Textos dos produtos */
+.produtos-texts {
+    height: 15vh;
+    width: 100%;
+}
+
+.produtos-texts h2 {
+    font-size: 1.8rem;
+    height: 7vh;
+    width: 100%;
+    line-height: 25px;
+    text-align: left;
+    justify-content: flex-start;
+}
+
+.produtos-texts p {
+    height: 8vh;
+    font-size: 1.1rem;
+    width: 100%;
+    text-align: left;
+    justify-content: flex-start;
+}
+
+/* Botões dos produtos */
+.produtos-btn {
+    height: 10vh;
+    width: 100%;
+    padding: 0;
+}
+
+.produtos-topics-div-btn {
+    width: 100%;
+    height: 10vh;
+    gap: 10px 10px;
+    align-items: center;
+}
+
+.produtos-topics-div-btn button {
+    padding: 10px 30px;
+    border-radius: 5px;
+    font-size: 0.8rem;
+}
+
+/* Container e layout dos cards de produtos */
+.produtos-container-cards {
+    width: 100%;
+    height: 55vh;
+    flex-wrap: nowrap;  
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.produtos-cards {
+    gap: 10px;
+    width: 100%;
+    overflow-x: hidden;
+
+}
+
+.produtos-card {
+    width: 100%;
+    height: 50vh;
+    padding: 10px;
+    flex-wrap: nowrap;
+    overflow-y: hidden;
+}
+
+/* Imagem do card do produto */
+.produto-card-img {
+    width: 100%;
+    height: 25vh;
+    margin-bottom: 10px;
+}
+
+.produto-card-img:hover > img {
+    transform: rotate(-2deg) scale(1);
+}
+
+.produto-card-img img {
+    width: 100%;
+    height: 25vh;
+}
+
+/* Texto do card do produto */
+.produto-card-text-top {
+    width: 100%;
+}
+
+.produto-card-text-top h6 {
+    font-size: 1rem;
+    margin-left: 10px;
+}
+
+.produto-card-text-top p {
+    font-size: 0.7rem;
+    margin-left: 10px;
+}
+
+/* Texto do card do produto - centro */
+.produto-card-text-center {
+    width: 100%;
+    gap: 5px;   
+    height: 7vh;
+}
+
+.produto-card-text-center-center {
+    width: 100%;
+    height: 2vh;
+    padding-bottom: 5px;    
+}
+
+.produto-card-text-center-center h6 {
+    font-size: 0.8rem;
+    margin-left: 10px;
+    width: 50%;
+}
+
+.produto-card-text-center-center p {
+    font-size: 0.8rem;
+    margin-right: 10px;
+    width: 50%;
+}
+
+/* Botões do card do produto */
+.produto-card-btns {
+    height: 10vh;
+    width: 100%;
+    gap: 10px;
+}
+
+.produto-card-btn-left {
+    width: 85%;
+    height: 5vh;
+    margin-left: 10px;  
+}
+
+.produto-card-btn-right {
+    width: 45px;
+    height: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.produto-card-btn-right i{
+    font-size: 20px;
+}
+
+.produto-action-left {
+    top: 70%; /* Centraliza verticalmente */
+    padding: 0px; /* Espaçamento opcional */
+}
+
+.produto-action-left.left {
+    left: 0%; /* Alinha à esquerda com margem */
+    width: 10%;
+    height: 10%;
+}
+
+.produto-action-left.left button,
+.produto-action-left.right button{
+    height: 100%;
+    width: 100%;
+}
+
+.produto-action-left.left i,
+.produto-action-left.right i{
+    font-size: 35px;
+}
+
+.produto-action-left.left i:hover,
+.produto-action-left.right i:hover{
+    color: #fff;
+}
+
+.produto-action-left.right {
+    right: 0%;
+    width: 10%;
+    height: 10%;
+}
+
+
+/* MODAL */
+
+/* Estilo do modal */
+.modal {
+    z-index: 10; /* Fica acima do conteúdo */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+}
+
+/* Estilo do conteúdo do modal */
+.modal-content {
+    margin: 10% auto; 
+    width: 80%;
+    height: 60vh;
+}
+
+/* Estilo do botão de fechar */
+.close {
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+}
+
+.modal-img-left{
+    width: 40%;
+    height: 60vh;
+}
+
+.modal-img-left img{
+    width: 100%;
+    height: 60vh;
+    border-radius: 15px 0px 0px 15px;
+}
+
+.modal-all-right{
+    width: 60%;
+    height: 60vh;
+    padding: 30px;
+}
+
+.modal-titles-right{
+    width: 100%;
+    height: 35vh;
+    gap: 10px;
+}
+
+.modal-all-right h2{
+    font-size: 3rem;
+    height: 5vh;
+}
+
+.modal-all-right p{
+    height: 30vh;
+}
+
+.modal-texts-right{
+    width: 100%;
+    height: 6vh;
+}
+
+.modal-texts-right p{
+    height: 5vh;
+    width: 35%;
+    font-size: 1rem;
+}
+
+.modal-texts-right h6{
+    height: 5vh;
+    width: 35%;
+    font-size: 1rem;
+}
+
+
+.sidebar {
+    top: 0;
+    right: -100%;
+    width: 300px;
+    height: 95dvh;
+    top: 2.5vh;
+}
+
+.sidebar-header {
+    height: 5vh;
+    padding: 20px;
+    width: 70%;
+}
+
+.sidebar-content {
+    padding: 20px;
+    height: 85vh;
+}
+
+.sidebar-products {
+    gap: 10px;
+}
+
+.sidebar-footer {
+    padding: 20px;
+    height: 10vh;
+    width: 100%;
+}
+
+.sidebar-footer button {
+    width: 80%;
+    padding: 10px;
+}
+
+.sidebar-product {
+    gap: 10px;
+    padding: 10px;
+    border-radius: 7px;
+}
+
+.sidebar-product img {
+    width: 40%;
+}
+
+.sidebar-product-details {
+    height: 7vh;
+}
+
+.sidebar-product-details h6{
+    font-size: 0.9rem;
+    line-height: 15px;
+    height: 4vh;
+    margin-bottom: 5px;
+}
+
+.sidebar-product-details p{
+    height: 3vh;
+    font-size: 0.7rem;
+}
+
+.sidebar-product-name {
+    font-size: 1.2rem; /* Ajuste o tamanho do nome aqui */
+}
+
+.sidebar-product-description {
+    font-size: 1rem; /* Ajuste o tamanho da descrição aqui */
+}
+
+.sidebar-close {
+    top: 0px;
+    right: 0px;
+    width: 35%;
+    height: 5vh;
+    font-size: 20px;
+    padding: 20px;
+}
+
+.floating-button {
+    bottom: 20px;
+    right: 20px;
+    width: 70px;
+    height: 70px;
+}
+
+.floating-button .fa-cart-shopping {
+    font-size: 20px;
+    width: 70px;
+    height: 70px;
+}
+
+.floating-button .badge {
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    top: -2px; /* Ajuste o valor conforme necessário */
+    right: -2px; /* Ajuste o valor conforme necessário */
+}
+
+.sidebar-product-remove {
+    font-size: 18px;
+    height: 10vh;
+    width: 2vh;
+}
+
+.sidebar-product-remove i {
+    font-size: 18px;
+}
 }
 
 @media (min-width: 1801px){
