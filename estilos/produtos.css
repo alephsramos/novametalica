@@ -2216,7 +2216,7 @@
 
 /* Div container dos produtos */
 .produtos-div-container {
-    height: 35vh;
+    height: 25vh;
     width: 100%;
 }
 
@@ -2282,7 +2282,7 @@
 
 .produtos-card {
     width: 100%;
-    height: 55vh;
+    height: 50vh;
     padding: 10px;
     flex-wrap: nowrap;
     overflow-y: hidden;
@@ -2291,7 +2291,7 @@
 /* Imagem do card do produto */
 .produto-card-img {
     width: 100%;
-    height: 27vh;
+    height: 25vh;
     margin-bottom: 10px;
 }
 
@@ -2301,7 +2301,7 @@
 
 .produto-card-img img {
     width: 100%;
-    height: 27vh;
+    height: 25vh;
 }
 
 /* Texto do card do produto */
