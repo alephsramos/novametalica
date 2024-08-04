@@ -173,11 +173,11 @@
     right: -100%;
     width: 250px;
     height: 95dvh;
-    background-color: rgba(0, 0, 0, 0.9);
+    background-color: rgba(0, 0, 0, 0.7);
     backdrop-filter: blur(50px);
     transition: right 0.3s ease;
     z-index: 1000;
-    box-shadow: 0 20px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 0px 40px rgba(0, 0, 0, 0.6);
 }
 
 .nav-sidebar.show {
