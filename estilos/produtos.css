@@ -683,9 +683,9 @@
 }
 
 
-@media (max-width: 768px){
-    /* Container principal dos produtos */
-.produtos-container {
+@media (max-width: 576px){
+   /* Container principal dos produtos */
+   .produtos-container {
     padding: 0 10%;
     height: 110vh;
 }
@@ -1055,4 +1055,24 @@
 .sidebar-product-remove i {
     font-size: 18px;
 }
+}
+
+@media (min-width: 576px) and (max-width: 769px){
+
+}
+
+@media (min-width: 769px) and (max-width: 992px){
+
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+
+}
+
+@media (min-width: 1200px) and (max-width: 1800px){
+
+}
+
+@media (min-width: 1801px){
+    
 }
