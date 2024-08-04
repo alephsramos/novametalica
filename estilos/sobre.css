@@ -249,6 +249,8 @@
         align-items: center;
         flex-direction: column;
         gap: 10px;
+        flex-wrap: wrap;
+        overflow-x: hidden;
     }
     
     .sobre-card{
