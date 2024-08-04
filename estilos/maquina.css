@@ -125,9 +125,10 @@
     color: #353535;
 }
 
-@media (max-width: 768px){
+
+@media (max-width: 576px){
     .maquina-container{
-        height: 110vh;
+        height: 115vh;
         padding: 0 10%;
         width: 100%;
     }
@@ -139,7 +140,165 @@
     
     .maquina-div-container {
         width: 100%;
-        height: 100vh;
+        height: 105vh;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+    
+    .maquina-video{
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+    }
+
+    
+    .maquina-container-right{
+        width: 100%;
+        padding: 0px;
+        height: 45vh;
+    }
+    
+    .maquina-right-texts{
+        height: 45vh;
+        width: 100%;
+        padding-left: 0px;
+    }
+    
+    .maquina-right-texts h2{
+        height: 10vh;
+        font-size: 1.2rem;
+        line-height: 20px;
+        width: 100%;
+    }
+    
+    .maquina-right-texts h4{
+        height: 5vh;
+        font-size: 0.9rem;
+    }
+    
+    .maquina-right-texts p{
+        height: 25vh;
+        padding-top: 10px;
+        font-size: 0.7rem; 
+    }
+    
+    
+    .maquina-right-btn{
+        height: 10vh;
+        width: 100%;
+        padding-left: 0px;
+    }
+    
+    .maquina-right-btn p{
+        width: 90%;
+        font-size: 0.9rem;
+    }
+    
+    .maquina-right-btn a{
+        width: 10%;
+        font-size: 0;
+        height: 5vh;
+    }
+    
+    .maquina-right-btn i{
+        font-size: 25px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 769px){
+    .maquina-container{
+        height: 115vh;
+        padding: 0 10%;
+        width: 100%;
+    }
+
+    .maquina-container::before {
+        clip-path: polygon(0 0, 100% 0, 100% 30%, 0 30%);
+    }
+    
+    
+    .maquina-div-container {
+        width: 100%;
+        height: 105vh;
+        gap: 5px;
+        flex-wrap: wrap;
+    }
+    
+    .maquina-video{
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+    }
+
+    
+    .maquina-container-right{
+        width: 100%;
+        padding: 0px;
+        height: 45vh;
+    }
+    
+    .maquina-right-texts{
+        height: 45vh;
+        width: 100%;
+        padding-left: 0px;
+    }
+    
+    .maquina-right-texts h2{
+        height: 10vh;
+        font-size: 1.6rem;
+        line-height: 20px;
+        width: 100%;
+    }
+    
+    .maquina-right-texts h4{
+        height: 5vh;
+        font-size: 1.2rem;
+    }
+    
+    .maquina-right-texts p{
+        height: 25vh;
+        padding-top: 10px;
+        font-size: 1rem; 
+    }
+    
+    
+    .maquina-right-btn{
+        height: 10vh;
+        width: 100%;
+        padding-left: 0px;
+    }
+    
+    .maquina-right-btn p{
+        width: 90%;
+        font-size: 1.2rem;
+    }
+    
+    .maquina-right-btn a{
+        width: 10%;
+        font-size: 0;
+        height: 5vh;
+    }
+    
+    .maquina-right-btn i{
+        font-size: 35px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px){
+    .maquina-container{
+        height: 115vh;
+        padding: 0 10%;
+        width: 100%;
+    }
+
+    .maquina-container::before {
+        clip-path: polygon(0 0, 100% 0, 100% 30%, 0 30%);
+    }
+    
+    
+    .maquina-div-container {
+        width: 100%;
+        height: 95vh;
         gap: 5px;
         flex-wrap: wrap;
     }
@@ -165,20 +324,20 @@
     
     .maquina-right-texts h2{
         height: 10vh;
-        font-size: 1.1rem;
+        font-size: 1.8rem;
         line-height: 20px;
         width: 100%;
     }
     
     .maquina-right-texts h4{
         height: 5vh;
-        font-size: 1rem;
+        font-size: 1.4rem;
     }
     
     .maquina-right-texts p{
-        height: 20vh;
+        height: 25vh;
         padding-top: 10px;
-        font-size: 0.6rem; 
+        font-size: 1.2rem; 
     }
     
     
@@ -190,7 +349,87 @@
     
     .maquina-right-btn p{
         width: 90%;
-        font-size: 0.8rem;
+        font-size: 1.4rem;
+    }
+    
+    .maquina-right-btn a{
+        width: 10%;
+        font-size: 0;
+        height: 5vh;
+    }
+    
+    .maquina-right-btn i{
+        font-size: 40px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+    .maquina-container{
+        height: 70vh;
+        padding: 0 10%;
+        width: 100%;
+    }
+
+    .maquina-container::before {
+        clip-path: polygon(0 0, 40% 0, 40% 100%, 0 100%);
+    }
+    
+    
+    .maquina-div-container {
+        width: 100%;
+        height: 60vh;
+        gap: 5px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .maquina-video{
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+    }
+
+    
+    .maquina-container-right{
+        width: 100%;
+        padding: 10px;
+        height: 60vh;
+    }
+    
+    .maquina-right-texts{
+        height: 50vh;
+        width: 100%;
+        padding-left: 30px;
+    }
+    
+    .maquina-right-texts h2{
+        height: 10vh;
+        font-size: 1.3rem;
+        line-height: 20px;
+        width: 100%;
+    }
+    
+    .maquina-right-texts h4{
+        height: 5vh;
+        font-size: 1rem;
+    }
+    
+    .maquina-right-texts p{
+        height: 35vh;
+        padding-top: 10px;
+        font-size: 0.9rem; 
+    }
+    
+    
+    .maquina-right-btn{
+        height: 5vh;
+        width: 100%;
+        padding-left: 30px;
+    }
+    
+    .maquina-right-btn p{
+        width: 90%;
+        font-size: 1rem;
     }
     
     .maquina-right-btn a{
@@ -202,5 +441,164 @@
     .maquina-right-btn i{
         font-size: 25px;
     }
+}
+
+@media (min-width: 1200px) and (max-width: 1800px){
+    .maquina-container{
+        height: 70vh;
+        padding: 0 10%;
+        width: 100%;
+    }
+
+    .maquina-container::before {
+        clip-path: polygon(0 0, 40% 0, 40% 100%, 0 100%);
+    }
     
+    
+    .maquina-div-container {
+        width: 100%;
+        height: 60vh;
+        gap: 5px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .maquina-video{
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+    }
+
+    
+    .maquina-container-right{
+        width: 100%;
+        padding: 10px;
+        height: 60vh;
+    }
+    
+    .maquina-right-texts{
+        height: 50vh;
+        width: 100%;
+        padding-left: 30px;
+    }
+    
+    .maquina-right-texts h2{
+        height: 10vh;
+        font-size: 1.5rem;
+        line-height: 20px;
+        width: 100%;
+    }
+    
+    .maquina-right-texts h4{
+        height: 5vh;
+        font-size: 1.2rem;
+    }
+    
+    .maquina-right-texts p{
+        height: 35vh;
+        padding-top: 10px;
+        font-size: 0.95rem; 
+    }
+    
+    
+    .maquina-right-btn{
+        height: 5vh;
+        width: 100%;
+        padding-left: 30px;
+    }
+    
+    .maquina-right-btn p{
+        width: 90%;
+        font-size: 1.2rem;
+    }
+    
+    .maquina-right-btn a{
+        width: 10%;
+        font-size: 0;
+        height: 5vh;
+    }
+    
+    .maquina-right-btn i{
+        font-size: 30px;
+    }
+}
+
+@media (min-width: 1801px){
+    .maquina-container{
+        height: 70vh;
+        padding: 0 10%;
+        width: 100%;
+    }
+
+    .maquina-container::before {
+        clip-path: polygon(0 0, 40% 0, 40% 100%, 0 100%);
+    }
+    
+    
+    .maquina-div-container {
+        width: 100%;
+        height: 60vh;
+        gap: 5px;
+        display: flex;
+        align-items: center;
+    }
+    
+    .maquina-video{
+        width: 100%;
+        height: 50vh;
+        object-fit: cover;
+    }
+
+    
+    .maquina-container-right{
+        width: 100%;
+        padding: 10px;
+        height: 60vh;
+    }
+    
+    .maquina-right-texts{
+        height: 50vh;
+        width: 100%;
+        padding-left: 30px;
+    }
+    
+    .maquina-right-texts h2{
+        height: 10vh;
+        font-size: 2.2rem;
+        line-height: 20px;
+        width: 100%;
+    }
+    
+    .maquina-right-texts h4{
+        height: 5vh;
+        font-size: 1.8rem;
+    }
+    
+    .maquina-right-texts p{
+        height: 35vh;
+        padding-top: 10px;
+        font-size: 1.65rem; 
+    }
+    
+    
+    .maquina-right-btn{
+        height: 5vh;
+        width: 100%;
+        padding-left: 30px;
+    }
+    
+    .maquina-right-btn p{
+        width: 90%;
+        font-size: 1.8rem;
+    }
+    
+    .maquina-right-btn a{
+        width: 10%;
+        font-size: 0;
+        height: 5vh;
+    }
+    
+    .maquina-right-btn i{
+        font-size: 40px;
+    }
 }
