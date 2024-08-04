@@ -12,6 +12,7 @@ document.addEventListener('DOMContentLoaded', function () {
     let currentPage = 0;
     let filteredCards = productCards;
     let savedProductsCount = 0;
+    let itemsPerPage = 4; // Valor padrão
 
     const leftButton = document.getElementById('produto_btn_left');
     const rightButton = document.getElementById('produto_btn_right');
@@ -26,6 +27,17 @@ document.addEventListener('DOMContentLoaded', function () {
         }
         currentPage = 0;
         showPage(currentPage); // Atualiza a exibição após a atualização
+    }
+
+    function showPage(pageIndex) {
+        // Oculta todos os cards
+        productCards.forEach(card => card.style.display = 'none');
+        // Exibe os cards filtrados para a página atual
+        filteredCards.forEach((card, index) => {
+            if (index >= pageIndex * itemsPerPage && index < (pageIndex + 1) * itemsPerPage) {
+                card.style.display = 'block';
+            }
+        });
     }
 
     window.addEventListener('resize', updateItemsPerPage);
@@ -162,16 +174,6 @@ document.addEventListener('DOMContentLoaded', function () {
         return text;
     }
 
-    function showPage(pageIndex) {
-        filteredCards.forEach((card, index) => {
-            if (index >= pageIndex * itemsPerPage && index < (pageIndex + 1) * itemsPerPage) {
-                card.style.display = 'block';
-            } else {
-                card.style.display = 'none';
-            }
-        });
-    }
-
     function handleSwipe(startX, endX) {
         if (endX < startX) {
             // Swipe left (move para o próximo item)
@@ -231,13 +233,18 @@ document.addEventListener('DOMContentLoaded', function () {
 
     filterButtons.forEach(button => {
         button.addEventListener('click', function () {
+            // Remove a classe active de todos os botões
+            filterButtons.forEach(btn => btn.classList.remove('active'));
+
+            // Adiciona a classe active ao botão clicado
+            this.classList.add('active');
+
             const category = this.getAttribute('data-category');
             filteredCards = productCards.filter(card => {
                 return category === 'all' || card.getAttribute('data-category') === category;
             });
 
             currentPage = 0;
-
             showPage(currentPage); // Atualiza a exibição após aplicar o filtro
         });
     });
