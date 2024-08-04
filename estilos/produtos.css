@@ -688,6 +688,7 @@
    .produtos-container {
     padding: 0 10%;
     height: 100vh;
+    overflow: hidden;
 }
 
 .produtos-container::before {

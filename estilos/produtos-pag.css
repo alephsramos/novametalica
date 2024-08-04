@@ -191,9 +191,10 @@ html, body{
 
 @media (max-width: 576px){
     .fundo-produtos{
-        height: 95vh;
+        height: 95dvh;
         width: 100%;
         overflow: hidden;
+        overflow-y: hidden;
     }
 
     .nav-top{
@@ -205,7 +206,7 @@ html, body{
     }
     
     .fundo-produtos::before {
-        clip-path: polygon(0 0%, 40% 0%, 60% 100%, 0% 100%);
+        clip-path: polygon(0 0%, 40% 0%, 70% 100%, 0% 100%);
     }
 
     .nav-links{
@@ -288,9 +289,8 @@ html, body{
     }
     
     .produto-pag-ctas{
-        height: 5vh;
+        height: 6vh;
         width: 100%;
-        display: none;
     }
     
     .produto-pag-ctas h4{
