@@ -17,8 +17,10 @@ document.addEventListener('DOMContentLoaded', function () {
     const rightButton = document.getElementById('produto_btn_right');
 
     function updateItemsPerPage() {
-        if (window.matchMedia("(max-width: 768px)").matches) {
+        if (window.matchMedia("(max-width: 568px)").matches) {
             itemsPerPage = 1; // Menor tela
+        } else if (window.matchMedia("(max-width: 992px)").matches) {
+            itemsPerPage = 2; // Tela intermediária
         } else {
             itemsPerPage = 4; // Tela maior
         }
