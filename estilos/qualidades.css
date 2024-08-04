@@ -141,14 +141,18 @@
 @media (max-width: 576px){
     .qualidades-container{
         padding: 0 10%;
-        height: 160dvh;
+        height: 165dvh;
         overflow-x: hidden;
     }
     
     .qualidades-all-items{
-        height: 140vh;
+        height: 150vh;
         width: 100%;
         gap: 20px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
     }
     
     .qualidade-texts{
