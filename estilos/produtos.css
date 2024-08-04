@@ -2286,6 +2286,10 @@
     padding: 10px;
     flex-wrap: nowrap;
     overflow-y: hidden;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
 }
 
 /* Imagem do card do produto */
@@ -2307,6 +2311,11 @@
 /* Texto do card do produto */
 .produto-card-text-top {
     width: 100%;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex-direction: column;
+    height: 7vh;
 }
 
 .produto-card-text-top h6 {
@@ -2323,13 +2332,21 @@
 .produto-card-text-center {
     width: 100%;
     gap: 5px;   
-    height: 7vh;
+    height: 5vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;
 }
 
 .produto-card-text-center-center {
     width: 100%;
-    height: 2vh;
-    padding-bottom: 5px;    
+    height: 5vh;    
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    justify-items: center;    
 }
 
 .produto-card-text-center-center h6 {
