@@ -1,0 +1,19 @@
+@keyframes wipe-in-right {
+    from {
+      clip-path: inset(0 100% 0 0);
+    }
+    to {
+      clip-path: inset(0 0 0 0);
+    }
+  }
+
+  [transition-style="in:wipe:right"] {
+    animation: 2.5s cubic-bezier(.25, 1, .30, 1) wipe-in-right both;
+    background-color: rgb(255, 255, 255);
+    width: 100%;
+    height: auto;
+    margin: 50px auto;
+    overflow: hidden; /* Esconde o conteúdo que está fora da área visível durante a animação */
+  }
+
+  
