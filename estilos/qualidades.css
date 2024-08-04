@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('../imagens/loja-teste-4.png');
+    background-image: url('../imagens/background-teste4.JPG');
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -221,21 +221,436 @@
 }
 
 @media (min-width: 576px) and (max-width: 769px){
-
+    .qualidades-container{
+        padding: 0 10%;
+        height: 90dvh;
+        overflow-x: hidden;
+    }
+    
+    .qualidades-all-items{
+        height: 80vh;
+        width: 100%;
+        gap: 20px;
+    }
+    
+    .qualidade-texts{
+        height: 10vh;
+    }
+    
+    .qualidade-texts h2{
+        height: 10vh;
+        font-size: 1.7rem;
+        width: 100%;
+        line-height: 25px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .qualidade-texts a{
+        display: none;
+    }
+    
+    .qualidade-cards-all{
+        height: 60vh;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    
+    .qualidade-cards {
+        height: 30vh;
+        width: 48%;
+        gap: 10px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
+    .qualidade-card-top{
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .qualidade-card-top i{
+        font-size: 25px;
+    }
+    
+    .qualidade-card-bottom{
+        width: 100%;
+        height: 20vh;
+        gap: 10px;
+    }
+    
+    .qualidade-card-bottom h6{
+        font-size: 1.2rem;
+        width: 100%;
+        letter-spacing:-0.5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 5vh;
+    }
+    
+    .qualidade-card-bottom p{
+        font-size: 0.8rem;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        height: 15vh;
+        text-align: justify;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 992px){
-
+    .qualidades-container{
+        padding: 0 10%;
+        height: 80dvh;
+        overflow-x: hidden;
+    }
+    
+    .qualidades-all-items{
+        height: 70vh;
+        width: 100%;
+        gap: 20px;
+    }
+    
+    .qualidade-texts{
+        height: 10vh;
+    }
+    
+    .qualidade-texts h2{
+        height: 10vh;
+        font-size: 2rem;
+        width: 100%;
+        line-height: 25px;
+        text-align: center;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .qualidade-texts a{
+        display: none;
+    }
+    
+    .qualidade-cards-all{
+        height: 50vh;
+        gap: 15px;
+        flex-wrap: wrap;
+    }
+    
+    .qualidade-cards {
+        height: 25vh;
+        width: 48%;
+        gap: 10px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
+    .qualidade-card-top{
+        width: 100%;
+        height: 3vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .qualidade-card-top i{
+        font-size: 25px;
+    }
+    
+    .qualidade-card-bottom{
+        width: 100%;
+        height: 17vh;
+        gap: 10px;
+    }
+    
+    .qualidade-card-bottom h6{
+        font-size: 1rem;
+        width: 100%;
+        letter-spacing:-0.5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 5vh;
+    }
+    
+    .qualidade-card-bottom p{
+        font-size: 0.85rem;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        height: 15vh;
+        text-align: justify;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1200px){
-
+    .qualidades-container{
+        padding: 0 10%;
+        height: 95dvh;
+        overflow-x: hidden;
+    }
+    
+    .qualidades-all-items{
+        height: 80vh;
+        width: 100%;
+        gap: 20px;
+    }
+    
+    .qualidade-texts{
+        height: 10vh;
+    }
+    
+    .qualidade-texts h2{
+        height: 10vh;
+        font-size: 2rem;
+        width: 80%; 
+        line-height: 25px;
+        text-align: center;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    .qualidade-texts a{
+        padding: 0px;
+        font-size: 0.8rem;  
+        height: 6vh;
+        width: 20%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .qualidade-cards-all{
+        height: 60vh;
+        gap: 15px;
+        flex-wrap: nowrap;
+    }
+    
+    .qualidade-cards {
+        height: 45vh;
+        width: 25%;
+        gap: 10px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
+    .qualidade-card-top{
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .qualidade-card-top i{
+        font-size: 25px;
+    }
+    
+    .qualidade-card-bottom{
+        width: 100%;
+        height: 35vh;
+        gap: 10px;
+    }
+    
+    .qualidade-card-bottom h6{
+        font-size: 0.9rem;
+        width: 100%;
+        letter-spacing:-0.5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 5vh;
+    }
+    
+    .qualidade-card-bottom p{
+        font-size: 0.75rem;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        text-align: left;
+        height: 30vh;
+    }
 }
 
 @media (min-width: 1200px) and (max-width: 1800px){
-
+    .qualidades-container{
+        padding: 0 10%;
+        height: 90dvh;
+        overflow-x: hidden;
+    }
+    
+    .qualidades-all-items{
+        height: 75vh;
+        width: 100%;
+        gap: 20px;
+    }
+    
+    .qualidade-texts{
+        height: 10vh;
+    }
+    
+    .qualidade-texts h2{
+        height: 10vh;
+        font-size: 2rem;
+        width: 80%; 
+        line-height: 25px;
+        text-align: center;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    .qualidade-texts a{
+        padding: 0px;
+        font-size: 0.8rem;  
+        height: 6vh;
+        width: 20%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .qualidade-cards-all{
+        height: 60vh;
+        gap: 15px;
+        flex-wrap: nowrap;
+    }
+    
+    .qualidade-cards {
+        height: 40vh;
+        width: 25%;
+        gap: 10px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
+    .qualidade-card-top{
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .qualidade-card-top i{
+        font-size: 25px;
+    }
+    
+    .qualidade-card-bottom{
+        width: 100%;
+        height: 30vh;
+        gap: 10px;
+    }
+    
+    .qualidade-card-bottom h6{
+        font-size: 0.9rem;
+        width: 100%;
+        letter-spacing:-0.5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 5vh;
+    }
+    
+    .qualidade-card-bottom p{
+        font-size: 0.75rem;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        text-align: left;
+        height: 25vh;
+    }
 }
 
 @media (min-width: 1801px){
-
+    .qualidades-container{
+        padding: 0 10%;
+        height: 90dvh;
+        overflow-x: hidden;
+    }
+    
+    .qualidades-all-items{
+        height: 75vh;
+        width: 100%;
+        gap: 20px;
+    }
+    
+    .qualidade-texts{
+        height: 10vh;
+    }
+    
+    .qualidade-texts h2{
+        height: 10vh;
+        font-size: 3rem;
+        width: 80%; 
+        line-height: 25px;
+        text-align: center;
+        align-items: center;
+        justify-content: flex-start;
+    }
+    
+    .qualidade-texts a{
+        padding: 0px;
+        font-size: 1.2rem;  
+        height: 6vh;
+        width: 20%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+    }
+    .qualidade-cards-all{
+        height: 60vh;
+        gap: 15px;
+        flex-wrap: nowrap;
+    }
+    
+    .qualidade-cards {
+        height: 40vh;
+        width: 25%;
+        gap: 10px;
+        padding: 20px;
+        border-radius: 10px;
+    }
+    
+    .qualidade-card-top{
+        width: 100%;
+        height: 5vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .qualidade-card-top i{
+        font-size: 45px;
+    }
+    
+    .qualidade-card-bottom{
+        width: 100%;
+        height: 30vh;
+        gap: 10px;
+    }
+    
+    .qualidade-card-bottom h6{
+        font-size: 1.3rem;
+        width: 100%;
+        letter-spacing:-0.5px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 5vh;
+    }
+    
+    .qualidade-card-bottom p{
+        font-size: 1.05rem;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        display: flex;
+        text-align: left;
+        height: 25vh;
+    }
 }
