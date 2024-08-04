@@ -112,6 +112,7 @@
         padding: 10px 30px;
         background-color: #000;
         color: #fff;
+        width: 100%;
     }
 
     .header-texts-btn button:hover{
