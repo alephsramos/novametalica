@@ -46,6 +46,7 @@
     font-weight: 500;
     width: 100%;
     justify-content: center;
+    text-align: center;
 }
 
 .produtos-texts p {
@@ -712,6 +713,7 @@
     height: 7vh;
     width: 100%;
     line-height: 25px;
+    text-align: center;
 }
 
 .produtos-texts p {
@@ -1850,13 +1852,15 @@
     width: 100%;
     line-height: 25px;
     text-align: left;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .produtos-texts p {
     height: 8vh;
     font-size: 1.1rem;
     width: 100%;
+    justify-content: center;
+    align-items: center;
 }
 
 /* Botões dos produtos */
@@ -2232,7 +2236,7 @@
     width: 100%;
     line-height: 25px;
     text-align: left;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .produtos-texts p {
@@ -2240,7 +2244,7 @@
     font-size: 0.9rem;
     width: 100%;
     text-align: left;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 /* Botões dos produtos */
@@ -2632,7 +2636,7 @@
     width: 100%;
     line-height: 25px;
     text-align: left;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 .produtos-texts p {
@@ -2640,7 +2644,7 @@
     font-size: 1.4rem;
     width: 100%;
     text-align: left;
-    justify-content: flex-start;
+    justify-content: center;
 }
 
 /* Botões dos produtos */
