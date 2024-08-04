@@ -27,18 +27,18 @@
     <link rel="icon" href="imagens/avatar.png"> <!-- Icone da página (FALTA COLOCAR) -->
     <link rel="stylesheet" href="estilos/animate.css"> <!-- CSS de animações -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Biblioteca de icons -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"/> <!-- Biblioteca de animação -->
 
     <!-- CÓDIGOS DO JAVASCRIPT -->
     <script src="scripts/script.js"></script> <!-- JS principal da página -->
+    <script src="scripts/animations.js" defer></script>
     <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2F1k7kuY3rKuXXJG-2ylCGY4BLRtgpgE&callback=initMap"></script> <!-- API do maps -->
 
     <title>Nova Metálica | Soluções construtivas e inovadoras</title> <!-- Titulo da página -->
 </head>
 
 <body> <!-- Abertura do corpo todo da página -->
-    <nav class="nav-top animate__animated animate__fadeIn">
-        <div class="nav-top-all-elements">
+    <nav class="nav-top">
+        <div class="nav-top-all-elements animate animate-fade-in">
             <div class="nav-links-top">
                 <div class="nav-link-top">
                 <i class="fa-solid fa-envelope"></i>
@@ -67,10 +67,10 @@
 <nav class="navbar">
     <div class="nav-desktop">
         <div class="nav-all-elements">
-            <div class="nav-image  animate__animated animate__lightSpeedInLeft">
+            <div class="nav-image animate animate-left">
                 <img src="imagens/logo.svg" alt="Logo">
             </div>
-            <div class="nav-links animate__animated animate__slideInDown">
+            <div class="nav-links  animate animate-fade-in">
                 <a href="#home">Ínicio</a> <!-- Link ancora para o inicio -->
                 <a href="#">Sobre nós</a> <!-- Link ancora para sobre nós -->
                 <a href="#">Diferencial</a> <!-- Link ancora para o nosso diferencial -->
@@ -79,7 +79,7 @@
                 <a href="#">Produtos</a> <!-- Link ancora para produtos -->
                 <a href="#">Projetos</a> <!-- Link ancora para projetos -->
             </div>
-            <div class="nav-btn animate__animated animate__lightSpeedInRight">
+            <div class="nav-btn animate animate-right">
                 <button id="contact_btn">Peça seu orçamento</button> <!-- Link ancora para o formulario -->
                 <script src="scripts/header.js"></script> <!-- efeito de rolar até o form -->
             </div>
@@ -118,7 +118,7 @@
 </div>
 <script src="scripts/header.js"></script> <!-- fazer o sidebar abrir ao clicar no botão -->
 <div class="header-div" id="home"> 
-        <div class="header-texts animate__animated animate__fadeInLeft">
+        <div class="header-texts animate animate-left">
             <h1>Sua Parceira Nº 1 em Soluções para Steel Frame</h1>
             <p>Na Nova Metálica, estamos comprometidos em fornecer os melhores perfis do mercado para a construção de estruturas em Steel Frame. Qualidade incomparável, durabilidade excepcional e inovação constante são nossos pilares. Escolha a Nova Metálica e leve seus projetos a um novo patamar de excelência!
             </p>
@@ -129,10 +129,10 @@
     </div>
 </header>
 
-<section transition-style="in:wipe:right" class="sobre-container">
+<section class="sobre-container">
     <div class="sobre-container-div">
         <div class="sobre-cards">
-            <div class="sobre-card animate__animated animate__fadeInDown">
+            <div class="sobre-card animate animate-fade-in">
                 <div class="sobre-card-top">
                     <img src="imagens/background-teste4.JPG">
                     <h4>Sobre Nós</h4>
@@ -141,7 +141,7 @@
                     <p>A Nova Metálica é uma empresa inovadora e pioneira no segmento de construção metálica, pré-fabricados e modulares, especializada na construção com perfis de Steel Frame. </p>
                 </div>
             </div>
-            <div class="sobre-card  animate__animated animate__fadeInDown animate__slow">
+            <div class="sobre-card animate animate-fade-in">
                 <div class="sobre-card-top">
                     <img src="imagens/background-teste4.JPG">
                     <h4>Visão</h4>
@@ -150,7 +150,7 @@
                     <p>TROCAR</p>
                 </div>
             </div>
-            <div class="sobre-card  animate__animated animate__fadeInDown animate__slower">
+            <div class="sobre-card animate animate-fade-in">
                 <div class="sobre-card-top">
                     <img src="imagens/background-teste4.JPG">
                     <h4>Missão</h4>
@@ -163,8 +163,8 @@
         <div class="sobre-titles">
             <h2>Nossos Valores</h2>
         </div>
-        <div class="sobre-topics">
-            <div class="sobre-topic animate__animated animate__bounceInUp animate__slow">
+        <div class="sobre-topics animate animate-fade-in">
+            <div class="sobre-topic">
                 <div class="sobre-topic-left">
                     <img src="imagens/luz.webp">
                 </div>
@@ -173,7 +173,7 @@
                     <p>Buscamos, incessantemente, novas tecnologias e métodos que desafiam os padrões estabelecidos da construção civil.</p>
                 </div>
             </div>
-            <div class="sobre-topic animate__animated animate__bounceInUp animate__slow">
+            <div class="sobre-topic">
                 <div class="sobre-topic-left">
                     <img src="imagens/star.webp">
                 </div>
@@ -183,7 +183,7 @@
                     </p>
                 </div>
             </div>
-            <div class="sobre-topic animate__animated animate__bounceInUp animate__slow">
+            <div class="sobre-topic">
                 <div class="sobre-topic-left">
                     <img src="imagens/hands.webp">
                 </div>
@@ -193,7 +193,7 @@
                     </p>
                 </div>
             </div>
-            <div class="sobre-topic animate__animated animate__bounceInUp animate__slow">
+            <div class="sobre-topic">
                 <div class="sobre-topic-left">
                     <img src="imagens/time.webp">
                 </div>
@@ -203,7 +203,7 @@
                     </p>
                 </div>
             </div>
-            <div class="sobre-topic animate__animated animate__bounceInUp animate__slow">
+            <div class="sobre-topic">
                 <div class="sobre-topic-left">
                     <img src="imagens/group.webp">
                 </div>

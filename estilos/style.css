@@ -9,6 +9,7 @@
 
 html, body{
     scroll-behavior: smooth;
+    overflow-x: hidden;
 }
 
 .header{
@@ -33,6 +34,4 @@ html, body{
 }
 
 
-:root {
-    --animate-delay: 0.5s;
-  }
+
