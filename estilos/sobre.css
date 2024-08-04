@@ -539,17 +539,625 @@
 }
 
 @media (min-width: 769px) and (max-width: 992px){
+    .sobre-container{
+        padding: 0 10%;
+        width: 100%;
+        height: 160vh;
+        overflow-x: hidden;
+    }
+    
+    .sobre-container-div{
+        width: 100%;
+        height: 150vh;
+        gap: 10px;
+    }
+    
+    .sobre-cards{
+        width: 100%;
+        height: 50dvh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        white-space: wrap;
+        gap: 10px;
+    }
+    
+    .sobre-card{
+        height: 40vh;
+        width: 48%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
 
+    .sobre-card:nth-child(3){
+        display: none;
+    }
+    
+    .sobre-card-top{
+        width: 100%;
+        height: 30vh;
+        padding: 0px;
+    }
+    
+    .sobre-card-top img{
+        left: 0;
+        width: 100%;
+        height: 20vh;
+    }
+    
+    .sobre-card-top h4{
+        height: 5vh;
+        width: 100%;
+        font-size: 1.7rem;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0px;
+    }
+    
+    .sobre-card-bottom{
+        width: 100%;
+        height: 15vh;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px 15px 10px 15px;
+    }
+    
+    .sobre-card-bottom p{
+        width: 100%;
+        font-size: 0.95rem;
+        align-items: center;
+        justify-content: center; 
+        height: 15vh;
+        text-align: justify;
+    }
+    
+    .sobre-titles{
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .sobre-titles h2{
+        width: 100%;
+        height: 5vh;
+        font-size: 2.2rem;
+    }
+    
+    
+    .sobre-topics{
+        width: 100%;
+        gap: 5px;
+        height: 85vh;
+        justify-content: space-between;
+    }
+    
+    .sobre-topic{
+        width: 100%;
+        height: 15vh;
+        border-radius: 0px;
+    }
+    
+    .sobre-topic:hover{
+        gap: 0px;
+    }
+    
+    .sobre-topic-left{
+        width: 30%;
+        height: 15vh;
+    }
+    
+    .sobre-topic-left img{
+        width: 40%;
+    }
+    
+    
+    .sobre-topic-left i{
+        width: 100%;
+        height: 15vh;
+        font-size: 40px;
+    }
+    
+    .sobre-topic-right{
+        width: 70%;
+        height: 15vh;
+        padding: 10px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .sobre-topic-right h4{
+        width: 100%;
+        height: 4vh;
+        font-size: 1.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 5px;
+    }
+    
+    .sobre-topic-right p{
+        width: 100%;
+        height: 11vh;
+        font-size: 1.05rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 5px;
+    }
 }
 
 @media (min-width: 992px) and (max-width: 1200px){
-
+    .sobre-container{
+        padding: 0 10%;
+        width: 100%;
+        height: 120vh;
+        overflow-x: hidden;
+    }
+    
+    .sobre-container-div{
+        width: 100%;
+        height: 110vh;
+        gap: 10px;
+    }
+    
+    .sobre-cards{
+        width: 100%;
+        height: 50dvh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        white-space: wrap;
+        gap: 10px;
+    }
+    
+    .sobre-card{
+        height: 45vh;
+        width: 32%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .sobre-card-top{
+        width: 100%;
+        height: 25vh;
+        padding: 0px;
+    }
+    
+    .sobre-card-top img{
+        left: 0;
+        width: 100%;
+        height: 20vh;
+    }
+    
+    .sobre-card-top h4{
+        height: 5vh;
+        width: 100%;
+        font-size: 1rem;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0px;
+    }
+    
+    .sobre-card-bottom{
+        width: 100%;
+        height: 20vh;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px 15px 10px 15px;
+    }
+    
+    .sobre-card-bottom p{
+        width: 100%;
+        font-size: 0.75rem;
+        align-items: center;
+        justify-content: center; 
+        height: 15vh;
+        text-align: justify;
+    }
+    
+    .sobre-titles{
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .sobre-titles h2{
+        width: 100%;
+        height: 5vh;
+        font-size: 1.7rem;
+    }
+    
+    
+    .sobre-topics{
+        width: 100%;
+        gap: 15px;
+        height: 45vh;
+        justify-content: center;
+        display: flex;
+    }
+    
+    .sobre-topic{
+        width: 32%;
+        height: 20vh;
+        border-radius: 0px;
+    }
+    
+    .sobre-topic:hover{
+        gap: 0px;
+    }
+    
+    .sobre-topic-left{
+        width: 30%;
+        height: 20vh;
+    }
+    
+    .sobre-topic-left img{
+        width: 50%;
+    }
+    
+    
+    .sobre-topic-left i{
+        width: 100%;
+        height: 25vh;
+        font-size: 40px;
+    }
+    
+    .sobre-topic-right{
+        width: 70%;
+        height: 20vh;
+        padding: 10px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .sobre-topic-right h4{
+        width: 100%;
+        height: 5vh;
+        font-size: 1rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 5px;
+    }
+    
+    .sobre-topic-right p{
+        width: 100%;
+        height: 15vh;
+        font-size: 0.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 5px;
+    }
 }
 
 @media (min-width: 1200px) and (max-width: 1800px){
-
+    .sobre-container{
+        padding: 0 10%;
+        width: 100%;
+        height: 120vh;
+        overflow-x: hidden;
+    }
+    
+    .sobre-container-div{
+        width: 100%;
+        height: 110vh;
+        gap: 10px;
+    }
+    
+    .sobre-cards{
+        width: 100%;
+        height: 50dvh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        white-space: wrap;
+        gap: 10px;
+    }
+    
+    .sobre-card{
+        height: 45vh;
+        width: 32%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .sobre-card-top{
+        width: 100%;
+        height: 25vh;
+        padding: 0px;
+    }
+    
+    .sobre-card-top img{
+        left: 0;
+        width: 100%;
+        height: 20vh;
+    }
+    
+    .sobre-card-top h4{
+        height: 5vh;
+        width: 100%;
+        font-size: 1.3rem;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0px;
+    }
+    
+    .sobre-card-bottom{
+        width: 100%;
+        height: 20vh;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 15px 15px 10px 15px;
+    }
+    
+    .sobre-card-bottom p{
+        width: 100%;
+        font-size: 0.90rem;
+        align-items: center;
+        justify-content: center; 
+        height: 15vh;
+        text-align: justify;
+    }
+    
+    .sobre-titles{
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .sobre-titles h2{
+        width: 100%;
+        height: 5vh;
+        font-size: 2rem;
+    }
+    
+    
+    .sobre-topics{
+        width: 100%;
+        gap: 15px;
+        height: 45vh;
+        justify-content: center;
+        display: flex;
+    }
+    
+    .sobre-topic{
+        width: 32%;
+        height: 20vh;
+        border-radius: 0px;
+    }
+    
+    .sobre-topic:hover{
+        gap: 0px;
+    }
+    
+    .sobre-topic-left{
+        width: 30%;
+        height: 20vh;
+    }
+    
+    .sobre-topic-left img{
+        width: 50%;
+    }
+    
+    
+    .sobre-topic-left i{
+        width: 100%;
+        height: 25vh;
+        font-size: 40px;
+    }
+    
+    .sobre-topic-right{
+        width: 70%;
+        height: 20vh;
+        padding: 10px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+    }
+    
+    .sobre-topic-right h4{
+        width: 100%;
+        height: 5vh;
+        font-size: 1.2rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 5px;
+    }
+    
+    .sobre-topic-right p{
+        width: 100%;
+        height: 15vh;
+        font-size: 0.8rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 5px;
+    }
 }
 
-@media (min-width: 1801px){
+@media (min-width: 1801px){
+    .sobre-container{
+        padding: 0 10%;
+        width: 100%;
+        height: 110vh;
+        overflow-x: hidden;
+    }
     
+    .sobre-container-div{
+        width: 100%;
+        height: 100vh;
+        gap: 10px;
+    }
+    
+    .sobre-cards{
+        width: 100%;
+        height: 50dvh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        white-space: wrap;
+        gap: 10px;
+    }
+    
+    .sobre-card{
+        height: 45vh;
+        width: 32%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .sobre-card-top{
+        width: 100%;
+        height: 25vh;
+        padding: 0px;
+    }
+    
+    .sobre-card-top img{
+        left: 0;
+        width: 100%;
+        height: 20vh;
+    }
+    
+    .sobre-card-top h4{
+        height: 5vh;
+        width: 100%;
+        font-size: 2rem;
+        align-items: center;
+        justify-content: center;
+        padding-top: 0px;
+    }
+    
+    .sobre-card-bottom{
+        width: 100%;
+        height: 20vh;
+        padding: 0px;
+        display: flex;
+        align-items: center;
+        flex-direction: column;
+        justify-content: center;
+        padding: 25px 25px 0px 25px;
+    }
+    
+    .sobre-card-bottom p{
+        width: 100%;
+        font-size: 1.3rem;
+        align-items: center;
+        justify-content: center; 
+        height: 15vh;
+        text-align: justify;
+    }
+    
+    .sobre-titles{
+        width: 100%;
+        height: 10vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .sobre-titles h2{
+        width: 100%;
+        height: 5vh;
+        font-size: 2.8rem;
+    }
+    
+    
+    .sobre-topics{
+        width: 100%;
+        gap: 15px;
+        height: 45vh;
+        justify-content: center;
+        display: flex;
+    }
+    
+    .sobre-topic{
+        width: 32%;
+        height: 20vh;
+        border-radius: 0px;
+    }
+    
+    .sobre-topic:hover{
+        gap: 0px;
+    }
+    
+    .sobre-topic-left{
+        width: 30%;
+        height: 20vh;
+    }
+    
+    .sobre-topic-left img{
+        width: 50%;
+    }
+    
+    
+    .sobre-topic-left i{
+        width: 100%;
+        height: 25vh;
+        font-size: 40px;
+    }
+    
+    .sobre-topic-right{
+        width: 70%;
+        height: 20vh;
+        padding: 10px;
+        padding: 5px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .sobre-topic-right h4{
+        width: 100%;
+        height: 5vh;
+        font-size: 1.7rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 10px;
+    }
+    
+    .sobre-topic-right p{
+        width: 100%;
+        height: 15vh;
+        font-size: 1.1rem;
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+        padding-left: 5px;
+    }
 }
