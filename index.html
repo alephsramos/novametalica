@@ -217,7 +217,6 @@
     </div>
 </section>
 
-
 <section class="qualidades-container" id="diferencial">
     <script src="scripts/qualidade.js"></script>
     <div class="qualidades-all-items">
@@ -914,11 +913,10 @@
 <div class="sidebar-overlay"></div>
 </section>
 
-<script src="scripts/produtos.js">
-</script>
+<script src="scripts/produtos.js"></script>
 
 <section class="projetos-container" id="projetos">
-    <div class="projetos-div-container">
+    <div class="projetos-div-container animate animate-fade-in">
         <div class="projetos-texts">
             <h2>Projetos em Destaque</h2>
             <p>Projetos que foram realizados com perfis fornecidos pela Nova Metálica, garantindo qualidade e eficiência.</p>
@@ -1283,7 +1281,7 @@
 
 <section class="infos-container" id="info"> <!-- Seção com as informações, abaixo do header -->
     <div class="info-div-texts"> <!-- Div para manipular os textos -->
-        <div class="info-estatisticas"> <!-- Div pai para manipular as estatisticas -->
+        <div class="info-estatisticas animate animate-fade-in"> <!-- Div pai para manipular as estatisticas -->
             <div class="estatisticas">
                 <h6 class="animatedCounter" data-target="100">0+</h6>
                 <p>Profissionais Especializados</p>
@@ -1305,52 +1303,7 @@
 
 </section> <!-- Fechamento da seção de informações -->
 
-<script>
-document.addEventListener('DOMContentLoaded', () => {
-    const counters = document.querySelectorAll('.animatedCounter');
-    const duration = 2000; // Duração da animação em milissegundos
-
-    function animateCounter(counter) {
-        const target = +counter.getAttribute('data-target'); // Obtém o número alvo do atributo data-target
-        const increment = target / (duration / 16); // Incremento por frame (assumindo 60fps)
-        let currentNumber = 0;
-
-        function updateCounter() {
-            currentNumber += increment;
-            if (currentNumber < target) {
-                counter.innerText = Math.floor(currentNumber) + (counter.innerText.includes('%') ? '%' : '+');
-                requestAnimationFrame(updateCounter);
-            } else {
-                counter.innerText = target + (counter.innerText.includes('%') ? '%' : '+');
-            }
-        }
-
-        updateCounter();
-    }
-
-    const observerOptions = {
-        root: null,
-        rootMargin: '0px',
-        threshold: 0.1 // Inicia a contagem quando 10% do elemento estiver visível
-    };
-
-    const observerCallback = (entries, observer) => {
-        entries.forEach(entry => {
-            if (entry.isIntersecting) {
-                entry.target.innerText = entry.target.getAttribute('data-target').includes('%') ? '0%' : '0+'; // Reinicia o texto do contador
-                animateCounter(entry.target);
-            }
-        });
-    };
-
-    const observer = new IntersectionObserver(observerCallback, observerOptions);
-
-    counters.forEach(counter => {
-        observer.observe(counter);
-    });
-});
-
-</script>
+<script src="scripts/info.js"></script>
 
 <section class="form-container" id="form">
     <div class="form-container-div">
