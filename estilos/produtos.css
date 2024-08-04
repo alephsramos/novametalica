@@ -769,7 +769,7 @@
 }
 
 .produto-card-img:hover > img {
-    transform: rotate(-10deg) scale(1.1);
+    transform: rotate(-2deg) scale(1);
 }
 
 .produto-card-img img {
