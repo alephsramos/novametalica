@@ -701,19 +701,19 @@
     .sobre-container{
         padding: 0 10%;
         width: 100%;
-        height: 120vh;
+        height: 130vh;
         overflow-x: hidden;
     }
     
     .sobre-container-div{
         width: 100%;
-        height: 110vh;
+        height: 120vh;
         gap: 10px;
     }
     
     .sobre-cards{
         width: 100%;
-        height: 50dvh;
+        height: 55dvh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -723,7 +723,7 @@
     }
     
     .sobre-card{
-        height: 45vh;
+        height: 50vh;
         width: 32%;
         display: flex;
         align-items: center;
@@ -753,7 +753,7 @@
     
     .sobre-card-bottom{
         width: 100%;
-        height: 20vh;
+        height: 25vh;
         padding: 0px;
         display: flex;
         align-items: center;
@@ -796,7 +796,7 @@
     
     .sobre-topic{
         width: 32%;
-        height: 20vh;
+        height: 25vh;
         border-radius: 0px;
     }
     
@@ -806,7 +806,7 @@
     
     .sobre-topic-left{
         width: 30%;
-        height: 20vh;
+        height: 25vh;
     }
     
     .sobre-topic-left img{
@@ -822,7 +822,7 @@
     
     .sobre-topic-right{
         width: 70%;
-        height: 20vh;
+        height: 25vh;
         padding: 10px;
         padding: 5px;
         display: flex;
@@ -856,19 +856,19 @@
     .sobre-container{
         padding: 0 10%;
         width: 100%;
-        height: 120vh;
+        height: 130vh;
         overflow-x: hidden;
     }
     
     .sobre-container-div{
         width: 100%;
-        height: 110vh;
+        height: 120vh;
         gap: 10px;
     }
     
     .sobre-cards{
         width: 100%;
-        height: 50dvh;
+        height: 55dvh;
         display: flex;
         align-items: center;
         justify-content: center;
@@ -878,7 +878,7 @@
     }
     
     .sobre-card{
-        height: 45vh;
+        height: 50vh;
         width: 32%;
         display: flex;
         align-items: center;
@@ -908,7 +908,7 @@
     
     .sobre-card-bottom{
         width: 100%;
-        height: 20vh;
+        height: 25vh;
         padding: 0px;
         display: flex;
         align-items: center;
@@ -944,14 +944,14 @@
     .sobre-topics{
         width: 100%;
         gap: 15px;
-        height: 45vh;
+        height: 55vh;
         justify-content: center;
         display: flex;
     }
     
     .sobre-topic{
         width: 32%;
-        height: 20vh;
+        height: 25vh;
         border-radius: 0px;
     }
     
@@ -961,7 +961,7 @@
     
     .sobre-topic-left{
         width: 30%;
-        height: 20vh;
+        height: 25vh;
     }
     
     .sobre-topic-left img{
@@ -977,7 +977,7 @@
     
     .sobre-topic-right{
         width: 70%;
-        height: 20vh;
+        height: 25vh;
         padding: 10px;
         padding: 5px;
         display: flex;
@@ -998,7 +998,7 @@
     
     .sobre-topic-right p{
         width: 100%;
-        height: 15vh;
+        height: 20vh;
         font-size: 0.8rem;
         display: flex;
         align-items: center;
