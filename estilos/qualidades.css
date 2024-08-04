@@ -1,12 +1,12 @@
-.qualidades-container{
+.qualidades-container {
     padding: 0 10%;
     height: 75vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('../imagens/background-teste4.JPG');
+    background-image: url('../imagens/fundo-teste02.JPG');
     background-attachment: fixed;
-    background-position: center;
+    background-position: left right; /* Inicialmente posicionado à esquerda */
     background-size: cover;
     clip-path: polygon(0 3%, 100% 0, 100% 97%, 0% 100%);
 }
