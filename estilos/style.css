@@ -12,7 +12,7 @@ html, body{
 }
 
 .header{
-    background-image: url(../imagens/loja-teste-4.png);
+    background-image: url(../imagens/header-fundo.svg);
     background-position: top;
     background-size: cover;
     height: 105dvh;

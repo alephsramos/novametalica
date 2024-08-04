@@ -309,7 +309,7 @@
 
 @media (min-width: 1200px) and (max-width: 1800px){
     .header{
-        background-position: top;
+        background-position: top center;
         background-size: cover;
         height: 100dvh;
         background-attachment: fixed;
