@@ -9,7 +9,6 @@ document.addEventListener('DOMContentLoaded', function () {
     const badge = floatingButton.querySelector('.badge');
     const filterButtons = document.querySelectorAll('.produtos-topics-div-btn button');
     const productCards = Array.from(document.querySelectorAll('.produtos-card'));
-    let itemsPerPage = 4; // Default for larger screens
     let currentPage = 0;
     let filteredCards = productCards;
     let savedProductsCount = 0;
@@ -19,16 +18,16 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function updateItemsPerPage() {
         if (window.matchMedia("(max-width: 768px)").matches) {
-            itemsPerPage = 1; // Smaller screens
+            itemsPerPage = 1; // Menor tela
         } else {
-            itemsPerPage = 4; // Larger screens
+            itemsPerPage = 4; // Tela maior
         }
         currentPage = 0;
-        showPage(currentPage); // Refresh the display after updating
+        showPage(currentPage); // Atualiza a exibição após a atualização
     }
 
     window.addEventListener('resize', updateItemsPerPage);
-    updateItemsPerPage(); // Initial check
+    updateItemsPerPage(); // Verificação inicial
 
     heartButtons.forEach(button => {
         button.addEventListener('click', function () {
@@ -173,14 +172,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function handleSwipe(startX, endX) {
         if (endX < startX) {
-            // Swipe left
+            // Swipe left (move para o próximo item)
             const totalPages = Math.ceil(filteredCards.length / itemsPerPage);
             if (currentPage < totalPages - 1) {
                 currentPage++;
                 showPage(currentPage);
             }
         } else if (endX > startX) {
-            // Swipe right
+            // Swipe right (voltar ao item anterior)
             if (currentPage > 0) {
                 currentPage--;
                 showPage(currentPage);
@@ -192,24 +191,6 @@ document.addEventListener('DOMContentLoaded', function () {
     let isSwiping = false;
 
     function setupSwipeEvents() {
-        document.addEventListener('mousedown', (e) => {
-            if (window.matchMedia("(max-width: 768px)").matches) {
-                startX = e.clientX;
-                isSwiping = true;
-            }
-        });
-
-        document.addEventListener('mousemove', (e) => {
-            if (isSwiping) {
-                handleSwipe(startX, e.clientX);
-                startX = e.clientX; // Update startX for continuous swiping
-            }
-        });
-
-        document.addEventListener('mouseup', () => {
-            isSwiping = false;
-        });
-
         document.addEventListener('touchstart', (e) => {
             if (window.matchMedia("(max-width: 768px)").matches) {
                 startX = e.touches[0].clientX;
@@ -220,7 +201,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.addEventListener('touchmove', (e) => {
             if (isSwiping) {
                 handleSwipe(startX, e.touches[0].clientX);
-                startX = e.touches[0].clientX; // Update startX for continuous swiping
+                startX = e.touches[0].clientX; // Atualiza startX para navegação contínua
             }
         });
 
@@ -255,23 +236,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
             currentPage = 0;
 
-            filteredCards.forEach((card, index) => {
-                if (index < itemsPerPage) {
-                    card.style.display = 'block';
-                } else {
-                    card.style.display = 'none';
-                }
-            });
-
-            productCards.forEach(card => {
-                card.style.display = 'none'; // Hide all cards initially
-            });
-
-            filteredCards.forEach((card, index) => {
-                if (index >= currentPage * itemsPerPage && index < (currentPage + 1) * itemsPerPage) {
-                    card.style.display = 'block';
-                }
-            });
+            showPage(currentPage); // Atualiza a exibição após aplicar o filtro
         });
     });
 });
