@@ -71,7 +71,7 @@
                 <img src="imagens/logo.svg" alt="Logo">
             </div>
             <div class="nav-links">
-                <a href="#">Ínicio</a> <!-- Link ancora para o inicio -->
+                <a href="#home">Ínicio</a> <!-- Link ancora para o inicio -->
                 <a href="#">Sobre nós</a> <!-- Link ancora para sobre nós -->
                 <a href="#">Diferencial</a> <!-- Link ancora para o nosso diferencial -->
                 <a href="#">Materiais</a> <!-- Link ancora para nossos materiais -->
@@ -93,7 +93,7 @@
             <img src="imagens/logo-white.svg" alt="Logo">
         </div>
         <div class="nav-sidebar-links">
-            <a href="#">Ínicio</a> <!-- Link ancora para o inicio -->
+            <a href="#home">Ínicio</a> <!-- Link ancora para o inicio -->
             <a href="#">Sobre nós</a> <!-- Link ancora para sobre nós -->
             <a href="#">Diferencial</a> <!-- Link ancora para o nosso diferencial -->
             <a href="#">Materiais</a> <!-- Link ancora para nossos materiais -->
@@ -118,47 +118,7 @@
         <span class="bar"></span>
     </div>
 </div>
-
-<script>
-    document.addEventListener('DOMContentLoaded', () => {
-        const hamburgerMenu = document.getElementById('hamburgerMenu');
-        const navSidebar = document.getElementById('navSidebar');
-        const closeSidebar = document.getElementById('closeSidebar');
-        const navLinks = document.querySelectorAll('.nav-sidebar-links a');
-
-        // Função para abrir a sidebar
-        function openSidebar() {
-            navSidebar.classList.add('show');
-            document.body.style.overflow = 'hidden'; // Impede o scroll da página
-        }
-
-        // Função para fechar a sidebar
-        function closeSidebarFunc() {
-            navSidebar.classList.remove('show');
-            document.body.style.overflow = ''; // Restaura o scroll da página
-        }
-
-        // Abre a sidebar ao clicar no menu hamburger
-        hamburgerMenu.addEventListener('click', openSidebar);
-
-        // Fecha a sidebar ao clicar no botão X
-        closeSidebar.addEventListener('click', closeSidebarFunc);
-
-        // Fecha a sidebar ao clicar fora dela
-        window.addEventListener('click', (event) => {
-            if (!navSidebar.contains(event.target) && !hamburgerMenu.contains(event.target)) {
-                closeSidebarFunc();
-            }
-        });
-
-        // Fecha a sidebar ao clicar em qualquer link dentro dela
-        navLinks.forEach(link => {
-            link.addEventListener('click', closeSidebarFunc);
-        });
-    });
-</script>
-
-
+<script src="scripts/header.js"></script>
 
     <div class="header-div" id="home"> <!-- Div para manipular as margens e tamanhos -->
         <div class="header-texts"> <!-- Div contendo os textos -->
