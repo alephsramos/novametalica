@@ -62,22 +62,9 @@
     </nav>
 
 <header class="header"> <!-- Abertura do header -->
-
-    <script>
-        window.addEventListener('scroll', function() {
-    // Verifica se a largura da janela é maior que 768px
-    if (window.innerWidth > 768) {
-        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        let header = document.querySelector('.header');
-        let scale = 1 + scrollTop / 1000; // Ajuste esse valor conforme necessário
-        
-        header.style.backgroundSize = scale * 100 + '%';
-    }
-});
-    </script>
+    <script src="scripts/header.js"></script> <!-- efeito de scroll -->
 
 <nav class="navbar">
-    <!-- Versão Desktop -->
     <div class="nav-desktop">
         <div class="nav-all-elements">
             <div class="nav-image">
@@ -94,29 +81,25 @@
             </div>
             <div class="nav-btn">
                 <button id="contact_btn">Peça seu orçamento</button> <!-- Link ancora para o formulario -->
-                <script>
-                    document.getElementById('contact_btn').addEventListener('click', function() {
-                        document.getElementById('form').scrollIntoView({ behavior: 'smooth' });
-                    });
-                </script>
+                <script src="scripts/header.js"></script> <!-- efeito de rolar até o form -->
             </div>
         </div>
     </div>
 
-<!-- Versão Sidebar -->
 <div class="nav-sidebar" id="navSidebar">
-    <div class="nav-sidebar-close" id="closeSidebar">&times;</div>
+    <div class="nav-sidebar-close" id="closeSidebar"><i class="fa-solid fa-xmark"></i></div>
     <div class="nav-sidebar-content">
         <div class="nav-sidebar-logo">
             <img src="imagens/logo-white.svg" alt="Logo">
         </div>
         <div class="nav-sidebar-links">
-            <a href="#home">Ínicio</a>
-            <a href="#sobre">Sobre nós</a>
-            <a href="#diferencial">Diferencial</a>
-            <a href="#profs">Profissionais</a>
-            <a href="#produtos">Produtos</a>
-            <a href="#projetos">Projetos</a>
+            <a href="#">Ínicio</a> <!-- Link ancora para o inicio -->
+            <a href="#">Sobre nós</a> <!-- Link ancora para sobre nós -->
+            <a href="#">Diferencial</a> <!-- Link ancora para o nosso diferencial -->
+            <a href="#">Materiais</a> <!-- Link ancora para nossos materiais -->
+            <a href="#">Como Funciona</a> <!-- Link ancora para o vídeo da maquina -->
+            <a href="#">Produtos</a> <!-- Link ancora para produtos -->
+            <a href="#">Projetos</a> <!-- Link ancora para projetos -->
         </div>
         <div class="nav-sidebar-btn">
             <button id="contact_btn_sidebar">Peça seu orçamento</button>

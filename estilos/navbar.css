@@ -275,8 +275,8 @@
     background: #000;
 }
 
-@media (width <= 576px){ /*Celular*/
-    .nav-top{
+@media (max-width: 576px) { /*Celular*/
+    .nav-top {
         display: none;
     }
     .nav-desktop {
@@ -285,43 +285,49 @@
     .nav-hamburger {
         display: flex;
     }
-}
-
-@media (width <= 768px) { /*Tablet*/
-    .nav-desktop{
-        display: none;
-    }
-    .nav-top{
-        display: none;
+    .nav-header {
+        width: 100%;
     }
 }
 
-@media (width <= 992px){ /*Tablet grande*/
-    .nav-desktop{
+@media (min-width: 576px) and (max-width: 769px) { /*Tablet*/
+    .nav-desktop {
         display: none;
     }
-    .nav-top{
+    .nav-top {
+        display: none;
+    }
+    .nav-hamburger {
+        display: flex;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px) { /*Tablet grande*/
+    .nav-desktop {
+        display: none;
+    }
+    .nav-top {
         display: none;
     }
 }
 
-@media (width <= 1200px){ /*Desktop pequeno*/
-    .nav-header{
+@media (min-width: 992px) and (max-width: 1200px) { /*Desktop pequeno*/
+    .nav-header {
         display: none;
     }
-    .nav-links-top a{
+    .nav-links-top a {
         font-size: 0.7rem;
     }
-    .nav-links-top i{
+    .nav-links-top i {
         font-size: 15px;
     }
-    .nav-link-top{
+    .nav-link-top {
         gap: 2px;
     }
-    .nav-social-top{
+    .nav-social-top {
         gap: 10px;
     }
-    .nav-social-top a{
+    .nav-social-top a {
         font-size: 15px;
     }
     .navbar {
@@ -330,34 +336,33 @@
     .nav-links {
         gap: 15px;
     }
-    
     .nav-links a {
         font-size: 0.7rem;
-    }  
+    }
     .nav-btn button {
         padding: 5px 15px;
         font-size: 0.7rem;
     }
 }
 
-@media (width >= 1201px){ /*Desktops grandes*/
-    .nav-header{
+@media (min-width: 1200px) and (max-width: 1800px) { /*Desktops grandes*/
+    .nav-header {
         display: none;
     }
-    .nav-links-top a{
+    .nav-links-top a {
         font-size: 0.8rem;
     }
-    .nav-links-top i{
+    .nav-links-top i {
         font-size: 15px;
     }
-    .nav-link-top{
+    .nav-link-top {
         gap: 5px;
     }
-    .nav-social-top{
+    .nav-social-top {
         gap: 10px;
     }
-    .nav-social-top a{
-        font-size: 15px;
+    .nav-social-top a {
+        font-size: 20px;
     }
     .navbar {
         padding: 10px 10%;
@@ -365,12 +370,45 @@
     .nav-links {
         gap: 20px;
     }
-    
     .nav-links a {
         font-size: 0.8rem;
-    }  
+    }
     .nav-btn button {
         padding: 5px 15px;
         font-size: 0.7rem;
+    }
+}
+
+@media (min-width: 1801px){
+    .nav-header {
+        display: none;
+    }
+    .nav-links-top a {
+        font-size: 0.8rem;
+    }
+    .nav-links-top i {
+        font-size: 25px;
+    }
+    .nav-link-top {
+        gap: 5px;
+    }
+    .nav-social-top {
+        gap: 10px;
+    }
+    .nav-social-top a {
+        font-size: 25px;
+    }
+    .navbar {
+        padding: 10px 10%;
+    }
+    .nav-links {
+        gap: 20px;
+    }
+    .nav-links a {
+        font-size: 1rem;
+    }
+    .nav-btn button {
+        padding: 5px 15px;
+        font-size: 1rem;
     }
 }
