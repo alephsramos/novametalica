@@ -890,64 +890,66 @@
 /* Estilo do conteúdo do modal */
 .modal-content {
     margin: 10% auto; 
-    width: 80%;
-    height: 60vh;
+    width: 80vw;
+    height: 80vh;
+    flex-direction: column;
 }
 
 /* Estilo do botão de fechar */
 .close {
-    font-size: 30px;
-    width: 50px;
-    height: 50px;
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
 }
 
 .modal-img-left{
-    width: 40%;
-    height: 60vh;
+    width: 100%;
+    height: 30vh;
 }
 
 .modal-img-left img{
     width: 100%;
-    height: 60vh;
-    border-radius: 15px 0px 0px 15px;
+    height: 30vh;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .modal-all-right{
-    width: 60%;
-    height: 60vh;
+    width: 100%;
+    height: 50vh;
     padding: 30px;
 }
 
 .modal-titles-right{
     width: 100%;
-    height: 35vh;
+    height: 30vh;
     gap: 10px;
 }
 
 .modal-all-right h2{
-    font-size: 3rem;
+    font-size: 1.4rem;
     height: 5vh;
 }
 
 .modal-all-right p{
-    height: 30vh;
+    height: 25vh;
+    font-size: 0.8rem;
 }
 
 .modal-texts-right{
     width: 100%;
-    height: 6vh;
+    height: 3vh;
 }
 
 .modal-texts-right p{
-    height: 5vh;
-    width: 35%;
-    font-size: 1rem;
+    height: 3vh;
+    width: 50%;
+    font-size: 0.8rem;
 }
 
 .modal-texts-right h6{
-    height: 5vh;
-    width: 35%;
-    font-size: 1rem;
+    height: 3vh;
+    width: 50%;
+    font-size: 0.8rem;
 }
 
 
@@ -1268,63 +1270,65 @@
 /* Estilo do conteúdo do modal */
 .modal-content {
     margin: 10% auto; 
-    width: 80%;
-    height: 60vh;
+    width: 80vw;
+    height: 80vh;
+    flex-direction: column;
 }
 
 /* Estilo do botão de fechar */
 .close {
-    font-size: 30px;
-    width: 50px;
-    height: 50px;
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
 }
 
 .modal-img-left{
-    width: 40%;
-    height: 60vh;
+    width: 100%;
+    height: 30vh;
 }
 
 .modal-img-left img{
     width: 100%;
-    height: 60vh;
-    border-radius: 15px 0px 0px 15px;
+    height: 30vh;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .modal-all-right{
-    width: 60%;
-    height: 60vh;
+    width: 100%;
+    height: 50vh;
     padding: 30px;
 }
 
 .modal-titles-right{
     width: 100%;
-    height: 35vh;
+    height: 30vh;
     gap: 10px;
 }
 
 .modal-all-right h2{
-    font-size: 3rem;
+    font-size: 1.7rem;
     height: 5vh;
 }
 
 .modal-all-right p{
-    height: 30vh;
+    height: 25vh;
+    font-size: 1rem;
 }
 
 .modal-texts-right{
     width: 100%;
-    height: 6vh;
+    height: 3vh;
 }
 
 .modal-texts-right p{
-    height: 5vh;
-    width: 35%;
+    height: 3vh;
+    width: 50%;
     font-size: 1rem;
 }
 
 .modal-texts-right h6{
-    height: 5vh;
-    width: 35%;
+    height: 3vh;
+    width: 50%;
     font-size: 1rem;
 }
 
@@ -1646,66 +1650,67 @@
 /* Estilo do conteúdo do modal */
 .modal-content {
     margin: 10% auto; 
-    width: 80%;
-    height: 60vh;
+    width: 80vw;
+    height: 80vh;
+    flex-direction: column;
 }
 
 /* Estilo do botão de fechar */
 .close {
-    font-size: 30px;
-    width: 50px;
-    height: 50px;
+    font-size: 20px;
+    width: 35px;
+    height: 35px;
 }
 
 .modal-img-left{
-    width: 40%;
-    height: 60vh;
+    width: 100%;
+    height: 30vh;
 }
 
 .modal-img-left img{
     width: 100%;
-    height: 60vh;
-    border-radius: 15px 0px 0px 15px;
+    height: 30vh;
+    border-radius: 10px 10px 0px 0px;
 }
 
 .modal-all-right{
-    width: 60%;
-    height: 60vh;
+    width: 100%;
+    height: 50vh;
     padding: 30px;
 }
 
 .modal-titles-right{
     width: 100%;
-    height: 35vh;
+    height: 30vh;
     gap: 10px;
 }
 
 .modal-all-right h2{
-    font-size: 3rem;
+    font-size: 1.9rem;
     height: 5vh;
 }
 
 .modal-all-right p{
-    height: 30vh;
+    height: 25vh;
+    font-size: 1.2rem;
 }
 
 .modal-texts-right{
     width: 100%;
-    height: 6vh;
+    height: 3vh;
 }
 
 .modal-texts-right p{
-    height: 5vh;
-    width: 35%;
-    font-size: 1rem;
+    height: 3vh;
+    width: 50%;
+    font-size: 1.1rem;
 }
 
 .modal-texts-right h6{
-    height: 5vh;
-    width: 35%;
-    font-size: 1rem;
+    height: 3vh;
+    width: 50%;
+    font-size: 1.1rem;
 }
-
 
 .sidebar {
     top: 0;
@@ -2027,8 +2032,8 @@
 /* Estilo do conteúdo do modal */
 .modal-content {
     margin: 10% auto; 
-    width: 80%;
-    height: 60vh;
+    width: 80vw;
+    height: 70vh;
 }
 
 /* Estilo do botão de fechar */
@@ -2040,12 +2045,12 @@
 
 .modal-img-left{
     width: 40%;
-    height: 60vh;
+    height: 70vh;
 }
 
 .modal-img-left img{
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     border-radius: 15px 0px 0px 15px;
 }
 
@@ -2057,17 +2062,18 @@
 
 .modal-titles-right{
     width: 100%;
-    height: 35vh;
+    height: 40vh;
     gap: 10px;
 }
 
 .modal-all-right h2{
-    font-size: 3rem;
+    font-size: 2.2rem;
     height: 5vh;
 }
 
 .modal-all-right p{
-    height: 30vh;
+    height: 35vh;
+    font-size: 1rem;
 }
 
 .modal-texts-right{
@@ -2410,8 +2416,8 @@
 /* Estilo do conteúdo do modal */
 .modal-content {
     margin: 10% auto; 
-    width: 80%;
-    height: 60vh;
+    width: 80vw;
+    height: 70vh;
 }
 
 /* Estilo do botão de fechar */
@@ -2423,12 +2429,12 @@
 
 .modal-img-left{
     width: 40%;
-    height: 60vh;
+    height: 70vh;
 }
 
 .modal-img-left img{
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     border-radius: 15px 0px 0px 15px;
 }
 
@@ -2440,17 +2446,18 @@
 
 .modal-titles-right{
     width: 100%;
-    height: 35vh;
+    height: 40vh;
     gap: 10px;
 }
 
 .modal-all-right h2{
-    font-size: 3rem;
+    font-size: 2.2rem;
     height: 5vh;
 }
 
 .modal-all-right p{
-    height: 30vh;
+    height: 35vh;
+    font-size: 1rem;
 }
 
 .modal-texts-right{
@@ -2469,7 +2476,6 @@
     width: 35%;
     font-size: 1rem;
 }
-
 
 .sidebar {
     top: 0;
@@ -2793,8 +2799,8 @@
 /* Estilo do conteúdo do modal */
 .modal-content {
     margin: 10% auto; 
-    width: 80%;
-    height: 60vh;
+    width: 80vw;
+    height: 70vh;
 }
 
 /* Estilo do botão de fechar */
@@ -2806,12 +2812,12 @@
 
 .modal-img-left{
     width: 40%;
-    height: 60vh;
+    height: 70vh;
 }
 
 .modal-img-left img{
     width: 100%;
-    height: 60vh;
+    height: 70vh;
     border-radius: 15px 0px 0px 15px;
 }
 
@@ -2823,7 +2829,7 @@
 
 .modal-titles-right{
     width: 100%;
-    height: 35vh;
+    height: 40vh;
     gap: 10px;
 }
 
@@ -2833,7 +2839,8 @@
 }
 
 .modal-all-right p{
-    height: 30vh;
+    height: 35vh;
+    font-size: 1.6rem;
 }
 
 .modal-texts-right{
@@ -2844,15 +2851,14 @@
 .modal-texts-right p{
     height: 5vh;
     width: 35%;
-    font-size: 1rem;
+    font-size: 1.4rem;
 }
 
 .modal-texts-right h6{
     height: 5vh;
     width: 35%;
-    font-size: 1rem;
+    font-size: 1.4rem;
 }
-
 
 .sidebar {
     top: 0;

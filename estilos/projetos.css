@@ -201,7 +201,8 @@
     color: #fff;
 }
 
-@media (max-width: 768px){
+
+@media (max-width: 576px){
     .projetos-container{
         padding: 0 10%;
         height: 105vh;
@@ -327,5 +328,148 @@
         font-size: 0.8rem;
         border-radius: 5px;
     }
+}
+
+@media (min-width: 576px) and (max-width: 769px){
+    .projetos-container{
+        padding: 0 10%;
+        height: 105vh;
+    }
+    
+    .projetos-div-container{
+        width: 100%;
+        height: 100vh;
+        overflow-x: auto;
+        display: flex;
+        align-items: center;
+        justify-content: space-evenly;
+    }
+    
+    .projetos-texts{
+        height: 10vh;
+        width: 100%;
+    }
+    
+    .projetos-texts h2{
+        font-size: 1.4rem;
+        width: 100%;
+    }
+    
+    .projetos-texts p{
+        font-size: 0.7rem;
+        width: 100%;
+    }
+    
+    .projetos-cards-div{
+        width: 100%;
+        gap: 0px;
+        height: 80vh;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transform: scale(1);
+    }
+    
+    .projetos-cards{
+        height: 75vh;
+        padding: 0px;
+        flex: 0 0 100%; /* Ocupa 100% da largura do contêiner por padrão */
+        opacity: 1;
+        filter: brightness(100%);
+        border-radius: 5px;
+    }
+    
+    
+    .projeto-image{
+        height: 35vh;
+        margin-bottom: 10px;
+    }
+    
+    .projeto-image img{
+        width: 100%;
+        height: 35vh;
+    }
+    
+    .projeto-text{
+        gap: 5px;
+        height: 10vh;
+        padding: 20px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .projeto-text h6{
+        width: 100%;
+        font-size: 1.2rem;
+    }
+    
+    .projeto-text p{
+        font-size: 0.8rem;
+        width: 100%;
+    }
+    
+    .projeto-parags{
+        margin: 10px 20px;
+    }
+    
+    .projeto-parags p{
+        font-size: 0.8rem;
+    }
+    
+    .projeto-btn{
+        width: 100%;
+        height: 12vh;
+        padding: 20px;
+    }
+    
+    .projeto-btn button{
+        width: 100%;
+        padding: 15px;
+        font-size: 0.8rem;
+    }
+    
+    .projeto-action{
+        width: 80%;
+        height: 5vh;
+        gap: 10px;
+    }
+    
+    .projeto-action-left,
+    .projeto-action-right{
+        height: 5vh;
+        width: 50px;
+    }
+    
+    
+    .projeto-action-left i,
+    .projeto-action-right i{
+        font-size: 25px;
+    }
+    
+    
+    .projeto-action-center{
+        height: 5vh;
+        width: 200px;
+        font-size: 0.8rem;
+        border-radius: 5px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px){
+
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+
+}
+
+@media (min-width: 1200px) and (max-width: 1800px){
+
+}
+
+@media (min-width: 1801px){
     
 }
