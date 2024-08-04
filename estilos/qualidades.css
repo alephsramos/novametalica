@@ -138,10 +138,11 @@
     font-weight: 400; 
 }
 
-@media (max-width: 768px){
+@media (max-width: 576px){
     .qualidades-container{
         padding: 0 10%;
         height: 160dvh;
+        overflow-x: hidden;
     }
     
     .qualidades-all-items{
@@ -159,6 +160,7 @@
         font-size: 1.4rem;
         width: 100%;
         line-height: 25px;
+        text-align: center;
     }
     
     .qualidade-texts a{
@@ -166,8 +168,9 @@
     }
     
     .qualidade-cards-all{
-        height: 20vh;
+        height: 130vh;
         gap: 15px;
+        flex-wrap: wrap;
     }
     
     .qualidade-cards {
@@ -215,4 +218,24 @@
         height: 15vh;
         text-align: justify;
     }
+}
+
+@media (min-width: 576px) and (max-width: 769px){
+
+}
+
+@media (min-width: 769px) and (max-width: 992px){
+
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+
+}
+
+@media (min-width: 1200px) and (max-width: 1800px){
+
+}
+
+@media (min-width: 1801px){
+
 }
