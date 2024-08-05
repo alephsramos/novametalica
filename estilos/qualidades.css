@@ -143,6 +143,8 @@
         padding: 0 10%;
         height: 165dvh;
         overflow-x: hidden;
+        background-color: #d1d1d1;
+        background-image: none;
     }
     
     .qualidades-all-items{
@@ -229,6 +231,8 @@
         padding: 0 10%;
         height: 90dvh;
         overflow-x: hidden;
+        background-color: #d1d1d1;
+        background-image: none;
     }
     
     .qualidades-all-items{
@@ -313,6 +317,8 @@
         padding: 0 10%;
         height: 80dvh;
         overflow-x: hidden;
+        background-color: #d1d1d1;
+        background-image: none;
     }
     
     .qualidades-all-items{

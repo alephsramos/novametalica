@@ -195,6 +195,8 @@
 @media (min-width: 769px) and (max-width: 992px){
     .header{
         background-position: top;
+        background-color: #d1d1d1;
+        background-image: none;
         background-size: cover;
         height: 100dvh;
         background-attachment: fixed;
