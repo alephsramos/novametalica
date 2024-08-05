@@ -150,7 +150,11 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const formElement = document.getElementById("contactForm");
         if (formElement) {
-            formElement.scrollIntoView({ behavior: "smooth" });
+            // Apenas rolar para baixo
+            window.scrollTo({
+                top: formElement.offsetTop,
+                behavior: 'smooth'
+            });
         }
     });
 
@@ -245,7 +249,7 @@ document.addEventListener('DOMContentLoaded', function () {
             });
 
             currentPage = 0;
-            showPage(currentPage); // Atualiza a exibição após aplicar o filtro
+            showPage(currentPage);
         });
     });
 });

@@ -28,14 +28,32 @@ function updateBackgroundPosition() {
     }
 }
 
-// Inicia o loop de animação apenas se o container estiver visível
-if (container.getBoundingClientRect().top < window.innerHeight) {
-    requestAnimationFrame(updateBackgroundPosition);
+function startAnimationIfDesktop() {
+    // Verifica se a tela é maior que 768px (ou qualquer largura que defina como o ponto de corte para mobile)
+    if (window.innerWidth > 768) {
+        if (container.getBoundingClientRect().top < window.innerHeight) {
+            requestAnimationFrame(updateBackgroundPosition);
+        }
+
+        window.addEventListener('scroll', () => {
+            // Atualiza a animação durante o scroll
+            if (container.getBoundingClientRect().top < window.innerHeight) {
+                requestAnimationFrame(updateBackgroundPosition);
+            }
+        });
+    }
 }
 
-window.addEventListener('scroll', () => {
-    // Atualiza a animação durante o scroll
-    if (container.getBoundingClientRect().top < window.innerHeight) {
-        requestAnimationFrame(updateBackgroundPosition);
+// Chama a função para iniciar a animação se estiver em um dispositivo desktop
+startAnimationIfDesktop();
+
+// Adiciona um event listener para lidar com a mudança de tamanho da janela
+window.addEventListener('resize', () => {
+    // Remove todos os event listeners de rolagem quando em mobile
+    if (window.innerWidth <= 768) {
+        window.removeEventListener('scroll', updateBackgroundPosition);
+    } else {
+        // Se for redimensionado para desktop, inicia a animação novamente
+        startAnimationIfDesktop();
     }
 });

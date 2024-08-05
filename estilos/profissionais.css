@@ -97,10 +97,11 @@
     align-items: center;
 }
 
-.prof-right-links p{
+.prof-orçamento{
     font-size: 1.2rem;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
+    color: #353535;
 }
 
 .prof-right-links a{
@@ -199,8 +200,8 @@
         height: 5vh;
     }
     
-    .prof-right-links p{
-        font-size: 0.8rem;
+    .prof-orçamento{
+        font-size: 0.9rem!important;
     }
     
     .prof-right-links a{
@@ -288,8 +289,8 @@
         width: 100%;
     }
     
-    .prof-right-links p{
-        font-size: 0.8rem;
+    .prof-orçamento{
+        font-size: 0.9rem;
     }
     
     .prof-right-links a{
@@ -377,8 +378,8 @@
         width: 100%;
     }
     
-    .prof-right-links p{
-        font-size: 1rem;
+    .prof-orçamento{
+        font-size: 1rem!important;
     }
     
     .prof-right-links a{
@@ -466,8 +467,8 @@
         width: 100%;
     }
     
-    .prof-right-links p{
-        font-size: 0.9rem;
+    .prof-orçamento{
+        font-size: 0.9rem!important;
     }
     
     .prof-right-links a{
@@ -555,8 +556,8 @@
         width: 100%;
     }
     
-    .prof-right-links p{
-        font-size: 1rem;
+    .prof-orçamento{
+        font-size: 1rem!important;
     }
     
     .prof-right-links a{
@@ -644,8 +645,8 @@
         width: 100%;
     }
     
-    .prof-right-links p{
-        font-size: 1.5rem;
+    .prof-orçamento{
+        font-size: 1.5rem!important;
     }
     
     .prof-right-links a{
