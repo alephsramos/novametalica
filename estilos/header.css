@@ -63,7 +63,8 @@
 
 @media (max-width: 576px){
     .header{
-        background-position: top;
+        background-position: center;
+        background-image: url('../imagens/header-fundo.svg');
         background-size: cover;
         height: 100dvh;
         background-attachment: fixed;
@@ -128,6 +129,7 @@
 @media (min-width: 576px) and (max-width: 769px){
     .header{
         background-position: top;
+        background-image: url('../imagens/header-fundo.svg');
         background-size: cover;
         height: 100dvh;
         background-attachment: fixed;
@@ -257,7 +259,7 @@
 
 @media (min-width: 992px) and (max-width: 1200px){
     .header{
-        background-position: top;
+        background-position: center;
         background-size: cover;
         height: 100dvh;
         background-attachment: fixed;
