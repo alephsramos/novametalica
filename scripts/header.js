@@ -1,4 +1,18 @@
 document.addEventListener('DOMContentLoaded', () => {
+    // Função para atualizar o tamanho do background ao rolar
+    function updateBackgroundSize() {
+        if (window.innerWidth > 768) {
+            let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+            let header = document.querySelector('.header');
+            let scale = 1 + scrollTop / 1000; // Ajuste esse valor conforme necessário
+
+            header.style.backgroundSize = scale * 100 + '%';
+        }
+    }
+
+    // Adiciona o evento de rolagem para ajustar o background no desktop
+    window.addEventListener('scroll', updateBackgroundSize);
+
     // Função para rolar até a seção #form
     document.getElementById('contact_btn').addEventListener('click', function() {
         document.getElementById('form').scrollIntoView({ behavior: 'smooth' });
