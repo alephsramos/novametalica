@@ -1,19 +1,9 @@
-window.addEventListener('scroll', function() {
-    // Verifica se a largura da janela é maior que 768px
-    if (window.innerWidth > 768) {
-        let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
-        let header = document.querySelector('.header');
-        let scale = 1 + scrollTop / 1000; // Ajuste esse valor conforme necessário
-        
-        header.style.backgroundSize = scale * 100 + '%';
-    }
-});
-
-document.getElementById('contact_btn').addEventListener('click', function() {
-    document.getElementById('form').scrollIntoView({ behavior: 'smooth' });
-});
-
 document.addEventListener('DOMContentLoaded', () => {
+    // Função para rolar até a seção #form
+    document.getElementById('contact_btn').addEventListener('click', function() {
+        document.getElementById('form').scrollIntoView({ behavior: 'smooth' });
+    });
+
     const hamburgerMenu = document.getElementById('hamburgerMenu');
     const navSidebar = document.getElementById('navSidebar');
     const closeSidebar = document.getElementById('closeSidebar');
@@ -48,4 +38,11 @@ document.addEventListener('DOMContentLoaded', () => {
     navLinks.forEach(link => {
         link.addEventListener('click', closeSidebarFunc);
     });
+});
+
+// Fecha a navbar no celular ao rolar para baixo
+window.addEventListener('scroll', function() {
+    if (window.innerWidth <= 768) {
+        closeSidebarFunc();
+    }
 });
