@@ -311,7 +311,7 @@
 
 @media (min-width: 1200px) and (max-width: 1800px){
     .header{
-        background-position: top center;
+        background-position: center center;
         background-size: cover;
         height: 100dvh;
         background-attachment: fixed;
@@ -333,7 +333,7 @@
     }
     
     .header-texts h1{
-        font-size: 2.6rem;
+        font-size: 2.4rem;
         height: 5vh;
         line-height: 55px;
         text-align: left;
@@ -341,7 +341,7 @@
     }
     
     .header-texts p{
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         width: 85%;
         text-align: left;
         font-weight: 300;
