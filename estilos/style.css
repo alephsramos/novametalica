@@ -13,7 +13,7 @@ html, body{
 }
 
 .header{
-    background-image: url(../imagens/background-header.webp);
+    background-image: url(../imagens/header-background.jpg);
     background-position: center;
     background-size: cover;
     height: 105dvh;
