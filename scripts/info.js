@@ -3,17 +3,18 @@ document.addEventListener('DOMContentLoaded', () => {
     const duration = 2000; // Duração da animação em milissegundos
 
     function animateCounter(counter) {
-        const target = +counter.getAttribute('data-target'); // Obtém o número alvo do atributo data-target
+        const target = parseFloat(counter.getAttribute('data-target')); // Obtém o número alvo do atributo data-target
+        const isPercentage = counter.getAttribute('data-target').includes('%'); // Verifica se é uma porcentagem
         const increment = target / (duration / 16); // Incremento por frame (assumindo 60fps)
         let currentNumber = 0;
 
         function updateCounter() {
             currentNumber += increment;
             if (currentNumber < target) {
-                counter.innerText = Math.floor(currentNumber) + (counter.innerText.includes('%') ? '%' : '+');
+                counter.innerText = Math.floor(currentNumber) + (isPercentage ? '%' : '+');
                 requestAnimationFrame(updateCounter);
             } else {
-                counter.innerText = target + (counter.innerText.includes('%') ? '%' : '+');
+                counter.innerText = target + (isPercentage ? '%' : '+');
             }
         }
 
@@ -29,7 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
     const observerCallback = (entries, observer) => {
         entries.forEach(entry => {
             if (entry.isIntersecting) {
-                entry.target.innerText = entry.target.getAttribute('data-target').includes('%') ? '0%' : '0+'; // Reinicia o texto do contador
+                const isPercentage = entry.target.getAttribute('data-target').includes('%');
+                entry.target.innerText = isPercentage ? '0%' : '0+'; // Reinicia o texto do contador
                 animateCounter(entry.target);
             }
         });
