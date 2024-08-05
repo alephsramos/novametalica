@@ -13,8 +13,8 @@ html, body{
 }
 
 .header{
-    background-image: url(../imagens/header-fundo.svg);
-    background-position: top;
+    background-image: url(../imagens/background-header.webp);
+    background-position: center;
     background-size: cover;
     height: 105dvh;
     background-attachment: fixed;

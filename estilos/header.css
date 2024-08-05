@@ -19,6 +19,8 @@
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     line-height: 70px;
+    color: #000;
+
 }
 
 .header-texts p{
@@ -363,11 +365,11 @@
 
 @media (min-width: 1801px){
     .header{
-        background-position: top;
-        background-size: cover;
+        background-position: top left;
         height: 100dvh;
         background-attachment: fixed;
         background-repeat: no-repeat;
+        background-position: center;
     }
 
     .header-div{
