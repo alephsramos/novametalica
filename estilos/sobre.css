@@ -1015,13 +1015,13 @@
     .sobre-container{
         padding: 0 10%;
         width: 100%;
-        height: 110vh;
+        height: 120vh;
         overflow-x: hidden;
     }
     
     .sobre-container-div{
         width: 100%;
-        height: 100vh;
+        height: 110vh;
         gap: 10px;
     }
     
@@ -1059,8 +1059,8 @@
     .sobre-card-top h4{
         height: 5vh;
         width: 100%;
-        font-size: 2rem;
-        align-items: center;
+        font-size: 1.8rem;
+        align-items: flex-end;
         justify-content: center;
         padding-top: 0px;
     }
@@ -1078,7 +1078,7 @@
     
     .sobre-card-bottom p{
         width: 100%;
-        font-size: 1.3rem;
+        font-size: 1.2rem;
         align-items: center;
         justify-content: center; 
         height: 15vh;

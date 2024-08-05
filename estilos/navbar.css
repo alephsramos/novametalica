@@ -410,7 +410,7 @@
         display: none;
     }
     .nav-links-top a {
-        font-size: 0.8rem;
+        font-size: 1rem;
     }
     .nav-links-top i {
         font-size: 25px;
@@ -431,10 +431,10 @@
         gap: 20px;
     }
     .nav-links a {
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     .nav-btn button {
-        padding: 5px 15px;
+        padding: 8px 15px;
         font-size: 1rem;
     }
 }
