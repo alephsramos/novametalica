@@ -168,13 +168,12 @@ document.addEventListener('DOMContentLoaded', function () {
     function generateQuoteText() {
         const products = Array.from(sidebarProductsContainer.children);
         let text = "Produtos selecionados:\n\n";
-
+    
         products.forEach(product => {
             const productName = product.querySelector('.sidebar-product-details h6').textContent;
-            const productThickness = product.querySelector('.sidebar-product-details p').textContent;
-            text += `Produto: ${productName}\nEspessura: ${productThickness}\n\n\n`; // Adiciona uma quebra de linha extra entre os produtos
+            text += `${productName}\n`; // Adiciona o nome do produto e pula uma linha
         });
-
+    
         return text;
     }
 
