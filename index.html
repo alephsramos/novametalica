@@ -10,28 +10,30 @@
     <meta name="description" content="DESCRIÇÃO BREVE DA PÁGINA"> <!-- uma breve descrição (FALTA COLOCAR) -->
     <meta name="keywords" content="Nova Metálica, Construção Civil, Fast Drywall, Drywall, SteelFrame, "> <!-- algumas palavras chaves (FALTA COLOCAR) -->
 
-    <!-- LINKS DE REFERÊNCIA -->
-    <link rel="stylesheet" href="estilos/style.css"> <!-- CSS principal da página -->
-    <link rel="stylesheet" href="estilos/navbar.css"> <!-- CSS da navbar -->
-    <link rel="stylesheet" href="estilos/header.css"> <!-- CSS do header -->
-    <link rel="stylesheet" href="estilos/info.css"> <!-- CSS da section de informações -->
-    <link rel="stylesheet" href="estilos/qualidades.css"> <!-- CSS da section de qualidades -->
-    <link rel="stylesheet" href="estilos/profissionais.css"> <!-- CSS da section de profissionais -->
-    <link rel="stylesheet" href="estilos/produtos.css"> <!-- CSS da section de produtos -->
-    <link rel="stylesheet" href="estilos/projetos.css"> <!-- CSS da section de projetos -->
-    <link rel="stylesheet" href="estilos/form.css"> <!-- CSS da section de formulario -->
-    <link rel="stylesheet" href="estilos/local.css"> <!-- CSS da section de local -->
-    <link rel="stylesheet" href="estilos/footer.css"> <!-- CSS do footer -->
-    <link rel="stylesheet" href="estilos/sobre.css"> <!-- CSS da section sobre a empresa -->
-    <link rel="stylesheet" href="estilos/maquina.css"> <!-- CSS da section sobre a maquina -->
-    <link rel="icon" href="imagens/avatar.png"> <!-- Icone da página (FALTA COLOCAR) -->
-    <link rel="stylesheet" href="estilos/animate.css"> <!-- CSS de animações -->
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Biblioteca de icons -->
+    <!-- CSS Crítico: carregue normalmente -->
+<link rel="stylesheet" href="estilos/navbar.css"> <!-- CSS da navbar -->
+<link rel="stylesheet" href="estilos/header.css"> <!-- CSS do header -->
 
-    <!-- CÓDIGOS DO JAVASCRIPT -->
-    <script src="scripts/script.js"></script> <!-- JS principal da página -->
-    <script src="scripts/animations.js" defer></script>
-    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2F1k7kuY3rKuXXJG-2ylCGY4BLRtgpgE&callback=initMap"></script> <!-- API do maps -->
+<!-- CSS Não Crítico: use media="none" e onload -->
+<link rel="stylesheet" href="estilos/style.css" media="none" onload="this.media='all'"> <!-- CSS principal da página -->
+<link rel="stylesheet" href="estilos/info.css" media="none" onload="this.media='all'"> <!-- CSS da section de informações -->
+<link rel="stylesheet" href="estilos/qualidades.css" media="none" onload="this.media='all'"> <!-- CSS da section de qualidades -->
+<link rel="stylesheet" href="estilos/profissionais.css" media="none" onload="this.media='all'"> <!-- CSS da section de profissionais -->
+<link rel="stylesheet" href="estilos/produtos.css" media="none" onload="this.media='all'"> <!-- CSS da section de produtos -->
+<link rel="stylesheet" href="estilos/projetos.css" media="none" onload="this.media='all'"> <!-- CSS da section de projetos -->
+<link rel="stylesheet" href="estilos/form.css" media="none" onload="this.media='all'"> <!-- CSS da section de formulario -->
+<link rel="stylesheet" href="estilos/local.css" media="none" onload="this.media='all'"> <!-- CSS da section de local -->
+<link rel="stylesheet" href="estilos/footer.css" media="none" onload="this.media='all'"> <!-- CSS do footer -->
+<link rel="stylesheet" href="estilos/sobre.css" media="none" onload="this.media='all'"> <!-- CSS da section sobre a empresa -->
+<link rel="stylesheet" href="estilos/maquina.css" media="none" onload="this.media='all'"> <!-- CSS da section sobre a maquina -->
+<link rel="stylesheet" href="estilos/animate.css" media="none" onload="this.media='all'"> <!-- CSS de animações -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"> <!-- Biblioteca de icons -->
+
+<!-- CÓDIGOS DO JAVASCRIPT -->
+<script src="scripts/script.js" defer></script> <!-- JS principal da página -->
+<script src="scripts/animations.js" defer></script>
+<script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script> <!-- API do maps -->
+
 
     <title>Nova Metálica | Soluções construtivas e inovadoras</title> <!-- Titulo da página -->
 </head>
@@ -1306,7 +1308,7 @@
 
 </section> 
 
-<script src="scripts/info.js"></script>
+<script src="scripts/info.js" async></script>
 
 <section class="form-container" id="form">
     <div class="form-container-div">
