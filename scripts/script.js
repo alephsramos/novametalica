@@ -99,5 +99,24 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
+document.addEventListener("DOMContentLoaded", function () {
+    const elements = document.querySelectorAll('.scroll-element');
 
+    function checkVisibility() {
+        const triggerHeight = window.innerHeight / 1.2;
+
+        elements.forEach(element => {
+            const elementTop = element.getBoundingClientRect().top;
+
+            if (elementTop < triggerHeight) {
+                element.classList.add('active');
+            } else {
+                element.classList.remove('active');
+            }
+        });
+    }
+
+    window.addEventListener('scroll', checkVisibility);
+    checkVisibility(); // Run initially to check visibility on load
+});
   
