@@ -45,6 +45,7 @@
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     transition: all .3s;
+    animation: animate_pulse 2s infinite linear;
 }
 
 .qualidade-texts a:hover{
