@@ -64,7 +64,8 @@
 @media (max-width: 576px){
     .header{
         background-position: center;
-        background-image: url('../imagens/header-fundo.svg');
+        background-image: none;
+        background-color: #e7e7e7;
         background-size: cover;
         height: 100dvh;
         background-attachment: fixed;
@@ -129,7 +130,8 @@
 @media (min-width: 576px) and (max-width: 769px){
     .header{
         background-position: top;
-        background-image: url('../imagens/header-fundo.svg');
+        background-image: none;
+        background-color: #e7e7e7;
         background-size: cover;
         height: 100dvh;
         background-attachment: fixed;
