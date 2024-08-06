@@ -4,7 +4,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('../imagens/qualidades-teste.jpg');
+    background-image: url('../imagens/qualidades-fundo.webp');
     background-position: center;
     background-size: cover;
     border-image: fill 0 linear-gradient(#0001, #353535);
