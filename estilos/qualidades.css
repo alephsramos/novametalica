@@ -5,8 +5,7 @@
     align-items: center;
     justify-content: center;
     background-image: url('../imagens/qualidade-background.webp');
-    background-attachment: fixed;
-    background-position: left right; /* Inicialmente posicionado à esquerda */
+    background-position: center;
     background-size: cover;
     clip-path: polygon(0 3%, 100% 0, 100% 97%, 0% 100%);
 }
