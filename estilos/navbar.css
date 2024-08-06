@@ -342,7 +342,7 @@
         display: none;
     }
     .nav-links-top a {
-        font-size: 0.7rem;
+        font-size: 0.6rem;
     }
     .nav-links-top i {
         font-size: 15px;
@@ -363,7 +363,7 @@
         gap: 15px;
     }
     .nav-links a {
-        font-size: 0.7rem;
+        font-size: 0.75rem;
     }
     .nav-btn button {
         padding: 5px 15px;
@@ -376,7 +376,7 @@
         display: none;
     }
     .nav-links-top a {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
     .nav-links-top i {
         font-size: 15px;
@@ -397,7 +397,7 @@
         gap: 25px;
     }
     .nav-links a {
-        font-size: 0.7rem;
+        font-size: 0.75rem;
     }
     .nav-btn button {
         padding: 5px 15px;
@@ -410,7 +410,7 @@
         display: none;
     }
     .nav-links-top a {
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
     .nav-links-top i {
         font-size: 25px;
