@@ -98,19 +98,6 @@ document.addEventListener('DOMContentLoaded', function() {
 
 
 
-function initMap() {
-    const japeri = { lat: -22.6431, lng: -43.6534 }; // Coordenadas de Japeri
-    const map = new google.maps.Map(document.getElementById("map"), {
-      zoom: 14,
-      center: japeri,
-    });
-
-    const marker = new google.maps.Marker({
-      position: japeri,
-      map: map,
-      title: "Meu Negócio",
-    });
-  }
 
 
   

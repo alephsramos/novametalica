@@ -30,7 +30,7 @@
 <!-- CÓDIGOS DO JAVASCRIPT -->
 <script src="scripts/script.js" defer></script> <!-- JS principal da página -->
 <script src="scripts/animations.js" defer></script>
-<script async defer src="https://maps.googleapis.com/maps/api/js?key=YOUR_API_KEY&callback=initMap"></script> <!-- API do maps -->
+<script defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyD2F1k7kuY3rKuXXJG-2ylCGY4BLRtgpgE&callback=initMap"></script> <!-- API do maps -->
 
 
     <title>Nova Metálica | Soluções construtivas e inovadoras</title> <!-- Titulo da página -->
@@ -1413,6 +1413,30 @@
 
 <section class="local-container animate animate-fade-in" id="local">
     <div id="map"></div>
+    <script>
+     function initMap() {
+            const geocoder = new google.maps.Geocoder();
+            const address = 'Rod. Presidente Dutra, Nº XX - Cidade Jardim Marajoara, Japeri/RJ, Brasil';
+
+            geocoder.geocode({ address: address }, function(results, status) {
+                if (status === 'OK') {
+                    const location = results[0].geometry.location;
+                    const map = new google.maps.Map(document.getElementById('map'), {
+                        zoom: 10,
+                        center: location,
+                    });
+
+                    const marker = new google.maps.Marker({
+                        position: location,
+                        map: map,
+                        title: 'Meu Negócio',
+                    });
+                } else {
+                    alert('Não foi possível encontrar o endereço: ' + status);
+                }
+            });
+        }
+        </script>
   </section>
 
 <footer class="footer-container" id="footer">
