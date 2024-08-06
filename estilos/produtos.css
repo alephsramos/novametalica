@@ -334,9 +334,9 @@
     top: 0;
     width: 100%;
     height: 100%;
-    overflow: auto; /* Permite rolagem se necessário */
     background-color: rgb(0,0,0); /* Cor de fundo preta */
     background-color: rgba(0,0,0,0.4); /* Cor de fundo preta com opacidade */
+    overflow: hidden;
 }
 
 /* Estilo do conteúdo do modal */
@@ -344,9 +344,9 @@
     background-color: #fefefe;
     margin: 10% auto; 
     width: 80%;
-    height: 60vh;
+    height: 80vh;
     display: flex;
-    border-radius: 15px;
+    border-radius: 5px;
 }
 
 /* Estilo do botão de fechar */
@@ -363,7 +363,7 @@
     align-items: center;
     justify-content: center;
     background-color: #fff;
-    border-radius: 15px 0px 15px 0px;
+    border-radius: 5px 0px 5px 0px;
 }
 
 .close i{
@@ -389,7 +389,7 @@
     width: 100%;
     height: 60vh;
     object-fit: cover;
-    border-radius: 15px 0px 0px 15px;
+    border-radius: 5px 0px 0px 5px;
 }
 
 .modal-all-right{
@@ -892,8 +892,8 @@
 /* Estilo do conteúdo do modal */
 .modal-content {
     margin: 10% auto; 
-    width: 80vw;
-    height: 80vh;
+    width: 90vw;
+    height: 90vh;
     flex-direction: column;
 }
 
@@ -1272,8 +1272,8 @@
 /* Estilo do conteúdo do modal */
 .modal-content {
     margin: 10% auto; 
-    width: 80vw;
-    height: 80vh;
+    width: 90vw;
+    height: 90vh;
     flex-direction: column;
 }
 
@@ -1651,9 +1651,9 @@
 
 /* Estilo do conteúdo do modal */
 .modal-content {
-    margin: 10% auto; 
-    width: 80vw;
-    height: 80vh;
+    margin: 5% auto; 
+    width: 90vw;
+    height: 90vh;
     flex-direction: column;
 }
 
@@ -1677,13 +1677,13 @@
 
 .modal-all-right{
     width: 100%;
-    height: 50vh;
+    height: 60vh;
     padding: 30px;
 }
 
 .modal-titles-right{
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     gap: 10px;
 }
 
@@ -2035,9 +2035,10 @@
 
 /* Estilo do conteúdo do modal */
 .modal-content {
-    margin: 10% auto; 
+    margin: 5% auto; 
     width: 80vw;
-    height: 70vh;
+    height: 80vh;
+    overflow: hidden;
 }
 
 /* Estilo do botão de fechar */
@@ -2049,24 +2050,24 @@
 
 .modal-img-left{
     width: 40%;
-    height: 70vh;
+    height: 80vh;
 }
 
 .modal-img-left img{
     width: 100%;
-    height: 70vh;
-    border-radius: 15px 0px 0px 15px;
+    height: 80vh;
+    border-radius: 5px 0px 0px 5px;
 }
 
 .modal-all-right{
     width: 60%;
-    height: 60vh;
+    height: 70vh;
     padding: 30px;
 }
 
 .modal-titles-right{
     width: 100%;
-    height: 40vh;
+    height: 50vh;
     gap: 10px;
 }
 
@@ -2436,9 +2437,9 @@
 
 /* Estilo do conteúdo do modal */
 .modal-content {
-    margin: 10% auto; 
+    margin: 5% auto; 
     width: 80vw;
-    height: 70vh;
+    height: 80vh;
 }
 
 /* Estilo do botão de fechar */
@@ -2450,24 +2451,24 @@
 
 .modal-img-left{
     width: 40%;
-    height: 70vh;
+    height: 80vh;
 }
 
 .modal-img-left img{
     width: 100%;
-    height: 70vh;
+    height: 80vh;
     border-radius: 15px 0px 0px 15px;
 }
 
 .modal-all-right{
     width: 60%;
-    height: 60vh;
+    height: 70vh;
     padding: 30px;
 }
 
 .modal-titles-right{
     width: 100%;
-    height: 40vh;
+    height: 50vh;
     gap: 10px;
 }
 
@@ -2819,9 +2820,9 @@
 
 /* Estilo do conteúdo do modal */
 .modal-content {
-    margin: 10% auto; 
-    width: 80vw;
-    height: 70vh;
+    margin: 5% auto; 
+    width: 90vw;
+    height: 80vh;
 }
 
 /* Estilo do botão de fechar */
@@ -2833,13 +2834,13 @@
 
 .modal-img-left{
     width: 40%;
-    height: 70vh;
+    height: 80vh;
 }
 
 .modal-img-left img{
     width: 100%;
-    height: 70vh;
-    border-radius: 15px 0px 0px 15px;
+    height: 80vh;
+    border-radius: 5px 0px 0px 5px;
 }
 
 .modal-all-right{
