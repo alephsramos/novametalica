@@ -88,25 +88,27 @@
     
 
     .header-texts{
-        height: 80dvh;
+        height: 80dvh!important;
         width: 100%;
         justify-content: center;
         align-items: center;
         display: flex;
         padding: 0%;
+        width: 100%;
     }
     
     .header-texts h1{
-        font-size: 1.8rem;
+        font-size: 1.8rem!important;
         height: 20vh;
         line-height: 30px;
         text-align: left;
         font-weight: 800;
+        width: 100%;
     }
     
     .header-texts p{
-        font-size: 1rem;
-        width: 100%;
+        font-size: 0.9rem!important;
+        width: 100%!important;
         text-align: left;
         font-weight: 400;
         height: 30vh;
@@ -154,7 +156,7 @@
 
     .header-texts{
         height: 80dvh;
-        width: 100%;
+        width: 100%!important;
         justify-content: center;
         align-items: center;
         display: flex;
@@ -167,11 +169,12 @@
         line-height: 50px;
         text-align: left;
         font-weight: 800;
+        width: 100%;
     }
     
     .header-texts p{
         font-size: 1.4rem;
-        width: 100%;
+        width: 100%!important;
         text-align: left;
         font-weight: 400;
         height: 30vh;
@@ -233,11 +236,12 @@
         line-height: 55px;
         text-align: left;
         font-weight: 800;
+        width: 100%;
     }
     
     .header-texts p{
         font-size: 1.6rem;
-        width: 100%;
+        width: 100%!important;
         text-align: left;
         font-weight: 400;
         height: 30vh;
