@@ -117,7 +117,7 @@
     height: 7vh;
     align-items: center;
     display: flex;
-    transition: all .3s;
+    transition: all .2s;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
 }
@@ -125,7 +125,7 @@
 .nav-links a:hover {
     border-bottom: 2px solid #353535;
     opacity: 0.9;
-    transform: scale(1.05);
+    transform: scale(1.02);
     letter-spacing: 0.5px;
 }
 
