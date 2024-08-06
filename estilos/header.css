@@ -73,13 +73,14 @@
 
 @media (max-width: 576px){
     .header{
-        background-position: center;
-        background-size: cover;
+        background-position: right!important;
         background-image: url('../imagens/header-background-mobile.webp')!important;
+        background-size: cover;
         height: 100dvh;
         background-attachment: fixed;
         background-repeat: no-repeat;
         clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 98%)!important;
+        border-image: fill 0 linear-gradient(#0001, rgba(255, 255, 255, 1))!important;
     }
 
     .header-div{
@@ -110,7 +111,7 @@
         font-size: 0.9rem!important;
         width: 100%!important;
         text-align: left;
-        font-weight: 400;
+        font-weight: 500!important;
         height: 30vh;
     }
     
@@ -146,6 +147,7 @@
         height: 100dvh;
         background-attachment: fixed;
         background-repeat: no-repeat;
+        border-image: fill 0 linear-gradient(#0001, rgba(255, 255, 255, 1))!important;
         clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 98%)!important;
     }
 
@@ -214,6 +216,7 @@
         background-attachment: fixed;
         background-repeat: no-repeat;
         clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 98%)!important;
+        border-image: fill 0 linear-gradient(#0001, rgba(255, 255, 255, 1))!important;
     }
 
     .header-div{
