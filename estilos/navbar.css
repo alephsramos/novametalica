@@ -30,8 +30,8 @@
 }
 
 .nav-link-top a:hover{
-    opacity: 0.9;
-    color: #1f9ad7;
+    opacity: 0.7;
+    color: #000;
 }
 
 .nav-links-top i{
@@ -68,7 +68,7 @@
 
 .nav-social-top a:hover{
     opacity: 0.8;
-    color:#1f9ad7;
+    color:#000;
 }
 
 /* NAVBAR */
