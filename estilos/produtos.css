@@ -117,7 +117,7 @@
     height: 50vh;
     padding: 20px;
     border: 1px solid #000;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: #fff;
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
 }
@@ -131,7 +131,7 @@
     align-items: center;
     justify-content: center;
     background-color: #eeeeee;
-    border-radius: 10px;
+    border-radius: 5px;
     transition: all .3s;
 }
 
@@ -218,7 +218,7 @@
     height: 4vh;
     background-color: transparent;
     border: none;
-    border-radius: 10px;
+    border-radius: 5px;
     cursor: pointer;
     transition: all .3s;
     background-color: #eeeeee;

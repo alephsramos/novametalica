@@ -39,7 +39,7 @@
 .qualidade-texts a{
     padding: 15px 40px;
     text-decoration: none;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: rgba(255, 255, 255, 0.6); /* Cor com baixa opacidade */
     color: #000;
     font-family: "Poppins", sans-serif;
@@ -71,7 +71,7 @@
     padding: 20px;
     background-color: rgba(255, 255, 255, 0.6); /* Cor com baixa opacidade */
     box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
+    border-radius: 5px;
     transition: all 0.3s;
 }
 
@@ -184,7 +184,7 @@
         width: 100%;
         gap: 10px;
         padding: 20px;
-        border-radius: 10px;
+        border-radius: 5px;
         background-color: #ffffff;
         filter: none;
     }
@@ -278,7 +278,7 @@
         width: 48%;
         gap: 10px;
         padding: 20px;
-        border-radius: 10px;
+        border-radius: 5px;
         filter: none;
         background-color: #ffffff;
     }
@@ -372,7 +372,7 @@
         width: 48%;
         gap: 10px;
         padding: 20px;
-        border-radius: 10px;
+        border-radius: 5px;
         filter: none;
         background-color: #ffffff;
     }
@@ -467,7 +467,7 @@
         width: 25%;
         gap: 10px;
         padding: 20px;
-        border-radius: 10px;
+        border-radius: 5px;
     }
     
     .qualidade-card-top{
@@ -556,7 +556,7 @@
         width: 25%;
         gap: 10px;
         padding: 20px;
-        border-radius: 10px;
+        border-radius: 5px;
     }
     
     .qualidade-card-top{
@@ -645,7 +645,7 @@
         width: 25%;
         gap: 10px;
         padding: 20px;
-        border-radius: 10px;
+        border-radius: 5px;
     }
     
     .qualidade-card-top{
