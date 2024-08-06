@@ -65,13 +65,13 @@ html, body{
 
 .header{
     background-image: url(../imagens/fundo-header-teste.webp);
-    background-position: top;
+    background-position: center;
     background-size: cover;
     height: 105dvh;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 97%);
 }
+
 
 .fade-in {
     opacity: 0;
