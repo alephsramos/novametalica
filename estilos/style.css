@@ -71,7 +71,7 @@ html, body{
     height: 105dvh;
     background-attachment: fixed;
     background-repeat: no-repeat;
-    clip-path: polygon(0 0, 100% 0, 100% 94%, 89% 100%, 11% 100%, 0 94%);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0% 98%);
     border-image: fill 0 linear-gradient(#0001, rgba(0, 0, 0, 0.1));
 }
 
