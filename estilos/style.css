@@ -12,34 +12,55 @@ html, body{
     overflow-x: hidden;
 }
 
-/* Estilos para o pré-carregamento */
-#preloader {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: #fff; /* Cor de fundo do preloader */
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    z-index: 9999;
-}
-
-#logo {
-    width: 150px; /* Tamanho da logo */
-    animation: fadeInOut 4s ease-in-out;
-}
-
-/* Animação para aparecer e desaparecer */
-@keyframes fadeInOut {
-    0% {
-        opacity: 0;
+@keyframes slideOutDown {
+    from {
+      transform: translateY(0);
     }
-    100% {
-        opacity: 1;
+    to {
+      transform: translateY(100%);
     }
-}
+  }
+  
+  @keyframes logoSlideIn {
+    from { transform: translateY(-50px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+  }
+  
+  @keyframes logoSlideOut {
+    from { transform: translateY(0); opacity: 1; }
+    to { transform: translateY(50px); opacity: 0; }
+  }
+  
+  #preloader {
+      position: fixed;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #fff; /* Cor de fundo do preloader */
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      z-index: 9999;
+      opacity: 1; /* Opacidade inicial */
+      transition: opacity 1s ease-out; /* Transição suave para opacidade */
+  }
+  
+  #preloader.hidden {
+      opacity: 0;
+      animation: slideOutDown 0.5s ease-out forwards; /* Animação de saída mais rápida para o preloader */
+  }
+  
+  #logo {
+      animation: logoSlideIn 1s ease-in-out forwards; /* Animação de entrada para a logo */
+  }
+  
+  #preloader.hidden #logo {
+      animation: logoSlideOut 0.5s ease-out forwards; /* Animação de saída mais rápida para a logo */
+  }
+  
+
+
 
 .header{
     background-image: url(../imagens/header-background.webp);

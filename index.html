@@ -41,27 +41,23 @@
     <div id="preloader">
         <img src="imagens/logo.svg" alt="Logo" id="logo">
         <script>
-        // Verifica se o usuário já visitou o site
-        if (!localStorage.getItem('siteVisited')) {
-            // Função para ocultar o preloader após 2 segundos
-            window.addEventListener("load", function () {
-                setTimeout(function () {
-                    const preloader = document.getElementById("preloader");
-                    const content = document.getElementById("content");
+window.addEventListener("load", function () {
+    const preloader = document.getElementById("preloader");
+    const content = document.getElementById("content");
 
-                    // Oculta o preloader e mostra o conteúdo
-                    preloader.style.display = "none";
-                    content.style.display = "block";
+    setTimeout(function () {
+        // Adiciona a classe para iniciar a animação de saída
+        preloader.classList.add("hidden");
 
-                    // Marca que o usuário visitou o site
-                    localStorage.setItem('siteVisited', 'true');
-                }, 3000); // 2000 milissegundos = 2 segundos
-            });
-        } else {
-            // Se o usuário já visitou, mostra o conteúdo imediatamente
-            document.getElementById("preloader").style.display = "none";
-            document.getElementById("content").style.display = "block";
-        }
+        // Remove o preloader após a animação de saída terminar
+        preloader.addEventListener('animationend', function() {
+            preloader.style.display = "none";
+            content.style.display = "block";
+        });
+    }, 3000); // 3000 milissegundos = 3 segundos
+});
+
+
 </script>
     </div>
 
