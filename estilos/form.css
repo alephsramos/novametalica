@@ -98,7 +98,7 @@
 }
 
 .form-linha{
-    border: 0.5px solid #000;
+    border: 0.5px solid #353535;
     width: 80%;
     float: left;
     opacity: 0.2;
@@ -117,7 +117,7 @@
     font-size: 30px;
     width: 30px;
     height: 30px;
-    color: #000;
+    color: #353535;
 }
 
 .form-right{
@@ -174,7 +174,7 @@
 .form-input-email:focus,
 .form-input-tel:focus{
     background-color: #f3f3f3;
-    color: #000;
+    color: #353535;
     font-size: 1rem;
     border: none;
 }
@@ -209,14 +209,14 @@
     padding: 15px;
     width: 40%;
     background-color: transparent;
-    color: #000;
+    color: #353535;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     cursor: pointer;
 }
 
 .form-submit button:hover{
-    background-color: #000;
+    background-color: #353535;
     color: #fff;
 }
 

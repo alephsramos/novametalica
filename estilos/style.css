@@ -64,8 +64,8 @@ html, body{
 
 
 .header{
-    background-image: url(../imagens/header-background.webp);
-    background-position: center;
+    background-image: url(../imagens/fundo-header-teste.webp);
+    background-position: bottom;
     background-size: cover;
     height: 105dvh;
     background-attachment: fixed;

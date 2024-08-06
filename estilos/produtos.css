@@ -95,7 +95,7 @@
 }
 
 .produtos-topics-div-btn button.active{
-    background-color: #000;
+    background-color: #353535;
     color: #fff;
 }
 
@@ -116,7 +116,7 @@
     width: 100%;
     height: 50vh;
     padding: 20px;
-    border: 1px solid #000;
+    border: 1px solid #353535;
     border-radius: 5px;
     background-color: #fff;
     box-shadow: 4px 4px 6px rgba(0, 0, 0, 0.2);
@@ -235,7 +235,7 @@
 
 .produto-card-btn-left:hover{
     background-color: #cfcfcf;
-    color: #000;
+    color: #353535;
 }
 
 .produto-card-btn-right i{
@@ -367,7 +367,7 @@
 }
 
 .close i{
-    color: #000;
+    color: #353535;
     transition: all .3s;
 }
 
@@ -596,7 +596,7 @@
     height: 5vh;
     font-size: 20px;
     cursor: pointer;
-    color: #000;
+    color: #353535;
     display: flex;
     align-items: center;
     justify-content: flex-end;
