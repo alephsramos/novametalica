@@ -388,16 +388,16 @@
         gap: 10px;
     }
     .nav-social-top a {
-        font-size: 17px;
+        font-size: 16px;
     }
     .navbar {
-        padding: 10px 10%;
+        padding: 15px 10%;
     }
     .nav-links {
         gap: 25px;
     }
     .nav-links a {
-        font-size: 0.75rem;
+        font-size: 0.8rem;
     }
     .nav-btn button {
         padding: 5px 15px;
@@ -416,7 +416,7 @@
         font-size: 25px;
     }
     .nav-link-top {
-        gap: 5px;
+        gap: 15px;
     }
     .nav-social-top {
         gap: 10px;
@@ -425,7 +425,7 @@
         font-size: 25px;
     }
     .navbar {
-        padding: 10px 10%;
+        padding: 15px 10%;
     }
     .nav-links {
         gap: 30px;
