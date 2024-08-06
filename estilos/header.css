@@ -64,13 +64,12 @@
 @media (max-width: 576px){
     .header{
         background-position: center;
-        background-image: none!important;
-        background-color: #e7e7e7;
         background-size: cover;
+        background-image: url('../imagens/header-background-mobile.webp')!important;
         height: 100dvh;
         background-attachment: fixed;
         background-repeat: no-repeat;
-        clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 97%);
+        clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 98%)!important;
     }
 
     .header-div{
@@ -130,13 +129,12 @@
 @media (min-width: 576px) and (max-width: 769px){
     .header{
         background-position: top;
-        background-image: none!important;
-        background-color: #e7e7e7;
+        background-image: url('../imagens/header-background-mobile.webp')!important;
         background-size: cover;
         height: 100dvh;
         background-attachment: fixed;
         background-repeat: no-repeat;
-        clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 97%);
+        clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 98%)!important;
     }
 
     .header-div{
@@ -197,13 +195,12 @@
 @media (min-width: 769px) and (max-width: 992px){
     .header{
         background-position: top;
-        background-color: #d1d1d1;
-        background-image: none!important;
+        background-image: url('../imagens/header-background-mobile.webp')!important;
         background-size: cover;
         height: 100dvh;
         background-attachment: fixed;
         background-repeat: no-repeat;
-        clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 97%);
+        clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 98%)!important;
     }
 
     .header-div{
