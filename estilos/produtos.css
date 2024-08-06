@@ -87,6 +87,8 @@
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     transition: all .3s;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .produtos-topics-div-btn button:hover {
