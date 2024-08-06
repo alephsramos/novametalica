@@ -30,7 +30,7 @@
     height: 5vh;
     align-items: center;
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
+    font-weight: 400!important;
 }
 
 .header-texts-btn{
@@ -41,7 +41,7 @@
 }
 
 .header-texts-btn button{
-    padding: 10px 50px;
+    padding: 5px 50px;
     border: 1px solid #353535;
     border-radius: 5px;
     background-color: transparent;
@@ -50,6 +50,7 @@
     cursor: pointer;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
+    animation: animate_pulse 2s infinite linear;
 }
 
 .header-texts-btn button:hover{
@@ -57,6 +58,16 @@
     border: none;
     color: #fff;
     transform: scale(1.02);
+}
+
+@keyframes animate_pulse{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.01) translateX(5px);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    }
 }
 
 
