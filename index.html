@@ -36,6 +36,25 @@
 </head>
 
 <body>
+
+    <div id="preloader">
+        <img src="imagens/logo.svg" alt="Logo" id="logo">
+        <script>
+        // Função para ocultar o preloader após 2 segundos
+window.addEventListener("load", function () {
+    setTimeout(function () {
+        const preloader = document.getElementById("preloader");
+        const content = document.getElementById("content");
+
+        // Oculta o preloader e mostra o conteúdo
+        preloader.style.display = "none";
+        content.style.display = "block";
+    }, 2000); // 2000 milissegundos = 2 segundos
+});
+</script>
+    </div>
+
+
     <nav class="nav-top">
         <div class="nav-top-all-elements animate animate-fade-in">
             <div class="nav-links-top">

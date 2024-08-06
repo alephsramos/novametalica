@@ -12,6 +12,35 @@ html, body{
     overflow-x: hidden;
 }
 
+/* Estilos para o pré-carregamento */
+#preloader {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #fff; /* Cor de fundo do preloader */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 9999;
+}
+
+#logo {
+    width: 150px; /* Tamanho da logo */
+    animation: fadeInOut 2s ease-in-out;
+}
+
+/* Animação para aparecer e desaparecer */
+@keyframes fadeInOut {
+    0%, 100% {
+        opacity: 0;
+    }
+    50% {
+        opacity: 1;
+    }
+}
+
 .header{
     background-image: url(../imagens/header-background.webp);
     background-position: center;
