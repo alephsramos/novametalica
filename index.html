@@ -147,7 +147,12 @@
             <p>Na Nova Metálica, estamos comprometidos em fornecer os melhores perfis do mercado para a construção de estruturas em Steel Frame. Qualidade incomparável, durabilidade excepcional e inovação constante são nossos pilares.<br>Escolha a Nova Metálica e leve seus projetos a um novo patamar de excelência!
             </p>
             <div class="header-texts-btn">
-            <button>Falar agora pelo WhatsApp</button>
+            <button id="falar_whatsapp">Falar agora pelo WhatsApp</button>
+            <script>
+                document.getElementById('falar_whatsapp').addEventListener('click', function() {
+  document.getElementById('form').scrollIntoView({ behavior: 'smooth' });
+});
+            </script>
             </div>
         </div>
     </div>
