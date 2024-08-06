@@ -607,11 +607,11 @@
     .form-redes{
         height: 10vh;
         width: 100%;
-        gap: 20px;
+        gap: 10px;
     }
     
     .form-redes i{
-        font-size: 25px;
+        font-size: 20px;
         width: 30px;
         height: 30px;
     }
@@ -754,11 +754,11 @@
     .form-redes{
         height: 10vh;
         width: 100%;
-        gap: 20px;
+        gap: 10px;
     }
     
     .form-redes i{
-        font-size: 35px;
+        font-size: 25px;
         width: 30px;
         height: 30px;
     }
@@ -901,11 +901,11 @@
     .form-redes{
         height: 10vh;
         width: 100%;
-        gap: 20px;
+        gap: 10px;
     }
     
     .form-redes i{
-        font-size: 35px;
+        font-size: 30px;
         width: 30px;
         height: 30px;
     }
