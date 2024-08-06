@@ -394,10 +394,10 @@
         padding: 10px 10%;
     }
     .nav-links {
-        gap: 20px;
+        gap: 25px;
     }
     .nav-links a {
-        font-size: 0.8rem;
+        font-size: 0.7rem;
     }
     .nav-btn button {
         padding: 5px 15px;
