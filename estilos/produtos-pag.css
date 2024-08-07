@@ -189,6 +189,8 @@ html, body{
     border: none;
 }
 
+
+
 @media (max-width: 576px){
     .fundo-produtos{
         height: 95dvh;
