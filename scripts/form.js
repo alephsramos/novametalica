@@ -1,8 +1,9 @@
 document.addEventListener('DOMContentLoaded', function () {
     const formElement = document.getElementById('contactForm');
     const textArea = document.getElementById('selectedProducts');
-    const submitButton = formElement.querySelector('button[type="submit"]');
-    const successAlert = document.getElementById('successAlert');
+    const submitButton = document.querySelector('button[type="submit"]');
+    const buttonText = submitButton.querySelector('.button-text');
+    const whatsappIcon = submitButton.querySelector('.whatsapp-icon');
 
     formElement.addEventListener('submit', function (event) {
         // Previne o envio padrão do formulário
@@ -57,12 +58,13 @@ document.addEventListener('DOMContentLoaded', function () {
             formElement.reset();
             textArea.value = ''; // Limpa o textarea
 
-            // Desativa o botão de envio para impedir envios duplicados
-            submitButton.disabled = true;
-            submitButton.textContent = "Você já enviou esse formulário";
-
-            // Altera o background para verde de sucesso
-            formElement.classList.add('success-background');
+            // Altera o botão para o link do WhatsApp com ícone
+            submitButton.classList.add('success-background');
+            buttonText.style.display = 'none'; // Esconde o texto do botão
+            whatsappIcon.style.display = 'inline-block'; // Mostra o ícone do WhatsApp
+            submitButton.onclick = function() {
+                window.open('https://wa.link/fiqr5h', '_blank');
+            };
         })
         .catch((error) => {
             console.error('Error:', error);
@@ -72,20 +74,23 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Função para mostrar o alerta de sucesso
     function showSuccessAlert() {
-        successAlert.style.display = 'block';
+        const successAlert = document.createElement('div');
+        successAlert.className = 'success-alert';
+        successAlert.textContent = 'Formulário enviado com sucesso!';
+        document.body.appendChild(successAlert);
         setTimeout(() => {
-            successAlert.style.display = 'none';
-        }, 300000); // Esconde o alerta após 3 segundos
+            successAlert.remove();
+        }, 2000); // Esconde o alerta após 3 segundos
     }
 
     function generateQuoteText() {
         const sidebarProducts = document.querySelectorAll('.sidebar-product');
-        let text = "Produtos selecionados:<br>";
+        let text = "<strong>Produtos selecionados:</strong><br>";
 
         sidebarProducts.forEach(product => {
             const productName = product.querySelector('.sidebar-product-details h6').textContent;
             const productThickness = product.querySelector('.sidebar-product-details p').textContent;
-            text += `Produto: ${productName}<br>Medidas: ${productThickness}<br><br>`;
+            text += `<strong>Produto:</strong> ${productName}<br><strong>Medidas:</strong> ${productThickness}<br><br>`;
         });
 
         return text;
@@ -95,19 +100,4 @@ document.addEventListener('DOMContentLoaded', function () {
     function generateUniqueId() {
         return new Date().getTime().toString();
     }
-
-    // Verifica se há uma âncora na URL e rola suavemente até o formulário
-    window.addEventListener('load', function() {
-        const hash = window.location.hash;
-        if (hash === '#form') {
-            const formElement = document.getElementById('form');
-            if (formElement) {
-                formElement.scrollIntoView({ behavior: 'smooth' });
-            }
-        }
-
-        // Reativa o botão e restaura o texto ao carregar a página
-        submitButton.disabled = false;
-        submitButton.textContent = "Enviar";
-    });
 });

@@ -222,10 +222,36 @@
 }
 
 /* Estilos para o botão desativado */
-button[type="submit"]:disabled {
-    background-color: #0c491f;
-    color: #fff;
+/* Estilo para o botão após o envio */
+button[type="submit"].success-background {
+    background-color: #0c491f; /* Verde de sucesso */
+    color: #fff; /* Cor do texto */
+    border: none;
+    transition: all .2s;
+    border-radius: 5px;
+    animation: animate_pulse2 2s alternate-reverse infinite;
 }
+
+button[type="submit"].success-background:hover{
+    background-color: #078f03;
+    color: #fff;
+    transform: scale(1.01);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para o ícone do WhatsApp no botão */
+button[type="submit"].success-background .whatsapp-icon {
+    font-size: 2.4rem; /* Tamanho do ícone */
+    color: white; /* Cor do ícone */
+    margin-left: 0.5rem; /* Espaçamento entre ícone e texto */
+    display: inline-block; /* Exibe o ícone */
+}
+
+/* Estilo inicial para o ícone do WhatsApp */
+.whatsapp-icon {
+    display: none; /* Esconde o ícone inicialmente */
+}
+
 
 /* Estilos para o alerta de sucesso */
 .success-alert {
@@ -283,12 +309,18 @@ button[type="submit"]:disabled {
     }
 
     /* Estilos para o alerta de sucesso */
-.success-alert {
-    padding: 15px 25px;
-    font-size: 12px;
-    text-align: center;
-    width: 80%;
-}
+    button[type="submit"].success-background .whatsapp-icon {
+        font-size: 1.4rem; /* Tamanho do ícone */
+    }
+
+    .success-alert {
+        padding: 20px 20px;
+        font-size: 13px;
+        text-align: center;
+        width: 70%;
+        left: 50%;
+        top: 5%;
+    }
     
     .form-input-nome,
     .form-input-email,
@@ -399,11 +431,17 @@ button[type="submit"]:disabled {
         width: 100%;
     }
 
+    button[type="submit"].success-background .whatsapp-icon {
+        font-size: 2rem; /* Tamanho do ícone */
+    }
+
     .success-alert {
-        padding: 15px 25px;
+        padding: 20px 20px;
         font-size: 13px;
         text-align: center;
-        width: 80%;
+        width: 50%;
+        left: 50%;
+        top: 10%;
     }
     
     .form-submit{
@@ -441,11 +479,17 @@ button[type="submit"]:disabled {
         justify-content: space-evenly;
     }
 
+    button[type="submit"].success-background .whatsapp-icon {
+        font-size: 2rem; /* Tamanho do ícone */
+    }
+
     .success-alert {
-        padding: 15px 25px;
-        font-size: 14px;
+        padding: 20px 20px;
+        font-size: 13px;
         text-align: center;
-        width: 80%;
+        width: 50%;
+        left: 50%;
+        top: 10%;
     }
     
     .form-right-text{
@@ -541,11 +585,17 @@ button[type="submit"]:disabled {
         padding: 5px;
     }
 
+    button[type="submit"].success-background .whatsapp-icon {
+        font-size: 1.8rem; /* Tamanho do ícone */
+    }
+
     .success-alert {
-        padding: 15px 25px;
+        padding: 20px 20px;
         font-size: 12px;
         text-align: center;
-        width: 80%;
+        width: 25%;
+        left: 70%;
+        top: 28%;
     }
     
     .form-input-nome,
@@ -695,11 +745,17 @@ button[type="submit"]:disabled {
         padding: 5px;
     }
 
+    button[type="submit"].success-background .whatsapp-icon {
+        font-size: 2rem; /* Tamanho do ícone */
+    }
+
     .success-alert {
-        padding: 15px 25px;
+        padding: 20px 20px;
         font-size: 13px;
         text-align: center;
-        width: 80%;
+        width: 20%;
+        left: 70%;
+        top: 13%;
     }
     
     .form-input-nome,
@@ -827,10 +883,12 @@ button[type="submit"]:disabled {
     }
     
     .success-alert {
-        padding: 15px 25px;
-        font-size: 14px;
+        padding: 25px 20px;
+        font-size: 17px;
         text-align: center;
-        width: 80%;
+        width: 20%;
+        left: 70%;
+        top: 27%;
     }
     
     .form-right{

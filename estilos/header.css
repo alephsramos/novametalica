@@ -65,8 +65,16 @@
         transform: scale(1);
     }
     50%{
-        transform: scale(1.01) translateX(5px);
+        transform: scale(1.01);
         box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    }
+}
+
+@keyframes animate_pulse2{
+    0%{
+    }
+    50%{
+        background-color: #078f03;
     }
 }
 
