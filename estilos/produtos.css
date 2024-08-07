@@ -465,12 +465,12 @@
     height: 95vh;
     top: 2.5vh;
     background-color: #fff;
-    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.1);
+    box-shadow: -4px 0 10px rgba(0, 0, 0, 0.3);
     transition: right 0.3s;
     display: flex;
     flex-direction: column;
     z-index: 15;
-    border-radius: 10px 0px 0px 10px;
+    border-radius: 5px 0px 0px 5px;
 }
 
 .sidebar-header {
@@ -481,7 +481,7 @@
     align-items: center;
     justify-content: space-between;
     background-color: #353535;
-    border-radius: 10px 0px 0px;
+    border-radius: 5px 0px 0px;
 }
 
 .sidebar-header span{
@@ -516,7 +516,7 @@
     align-items: center;
     justify-content: center;
     width: 100%;
-    border-radius: 0px 0px 0px 10px;
+    border-radius: 0px 0px 0px 5px;
 }
 
 .sidebar-footer button {
@@ -524,7 +524,7 @@
     padding: 15px;
     background-color: transparent;
     border: 1px solid #ffffff;
-    border-radius: 10px;
+    border-radius: 5px;
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     transition: all .3s;

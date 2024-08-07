@@ -213,6 +213,7 @@
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     cursor: pointer;
+    transition: all .2s;
 }
 
 .form-submit button:hover{
@@ -220,14 +221,27 @@
     color: #fff;
 }
 
-.form-submit button.correct::after {
-    background-image: url('../imagens/avatar.png'); /* Substitua pelo caminho do ícone de check */
+/* Estilos para o botão desativado */
+button[type="submit"]:disabled {
+    background-color: #0c491f;
+    color: #fff;
 }
 
-.form-submit button.incorrect::after {
-    background-image: url('x-icon.png'); /* Substitua pelo caminho do ícone de X */
+/* Estilos para o alerta de sucesso */
+.success-alert {
+    position: fixed;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #353535;
+    color: white;
+    padding: 25px 30px;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+    z-index: 1000;
+    font-size: 16px;
+    text-align: center;
 }
-
 
 
 @media (max-width: 576px){
@@ -267,6 +281,14 @@
         gap: 10px;
         padding: 5px;
     }
+
+    /* Estilos para o alerta de sucesso */
+.success-alert {
+    padding: 15px 25px;
+    font-size: 12px;
+    text-align: center;
+    width: 80%;
+}
     
     .form-input-nome,
     .form-input-email,
@@ -376,6 +398,13 @@
         font-size: 1rem;
         width: 100%;
     }
+
+    .success-alert {
+        padding: 15px 25px;
+        font-size: 13px;
+        text-align: center;
+        width: 80%;
+    }
     
     .form-submit{
         height: 7vh;
@@ -410,6 +439,13 @@
         width: 100%;
         padding: 15px;
         justify-content: space-evenly;
+    }
+
+    .success-alert {
+        padding: 15px 25px;
+        font-size: 14px;
+        text-align: center;
+        width: 80%;
     }
     
     .form-right-text{
@@ -503,6 +539,13 @@
         width: 100%;
         gap: 10px;
         padding: 5px;
+    }
+
+    .success-alert {
+        padding: 15px 25px;
+        font-size: 12px;
+        text-align: center;
+        width: 80%;
     }
     
     .form-input-nome,
@@ -651,6 +694,13 @@
         gap: 10px;
         padding: 5px;
     }
+
+    .success-alert {
+        padding: 15px 25px;
+        font-size: 13px;
+        text-align: center;
+        width: 80%;
+    }
     
     .form-input-nome,
     .form-input-email,
@@ -776,6 +826,12 @@
         height: 70vh;
     }
     
+    .success-alert {
+        padding: 15px 25px;
+        font-size: 14px;
+        text-align: center;
+        width: 80%;
+    }
     
     .form-right{
         width: 50%;

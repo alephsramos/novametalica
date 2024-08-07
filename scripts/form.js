@@ -1,7 +1,8 @@
-
 document.addEventListener('DOMContentLoaded', function () {
     const formElement = document.getElementById('contactForm');
     const textArea = document.getElementById('selectedProducts');
+    const submitButton = formElement.querySelector('button[type="submit"]');
+    const successAlert = document.getElementById('successAlert');
 
     formElement.addEventListener('submit', function (event) {
         // Previne o envio padrão do formulário
@@ -16,10 +17,13 @@ document.addEventListener('DOMContentLoaded', function () {
         const tel = document.getElementById('tel').value;
         const selectedProducts = textArea.value;
 
+        // Gera um identificador único para cada submissão
+        const uniqueId = generateUniqueId();
+
         // Monta o payload conforme necessário para o PipeRun
         const payload = {
             leads: [{
-                id: "site_nova_metalica",
+                id: "site_nova_metalica_" + uniqueId,
                 user: name,
                 title: name,
                 email: email,
@@ -30,7 +34,8 @@ document.addEventListener('DOMContentLoaded', function () {
                     source: "site_nova_metalica"
                 },
                 custom_fields: {
-                    selectedProducts
+                    selectedProducts,
+                    uniqueId
                 }
             }]
         };
@@ -46,10 +51,18 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(response => response.json())
         .then(data => {
             console.log('Success:', data);
-            alert('Formulário enviado com sucesso!');
+            showSuccessAlert(); // Mostra o alerta de sucesso
+
             // Limpa o formulário após o envio
             formElement.reset();
             textArea.value = ''; // Limpa o textarea
+
+            // Desativa o botão de envio para impedir envios duplicados
+            submitButton.disabled = true;
+            submitButton.textContent = "Você já enviou esse formulário";
+
+            // Altera o background para verde de sucesso
+            formElement.classList.add('success-background');
         })
         .catch((error) => {
             console.error('Error:', error);
@@ -57,17 +70,30 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     });
 
+    // Função para mostrar o alerta de sucesso
+    function showSuccessAlert() {
+        successAlert.style.display = 'block';
+        setTimeout(() => {
+            successAlert.style.display = 'none';
+        }, 300000); // Esconde o alerta após 3 segundos
+    }
+
     function generateQuoteText() {
         const sidebarProducts = document.querySelectorAll('.sidebar-product');
-        let text = "Produtos selecionados:\n";
+        let text = "Produtos selecionados:<br>";
 
         sidebarProducts.forEach(product => {
             const productName = product.querySelector('.sidebar-product-details h6').textContent;
             const productThickness = product.querySelector('.sidebar-product-details p').textContent;
-            text += `Nome: ${productName}\nEspessura: ${productThickness}\n\n`;
+            text += `Produto: ${productName}<br>Medidas: ${productThickness}<br><br>`;
         });
 
         return text;
+    }
+
+    // Função para gerar um identificador único
+    function generateUniqueId() {
+        return new Date().getTime().toString();
     }
 
     // Verifica se há uma âncora na URL e rola suavemente até o formulário
@@ -79,5 +105,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 formElement.scrollIntoView({ behavior: 'smooth' });
             }
         }
+
+        // Reativa o botão e restaura o texto ao carregar a página
+        submitButton.disabled = false;
+        submitButton.textContent = "Enviar";
     });
 });
