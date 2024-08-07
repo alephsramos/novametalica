@@ -176,13 +176,14 @@
 .projeto-action-left i,
 .projeto-action-right i{
     font-size: 30px;
-    color: #cfcfcf;
+    color: #353535;
     transition: all .3s;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
 }
 
 .projeto-action-left i:hover,
 .projeto-action-right i:hover{
-    color: #353535;
+    color: #292929;
 }
 
 

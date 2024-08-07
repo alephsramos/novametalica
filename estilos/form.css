@@ -221,6 +221,7 @@
     color: #fff;
 }
 
+
 /* Estilos para o botão desativado */
 /* Estilo para o botão após o envio */
 button[type="submit"].success-background {
@@ -252,22 +253,85 @@ button[type="submit"].success-background .whatsapp-icon {
     display: none; /* Esconde o ícone inicialmente */
 }
 
+/* Estilo para o overlay de carregamento */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 1); /* Fundo semi-transparente branco */
+    display: none; /* Oculto por padrão */
+    align-items: center;
+    justify-content: center;
+    z-index: 9999; /* Acima de todos os outros elementos */
+}
+
+/* Estilo para o overlay de carregamento */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255); /* Fundo semi-transparente branco */
+    display: none; /* Oculto por padrão */
+    align-items: center;
+    justify-content: center;
+    z-index: 9999; /* Acima de todos os outros elementos */
+}
+
+/* Estilo para o spinner de carregamento */
+.spinner {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Animação de rotação do ícone */
+.spinner .fa-spinner {
+    font-size: 2rem; /* Tamanho do ícone */
+    color: #0c491f; /* Cor do ícone */
+}
+
+/* Estilo e animação para o ícone de check */
+.success-check {
+    font-size: 3rem; /* Tamanho do ícone de check */
+    color: #0c491f; /* Cor do ícone de sucesso */
+    position: absolute;
+    display: none; /* Oculto por padrão */
+    opacity: 0;
+    transition: opacity 0.5s; /* Transição suave */
+}
+
+.spinner.show-check .fa-spinner {
+    opacity: 0;
+}
+
+.spinner.show-check .fa-check {
+    display: inline-block;
+    opacity: 1;
+}
+
+/* Animação de rotação do ícone */
+@keyframes rotateSpinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
 
 /* Estilos para o alerta de sucesso */
-.success-alert {
-    position: fixed;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    background-color: #353535;
-    color: white;
-    padding: 25px 30px;
-    border-radius: 5px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-    z-index: 1000;
-    font-size: 16px;
-    text-align: center;
-}
 
 
 @media (max-width: 576px){

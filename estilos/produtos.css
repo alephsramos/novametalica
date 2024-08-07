@@ -233,6 +233,7 @@
     cursor: pointer;
     background-color: transparent;
     border: 1px solid #cfcfcf;
+    
 }
 
 .produto-card-btn-left:hover{
@@ -304,6 +305,7 @@
     font-size: 40px;
     color: #cfcfcf;
     transition: all .3s;
+    filter: drop-shadow(2px 2px 2px rgba(0, 0, 0, 0.3));
 }
 
 .produto-action-left.left i:hover,

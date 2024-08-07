@@ -1,16 +1,26 @@
 document.addEventListener('DOMContentLoaded', function () {
     const formElement = document.getElementById('contactForm');
-    const textArea = document.getElementById('selectedProducts');
+    const textArea = document.getElementById('selectedProducts'); // Mantém para enviar os dados em texto simples
+    const previewDiv = document.getElementById('previewDiv'); // Novo elemento para exibir HTML formatado
     const submitButton = document.querySelector('button[type="submit"]');
     const buttonText = submitButton.querySelector('.button-text');
     const whatsappIcon = submitButton.querySelector('.whatsapp-icon');
+    const loadingOverlay = document.getElementById('loadingOverlay');
+    const spinner = loadingOverlay.querySelector('.spinner');
+    const spinnerIcon = spinner.querySelector('.fa-spinner');
+    const checkIcon = spinner.querySelector('.fa-check');
 
     formElement.addEventListener('submit', function (event) {
         // Previne o envio padrão do formulário
         event.preventDefault();
-        
+
+        // Exibe o overlay de carregamento
+        loadingOverlay.style.display = 'flex';
+
         // Preenche o textarea com os dados dos produtos selecionados
-        textArea.value = generateQuoteText();
+        const formattedText = generateQuoteText();
+        textArea.value = formattedText; // Mantém o texto simples para enviar
+        previewDiv.innerHTML = formattedText; // Mostra o HTML formatado na visualização
 
         // Captura os valores dos campos do formulário
         const name = document.getElementById('name').value;
@@ -52,7 +62,14 @@ document.addEventListener('DOMContentLoaded', function () {
         .then(response => response.json())
         .then(data => {
             console.log('Success:', data);
-            showSuccessAlert(); // Mostra o alerta de sucesso
+
+            // Oculta o spinner e mostra o ícone de check
+            setTimeout(() => {
+                spinner.classList.add('show-check');
+                setTimeout(() => {
+                    loadingOverlay.style.display = 'none'; // Oculta o overlay após a animação
+                }, 400); // Tempo para a transição do check
+            }, 300); // Tempo da animação do spinner
 
             // Limpa o formulário após o envio
             formElement.reset();
@@ -62,6 +79,11 @@ document.addEventListener('DOMContentLoaded', function () {
             submitButton.classList.add('success-background');
             buttonText.style.display = 'none'; // Esconde o texto do botão
             whatsappIcon.style.display = 'inline-block'; // Mostra o ícone do WhatsApp
+
+            // Muda o texto do h2 para "Já enviado" com ícone de check
+            const heading = document.querySelector('#contactForm .form-right-text h2');
+            heading.innerHTML = 'Enviado com sucesso!';
+
             submitButton.onclick = function() {
                 window.open('https://wa.link/fiqr5h', '_blank');
             };
@@ -71,17 +93,6 @@ document.addEventListener('DOMContentLoaded', function () {
             alert('Houve um erro ao enviar o formulário.');
         });
     });
-
-    // Função para mostrar o alerta de sucesso
-    function showSuccessAlert() {
-        const successAlert = document.createElement('div');
-        successAlert.className = 'success-alert';
-        successAlert.textContent = 'Formulário enviado com sucesso!';
-        document.body.appendChild(successAlert);
-        setTimeout(() => {
-            successAlert.remove();
-        }, 2000); // Esconde o alerta após 3 segundos
-    }
 
     function generateQuoteText() {
         const sidebarProducts = document.querySelectorAll('.sidebar-product');
