@@ -1421,7 +1421,6 @@
                 </div>
             </div>
         </form>
-        <div id="previewDiv"></div>
             </div>
     
     <script src="scripts/form.js"></script>
@@ -1439,7 +1438,7 @@
                 if (status === 'OK') {
                     const location = results[0].geometry.location;
                     const map = new google.maps.Map(document.getElementById('map'), {
-                        zoom: 12,
+                        zoom: 16,
                         center: location,
                     });
 

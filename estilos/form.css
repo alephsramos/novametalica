@@ -127,7 +127,8 @@
     justify-content: center;
     flex-direction: column;
     padding: 15px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .form-right-text{
@@ -161,6 +162,9 @@
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     padding: 20px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .form-input-nome::placeholder,
@@ -214,6 +218,9 @@
     font-weight: 300;
     cursor: pointer;
     transition: all .2s;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .form-submit button:hover{

@@ -1,7 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
     const formElement = document.getElementById('contactForm');
-    const textArea = document.getElementById('selectedProducts'); // Mantém para enviar os dados em texto simples
-    const previewDiv = document.getElementById('previewDiv'); // Novo elemento para exibir HTML formatado
+    const textArea = document.getElementById('selectedProducts');
     const submitButton = document.querySelector('button[type="submit"]');
     const buttonText = submitButton.querySelector('.button-text');
     const whatsappIcon = submitButton.querySelector('.whatsapp-icon');
@@ -18,9 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
         loadingOverlay.style.display = 'flex';
 
         // Preenche o textarea com os dados dos produtos selecionados
-        const formattedText = generateQuoteText();
-        textArea.value = formattedText; // Mantém o texto simples para enviar
-        previewDiv.innerHTML = formattedText; // Mostra o HTML formatado na visualização
+        textArea.value = generateQuoteText();
 
         // Captura os valores dos campos do formulário
         const name = document.getElementById('name').value;
@@ -34,7 +31,7 @@ document.addEventListener('DOMContentLoaded', function () {
         // Monta o payload conforme necessário para o PipeRun
         const payload = {
             leads: [{
-                id: "site_nova_metalica_" + uniqueId,
+                id: "WebSite_Nova_Metalica",
                 user: name,
                 title: name,
                 email: email,
@@ -68,7 +65,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 spinner.classList.add('show-check');
                 setTimeout(() => {
                     loadingOverlay.style.display = 'none'; // Oculta o overlay após a animação
-                }, 400); // Tempo para a transição do check
+                }, 500); // Tempo para a transição do check
             }, 300); // Tempo da animação do spinner
 
             // Limpa o formulário após o envio
@@ -96,12 +93,12 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function generateQuoteText() {
         const sidebarProducts = document.querySelectorAll('.sidebar-product');
-        let text = "<strong>Produtos selecionados:</strong><br>";
+        let text = "<b>Produtos selecionados:</b><br>";
 
         sidebarProducts.forEach(product => {
             const productName = product.querySelector('.sidebar-product-details h6').textContent;
             const productThickness = product.querySelector('.sidebar-product-details p').textContent;
-            text += `<strong>Produto:</strong> ${productName}<br><strong>Medidas:</strong> ${productThickness}<br><br>`;
+            text += `<b>Produto:</b> ${productName}<br><b>Medidas:</b> ${productThickness}<br><br>`;
         });
 
         return text;
