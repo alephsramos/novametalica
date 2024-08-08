@@ -33,7 +33,6 @@ document.addEventListener('DOMContentLoaded', function () {
             leads: [{
                 id: "WebSite_Nova_Metalica",
                 user: name,
-                title: name,
                 email: email,
                 name: name,
                 personal_phone: tel,
