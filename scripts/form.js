@@ -30,6 +30,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
         // Monta o payload conforme necessário para o PipeRun
         const payload = {
+            "rules": {
+    
+                "update": "false",
+                "filter_status_update": "open",
+                "equal_pipeline": "true",
+                "status": "open",
+                "validate_cpf": "false",
+                },
             leads: [{
                 id: "WebSite_Nova_Metalica",
                 user: name,
