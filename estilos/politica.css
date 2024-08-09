@@ -13,6 +13,7 @@ html, body{
     border: 1px solid #000;
     overflow: hidden;
     scroll-behavior: smooth;
+    background-color: #fff;
 }
 
 main{
@@ -34,9 +35,10 @@ main{
     white-space: wrap;
     border: 1px solid rgba(0, 0, 0, 0.2);
     border-radius: 10px;
-    box-shadow: 0 0 5px rgba(0, 0, 0, 0.2);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
     padding: 40px;
     position: relative;
+    background-color: #fff;
 }
 
 .title{
