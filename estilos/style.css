@@ -44,20 +44,20 @@ html, body{
       align-items: center;
       z-index: 9999;
       opacity: 1; /* Opacidade inicial */
-      transition: opacity 0.5s ease-out; /* Transição suave para opacidade */
+      transition: opacity 0.2s ease-out; /* Transição suave para opacidade */
   }
   
   #preloader.hidden {
       opacity: 0;
-      animation: slideOutDown 0.5s ease-out forwards; /* Animação de saída mais rápida para o preloader */
+      animation: slideOutDown 0.2s ease-out forwards; /* Animação de saída mais rápida para o preloader */
   }
   
   #logo {
-      animation: logoSlideIn 0.5s ease-in-out forwards; /* Animação de entrada para a logo */
+      animation: logoSlideIn 0.2s ease-in-out forwards; /* Animação de entrada para a logo */
   }
   
   #preloader.hidden #logo {
-      animation: logoSlideOut 0.5s ease-out forwards; /* Animação de saída mais rápida para a logo */
+      animation: logoSlideOut 0.2s ease-out forwards; /* Animação de saída mais rápida para a logo */
   }
   
   
@@ -87,5 +87,11 @@ html, body{
     }
 }
 
+::-webkit-scrollbar{
+    background-color: #353535;
+    width: 10px;
+}
 
-
+::-webkit-scrollbar-thumb{
+    background-color: #cfcfcf;
+}

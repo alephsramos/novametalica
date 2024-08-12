@@ -7,7 +7,7 @@
     <meta name="author" content="Aleph Ramos - Desenvolvedor Web"> <!-- criador do site ig: @alephsramos -->
     <meta name="author" content="Alice Pereira - Copy"> <!-- criador da escrita do site -->
     <meta name="author" content="Livia Motta - WebDesign"> <!-- criador do design do site -->
-    <meta name="description" content="DESCRIÇÃO BREVE DA PÁGINA"> <!-- uma breve descrição (FALTA COLOCAR) -->
+    <meta name="description" content="A Nova Metálica é uma empresa referência na fabricação de perfis para construção em Steel Frame, oferecendo soluções inovadoras e de alta qualidade para projetos eficientes e sustentáveis."> <!-- uma breve descrição -->
     <meta name="keywords" content="Nova Metálica, Construção Civil, Drywall, SteelFrame, Fast Drywall, Auraucária Perfis, Ananda Perfis, VL Perfil, Perfil Lider, Multi Perfil">
 
     <link rel="stylesheet" href="estilos/navbar.css"> <!-- CSS da navbar -->
@@ -58,7 +58,7 @@
             preloader.style.display = "none";
             content.style.display = "block";
         });
-    }, 2000); 
+    }, 400); 
 });
 </script>
     </div>
@@ -1106,8 +1106,8 @@
             <button class="projeto-action-left" id="projeto_left">
                 <i class="fa-solid fa-circle-chevron-left"></i>
             </button>
-            <button class="projeto-action-center">
-                Ver todos
+            <button data-modal="modal6" class="projeto-action-center openModal">
+                Ver um Projeto
             </button>
             <button class="projeto-action-right" id="projeto_right">
                 <i class="fa-solid fa-circle-chevron-right"></i>
@@ -1351,7 +1351,7 @@
                 </div>
                 <div class="form-contact-right">
                     <h6>Telefone</h6>
-                    <p>(24) 1234-5678</p>
+                    <p>+55 (21) 99288-2282</p>
                 </div>
             </div>
             <div class="form-contact-div">
@@ -1376,13 +1376,13 @@
             <hr class="form-linha">
             </div>
             <div class="form-redes">
-                <a href="#">
+                <a href="https://www.instagram.com/anovametalica/" target="_blank">
                     <i class="fa-brands fa-instagram"></i>
                 </a>
                 <a href="#">
                     <i class="fa-brands fa-facebook"></i>
                 </a>
-                <a href="#">
+                <a href="https://www.linkedin.com/in/novametalica/" target="_blank">
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
                 <a href="#">
@@ -1406,7 +1406,7 @@
             <div class="form-inputs">
                 <input class="form-input-nome" required type="text" placeholder="Nome" id="name" name="name">
                 <input class="form-input-email" required type="email" placeholder="E-mail" id="email" name="email">
-                <input class="form-input-tel" required type="tel" placeholder="+55 21 987654321" id="tel" name="tel">
+                <input class="form-input-tel" required type="tel" placeholder="+55 (21) 99288-2282" id="tel" name="tel">
                 <textarea id="selectedProducts" name="selectedProducts" style="display: none;"></textarea>
             </div>
             <div class="form-right-direitos">
@@ -1454,10 +1454,10 @@
         </div>
         <div class="footer-links animate animate-fade-in">
             <p>Parcerias</p>
-            <a href="#" target="_blank">CSN Siderúrgica</a>
-            <a href="#" target="_blank">Arcellor Mital</a>
-            <a href="#" target="_blank">Saint Gobain</a>
-            <a href="#" target="_blank">Grupo STO Brasil</a>
+            <a href="https://www.csn.com.br/" target="_blank">CSN Siderúrgica</a>
+            <a href="https://loja.arcelormittal.com.br/" target="_blank">Arcellor Mital</a>
+            <a href="https://www.saint-gobain.com.br/" target="_blank">Saint Gobain</a>
+            <a href="https://stobrasil.com.br/" target="_blank">Grupo STO Brasil</a>
         </div>
         <div class="footer-links animate animate-fade-in">
             <p>Siga-nos</p>
@@ -1481,120 +1481,6 @@
     <i class="fa-solid fa-cart-shopping"></i>
     <span class="badge">0</span> <!-- Indicador de notificação -->
 </div>
-
-
-<script>
-   document.addEventListener("DOMContentLoaded", function () {
-        const startTime = Date.now();
-        let sectionTimes = {};
-        let currentSection = null;
-        let formSubmitted = false;
-
-        // Inicializar tempos das seções
-        const sections = document.querySelectorAll("section");
-        sections.forEach(section => {
-            sectionTimes[section.id] = 0;
-        });
-
-        // Detectar a seção ativa
-        const getActiveSection = () => {
-            let activeSection = null;
-            let minDistance = Infinity;
-            sections.forEach(section => {
-                const rect = section.getBoundingClientRect();
-                const distance = Math.abs(rect.top);
-                if (distance < minDistance) {
-                    minDistance = distance;
-                    activeSection = section;
-                }
-            });
-            return activeSection;
-        };
-
-        // Atualizar a seção atual
-        const updateCurrentSection = () => {
-            const newSection = getActiveSection();
-            if (newSection !== currentSection) {
-                if (currentSection) {
-                    sectionTimes[currentSection.id] += Date.now() - startTime;
-                }
-                currentSection = newSection;
-            }
-        };
-
-        window.addEventListener("scroll", updateCurrentSection);
-
-        // Formulário
-        const form = document.querySelector("form");
-        if (form) {
-            form.addEventListener("submit", function () {
-                formSubmitted = true;
-            });
-        }
-
-        // Função para enviar dados para o Google Sheets
-        function sendToGoogleSheets(data) {
-            const sheetId = "1_VQG4VhJmqvFJ0s0H4VlRXho5hEdbWO1fSiPo2RcThY"; // ID da planilha
-            const apiKey = "AIzaSyDAwDX2rY_3ywmgU9Ke4YDhseq4ZwkJQe0"; // Sua chave de API
-            const url = `https://sheets.googleapis.com/v4/spreadsheets/${sheetId}/values/A1:append?valueInputOption=USER_ENTERED&key=${apiKey}`;
-
-            const body = {
-                values: [
-                    [
-                        new Date().toLocaleString(), // Timestamp
-                        data.totalTimeOnSite,
-                        JSON.stringify(data.sectionTimes),
-                        data.sectionLeft,
-                        data.formSubmitted
-                    ]
-                ]
-            };
-
-            fetch(url, {
-                method: "POST",
-                headers: {
-                    "Content-Type": "application/json"
-                },
-                body: JSON.stringify(body)
-            }).then(response => {
-                if (response.ok) {
-                    console.log("Dados enviados para o Google Sheets");
-                } else {
-                    console.error("Erro ao enviar dados: ", response.statusText);
-                }
-            }).catch(error => {
-                console.error("Erro ao enviar dados para o Google Sheets", error);
-            });
-        }
-
-        // Função para coletar e enviar dados
-        function collectAndSendData() {
-            if (currentSection) {
-                sectionTimes[currentSection.id] += Date.now() - startTime;
-            }
-
-            const totalTimeOnSite = Date.now() - startTime;
-            const sectionLeft = currentSection ? currentSection.id : null;
-            const data = {
-                totalTimeOnSite,
-                sectionTimes,
-                sectionLeft,
-                formSubmitted
-            };
-
-            sendToGoogleSheets(data);
-        }
-
-        // // Enviar dados a cada 5 minutos
-        // const intervalId = setInterval(collectAndSendData, 5 * 60 * 1000);
-
-        // Registrar dados ao sair
-        window.addEventListener("beforeunload", function () {
-            clearInterval(intervalId);
-            collectAndSendData();
-        });
-    });
-</script>
 
 </body>
 
