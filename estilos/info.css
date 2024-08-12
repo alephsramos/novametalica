@@ -123,10 +123,11 @@
     }
     
     .estatisticas p{
-        font-size: 0.7rem;
+        font-size: 0.6rem;
         width: 100%;
         text-align: center;
     }
+    
 }
 
 @media (min-width: 576px) and (max-width: 769px){
@@ -344,7 +345,7 @@
     }
     
     .estatisticas p{
-        font-size: 1rem;
+        font-size: 1.2rem;
         width: 100%;
         text-align: center;
     }
