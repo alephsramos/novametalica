@@ -3,6 +3,7 @@
 .nav-top{
     padding: 0 10%;
     height: 5vh;
+    background-color: #353535;
 }
 
 .nav-top-all-elements{
@@ -22,7 +23,7 @@
 }
 
 .nav-links-top a{
-    color: #353535;
+    color: #fff;
     text-decoration: none;
     transition: all .3s;
     font-family: "Poppins", sans-serif;
@@ -31,13 +32,13 @@
 
 .nav-link-top a:hover{
     opacity: 0.7;
-    color: #000;
+    color: #fff;
 }
 
 .nav-links-top i{
     font-size: 20px;
     transition: all .3s;
-    color: #353535;
+    color: #fff;
 }
 
 .nav-link-top{
@@ -61,20 +62,23 @@
 
 .nav-social-top a{
     text-decoration: none;
-    color: #353535;
+    color: #fff;
     font-size: 20px;
     transition: all .1s ease-in-out;
 }
 
 .nav-social-top a:hover{
     opacity: 0.8;
-    color:#000;
+    color:#fff;
 }
 
 /* NAVBAR */
 
 .navbar {
     padding: 15px 10%;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.4);
+    height: 12%;
 }
 
 /* Versão Desktop */
@@ -310,6 +314,10 @@
     .nav-desktop {
         display: none;
     }
+    .navbar{
+        background-color: transparent;
+        box-shadow: none;
+    }
     .nav-hamburger {
         display: flex;
     }
@@ -328,6 +336,10 @@
     .nav-hamburger {
         display: flex;
     }
+    .navbar{
+        background-color: transparent;
+        box-shadow: none;
+    }
 }
 
 @media (min-width: 769px) and (max-width: 992px) { /*Tablet grande*/
@@ -336,6 +348,10 @@
     }
     .nav-top {
         display: none;
+    }
+    .navbar{
+        background-color: transparent;
+        box-shadow: none;
     }
 }
 
@@ -360,6 +376,7 @@
     }
     .navbar {
         padding: 10px 10%;
+        height: 10%;
     }
     .nav-links {
         gap: 15px;
@@ -393,7 +410,8 @@
         font-size: 16px;
     }
     .navbar {
-        padding: 15px 10%;
+        padding: 10px 10%;
+        height: 10%;
     }
     .nav-links {
         gap: 25px;
@@ -402,7 +420,7 @@
         font-size: 0.8rem;
     }
     .nav-btn button {
-        padding: 5px 15px;
+        padding: 10px 15px;
         font-size: 0.7rem;
     }
 }
@@ -428,6 +446,7 @@
     }
     .navbar {
         padding: 15px 10%;
+        height: 10%;
     }
     .nav-links {
         gap: 30px;
