@@ -22,7 +22,7 @@
 }
 
 .nav-links-top a{
-    color: #000;
+    color: #353535;
     text-decoration: none;
     transition: all .3s;
     font-family: "Poppins", sans-serif;
@@ -30,14 +30,14 @@
 }
 
 .nav-link-top a:hover{
-    opacity: 0.9;
-    color: #1f9ad7;
+    opacity: 0.7;
+    color: #000;
 }
 
 .nav-links-top i{
     font-size: 20px;
     transition: all .3s;
-    color: #000;
+    color: #353535;
 }
 
 .nav-link-top{
@@ -61,14 +61,14 @@
 
 .nav-social-top a{
     text-decoration: none;
-    color: #000;
+    color: #353535;
     font-size: 20px;
     transition: all .1s ease-in-out;
 }
 
 .nav-social-top a:hover{
     opacity: 0.8;
-    color:#1f9ad7;
+    color:#000;
 }
 
 /* NAVBAR */
@@ -112,20 +112,20 @@
 }
 
 .nav-links a {
-    color: #000;
+    color: #353535;
     text-decoration: none;
     height: 7vh;
     align-items: center;
     display: flex;
-    transition: all .3s;
+    transition: all .2s;
     font-family: "Poppins", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .nav-links a:hover {
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #353535;
     opacity: 0.9;
-    transform: scale(1.05);
+    transform: scale(1.02);
     letter-spacing: 0.5px;
 }
 
@@ -137,20 +137,22 @@
 }
 
 .nav-btn button {
-    background-color: #000;
+    background-color: #353535;
+    box-shadow: none!important;
     color: #fff;
+    border: none;
     padding: 10px 30px;
     border-radius: 5px;
     transition: all .3s;
     cursor: pointer;
     font-family: "Poppins", sans-serif;
-    font-weight: 300;
+    font-weight: 400;
 }
 
 .nav-btn button:hover {
     background-color: transparent;
-    color: #000;
-    border: 1px solid #000;
+    color: #353535;
+    border: 1px solid #353535;
     transform: scale(1.05);
 }
 
@@ -256,7 +258,7 @@
 .nav-sidebar-links a:hover{
     opacity: 0.8;
     background-color: #fff;
-    color: #000;
+    color: #353535;
 }
 
 .nav-sidebar-btn {
@@ -283,7 +285,7 @@
 
 .nav-sidebar-btn a:hover{
     background-color: #fff;
-    color: #000;
+    color: #353535;
     border: none;
 }
 
@@ -298,7 +300,7 @@
 
 .nav-hamburger .bar {
     height: 4px;
-    background: #000;
+    background: #353535;
 }
 
 @media (max-width: 576px) { /*Celular*/
@@ -388,16 +390,16 @@
         gap: 10px;
     }
     .nav-social-top a {
-        font-size: 17px;
+        font-size: 16px;
     }
     .navbar {
-        padding: 10px 10%;
+        padding: 15px 10%;
     }
     .nav-links {
         gap: 25px;
     }
     .nav-links a {
-        font-size: 0.75rem;
+        font-size: 0.8rem;
     }
     .nav-btn button {
         padding: 5px 15px;
@@ -416,7 +418,7 @@
         font-size: 25px;
     }
     .nav-link-top {
-        gap: 5px;
+        gap: 15px;
     }
     .nav-social-top {
         gap: 10px;
@@ -425,7 +427,7 @@
         font-size: 25px;
     }
     .navbar {
-        padding: 10px 10%;
+        padding: 15px 10%;
     }
     .nav-links {
         gap: 30px;
@@ -434,7 +436,7 @@
         font-size: 1.2rem;
     }
     .nav-btn button {
-        padding: 8px 15px;
+        padding: 10px 25px;
         font-size: 1rem;
     }
 }

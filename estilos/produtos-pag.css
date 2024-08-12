@@ -78,7 +78,7 @@ html, body{
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    border: 1px solid #000;
+    border: 1px solid #353535;
     background-color: #353535;
     padding: 40px;
     border-radius: 5px;
@@ -151,7 +151,7 @@ html, body{
 }
 
 .produto-pag-btn-left i{
-    color: #000;
+    color: #353535;
     background-color: #ffffff;
     width: 45px;
     height: 45px;
@@ -185,9 +185,11 @@ html, body{
 .produto-pag-btn-right button:hover,
 .produto-pag-btn-right button:active{
     background-color: #fff;
-    color: #000;
+    color: #353535;
     border: none;
 }
+
+
 
 @media (max-width: 576px){
     .fundo-produtos{

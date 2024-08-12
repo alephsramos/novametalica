@@ -17,7 +17,7 @@
 
 /* Animação de fade-in */
 .animate-fade-in {
-  transform: scale(0.9);
+  transform: scale(0.5);
 }
 
 /* Animação de deslizar para cima */

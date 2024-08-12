@@ -3,34 +3,34 @@
 }
 
 .header-texts{
-    height: 60vh;
+    height: 80vh;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 30px;
+    gap: 25px;
 }
 
 .header-texts h1{
     font-size: 4rem;
-    width: 100%;
+    width: 70%;
     height: 20vh;
     display: flex;
     align-items: center;
     font-family: "Poppins", sans-serif;
     font-weight: 600;
     line-height: 70px;
-    color: #000;
+    color: #353535;
 
 }
 
 .header-texts p{
     font-size: 1.2rem;
-    width: 100%;
+    width: 60%!important;
     display: flex;
     height: 5vh;
     align-items: center;
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
+    font-weight: 400!important;
 }
 
 .header-texts-btn{
@@ -41,31 +41,49 @@
 }
 
 .header-texts-btn button{
-    padding: 10px 50px;
-    box-shadow: 0 0px 2px rgba(0, 0, 0, 0.6);
-    border: 1px solid #000;
+    padding: 5px 50px;
+    border: 1px solid #353535;
     border-radius: 5px;
     background-color: transparent;
-    color: #000;
+    color: #353535;
     transition: all .3s ;
     cursor: pointer;
     font-family: "Poppins", sans-serif;
-    font-weight: 400;
+    font-weight: 600;
+    animation: animate_pulse 2s infinite linear;
 }
 
 .header-texts-btn button:hover{
-    background-color: #000;
+    background-color: #353535;
     border: none;
     color: #fff;
     transform: scale(1.02);
 }
 
+@keyframes animate_pulse{
+    0%{
+        transform: scale(1);
+    }
+    50%{
+        transform: scale(1.01);
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.8);
+    }
+}
+
+@keyframes animate_pulse2{
+    0%{
+    }
+    50%{
+        background-color: #078f03;
+    }
+}
+
 
 @media (max-width: 576px){
     .header{
-        background-position: center;
-        background-size: cover;
+        background-position: right!important;
         background-image: url('../imagens/header-background-mobile.webp')!important;
+        background-size: cover;
         height: 100dvh;
         background-attachment: fixed;
         background-repeat: no-repeat;
@@ -78,27 +96,29 @@
     
 
     .header-texts{
-        height: 80dvh;
+        height: 80dvh!important;
         width: 100%;
         justify-content: center;
         align-items: center;
         display: flex;
         padding: 0%;
+        width: 100%;
     }
     
     .header-texts h1{
-        font-size: 1.8rem;
+        font-size: 1.8rem!important;
         height: 20vh;
         line-height: 30px;
         text-align: left;
         font-weight: 800;
+        width: 100%;
     }
     
     .header-texts p{
-        font-size: 1rem;
-        width: 100%;
+        font-size: 0.9rem!important;
+        width: 100%!important;
         text-align: left;
-        font-weight: 400;
+        font-weight: 500!important;
         height: 30vh;
     }
     
@@ -112,14 +132,14 @@
     
     .header-texts-btn button{
         padding: 10px 30px;
-        background-color: #000;
+        background-color: #353535;
         color: #fff;
         width: 100%;
     }
 
     .header-texts-btn button:hover{
         background-color: #fff;
-        color: #000;
+        color: #353535;
         border: none;
         transform: scale(1);
         box-shadow: none;
@@ -144,7 +164,7 @@
 
     .header-texts{
         height: 80dvh;
-        width: 100%;
+        width: 100%!important;
         justify-content: center;
         align-items: center;
         display: flex;
@@ -157,11 +177,12 @@
         line-height: 50px;
         text-align: left;
         font-weight: 800;
+        width: 100%;
     }
     
     .header-texts p{
         font-size: 1.4rem;
-        width: 100%;
+        width: 100%!important;
         text-align: left;
         font-weight: 400;
         height: 30vh;
@@ -178,14 +199,14 @@
     .header-texts-btn button{
         padding: 15px 30px;
         font-size: 1.1rem;
-        background-color: #000;
+        background-color: #353535;
         color: #fff;
         width: 100%;
     }
 
     .header-texts-btn button:hover{
         background-color: #fff;
-        color: #000;
+        color: #353535;
         border: none;
         transform: scale(1);
         box-shadow: none;
@@ -223,11 +244,12 @@
         line-height: 55px;
         text-align: left;
         font-weight: 800;
+        width: 100%;
     }
     
     .header-texts p{
         font-size: 1.6rem;
-        width: 100%;
+        width: 100%!important;
         text-align: left;
         font-weight: 400;
         height: 30vh;
@@ -244,14 +266,14 @@
     .header-texts-btn button{
         padding: 20px 30px;
         font-size: 1.2rem;
-        background-color: #000;
+        background-color: #353535;
         color: #fff;
         width: 100%;
     }
 
     .header-texts-btn button:hover{
         background-color: #fff;
-        color: #000;
+        color: #353535;
         border: none;
         transform: scale(1);
         box-shadow: none;
@@ -273,7 +295,7 @@
     
 
     .header-texts{
-        height: 80dvh;
+        height: 70dvh;
         width: 100%;
         justify-content: center;
         align-items: flex-start;
@@ -284,21 +306,21 @@
     .header-texts h1{
         font-size: 2.2rem;
         height: 5vh;
-        line-height: 55px;
+        line-height: 35px;
         text-align: left;
         font-weight: 800;
     }
     
     .header-texts p{
-        font-size: 1.1rem;
+        font-size: 0.9rem;
         width: 85%;
         text-align: left;
         font-weight: 300;
-        height: 20vh;
+        height: 25vh;
     }
     
     .header-texts-btn{
-        height: 10vh;
+        height: 5vh;
         width: 100%;
         display: flex;
         align-items: center;
@@ -338,7 +360,7 @@
     .header-texts h1{
         font-size: 2.4rem;
         height: 5vh;
-        line-height: 55px;
+        line-height: 45px;
         text-align: left;
         font-weight: 800;
     }

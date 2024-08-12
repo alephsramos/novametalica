@@ -98,7 +98,7 @@
 }
 
 .form-linha{
-    border: 0.5px solid #000;
+    border: 0.5px solid #353535;
     width: 80%;
     float: left;
     opacity: 0.2;
@@ -117,7 +117,7 @@
     font-size: 30px;
     width: 30px;
     height: 30px;
-    color: #000;
+    color: #353535;
 }
 
 .form-right{
@@ -127,7 +127,8 @@
     justify-content: center;
     flex-direction: column;
     padding: 15px;
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    border-radius: 5px;
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .form-right-text{
@@ -161,6 +162,9 @@
     font-family: "Poppins", sans-serif;
     font-weight: 400;
     padding: 20px;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.2);
 }
 
 .form-input-nome::placeholder,
@@ -174,7 +178,7 @@
 .form-input-email:focus,
 .form-input-tel:focus{
     background-color: #f3f3f3;
-    color: #000;
+    color: #353535;
     font-size: 1rem;
     border: none;
 }
@@ -209,25 +213,132 @@
     padding: 15px;
     width: 40%;
     background-color: transparent;
-    color: #000;
+    color: #353535;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
     cursor: pointer;
+    transition: all .2s;
+    border-radius: 5px;
+    border: none;
+    border: 1px solid rgba(0, 0, 0, 0.3);
 }
 
 .form-submit button:hover{
-    background-color: #000;
+    background-color: #353535;
     color: #fff;
 }
 
-.form-submit button.correct::after {
-    background-image: url('../imagens/avatar.png'); /* Substitua pelo caminho do ícone de check */
+
+/* Estilos para o botão desativado */
+/* Estilo para o botão após o envio */
+button[type="submit"].success-background {
+    background-color: #0c491f; /* Verde de sucesso */
+    color: #fff; /* Cor do texto */
+    border: none;
+    transition: all .2s;
+    border-radius: 5px;
+    animation: animate_pulse2 2s alternate-reverse infinite;
 }
 
-.form-submit button.incorrect::after {
-    background-image: url('x-icon.png'); /* Substitua pelo caminho do ícone de X */
+button[type="submit"].success-background:hover{
+    background-color: #078f03;
+    color: #fff;
+    transform: scale(1.01);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
 }
 
+/* Estilo para o ícone do WhatsApp no botão */
+button[type="submit"].success-background .whatsapp-icon {
+    font-size: 2.4rem; /* Tamanho do ícone */
+    color: white; /* Cor do ícone */
+    margin-left: 0.5rem; /* Espaçamento entre ícone e texto */
+    display: inline-block; /* Exibe o ícone */
+}
+
+/* Estilo inicial para o ícone do WhatsApp */
+.whatsapp-icon {
+    display: none; /* Esconde o ícone inicialmente */
+}
+
+/* Estilo para o overlay de carregamento */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(255, 255, 255, 1); /* Fundo semi-transparente branco */
+    display: none; /* Oculto por padrão */
+    align-items: center;
+    justify-content: center;
+    z-index: 9999; /* Acima de todos os outros elementos */
+}
+
+/* Estilo para o overlay de carregamento */
+.loading-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255); /* Fundo semi-transparente branco */
+    display: none; /* Oculto por padrão */
+    align-items: center;
+    justify-content: center;
+    z-index: 9999; /* Acima de todos os outros elementos */
+}
+
+/* Estilo para o spinner de carregamento */
+.spinner {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+/* Animação de rotação do ícone */
+.spinner .fa-spinner {
+    font-size: 2rem; /* Tamanho do ícone */
+    color: #0c491f; /* Cor do ícone */
+}
+
+/* Estilo e animação para o ícone de check */
+.success-check {
+    font-size: 3rem; /* Tamanho do ícone de check */
+    color: #0c491f; /* Cor do ícone de sucesso */
+    position: absolute;
+    display: none; /* Oculto por padrão */
+    opacity: 0;
+    transition: opacity 0.5s; /* Transição suave */
+}
+
+.spinner.show-check .fa-spinner {
+    opacity: 0;
+}
+
+.spinner.show-check .fa-check {
+    display: inline-block;
+    opacity: 1;
+}
+
+/* Animação de rotação do ícone */
+@keyframes rotateSpinner {
+    0% {
+        transform: rotate(0deg);
+    }
+    100% {
+        transform: rotate(360deg);
+    }
+}
+
+
+
+
+
+
+/* Estilos para o alerta de sucesso */
 
 
 @media (max-width: 576px){
@@ -266,6 +377,20 @@
         width: 100%;
         gap: 10px;
         padding: 5px;
+    }
+
+    /* Estilos para o alerta de sucesso */
+    button[type="submit"].success-background .whatsapp-icon {
+        font-size: 1.4rem; /* Tamanho do ícone */
+    }
+
+    .success-alert {
+        padding: 20px 20px;
+        font-size: 13px;
+        text-align: center;
+        width: 70%;
+        left: 50%;
+        top: 5%;
     }
     
     .form-input-nome,
@@ -376,6 +501,19 @@
         font-size: 1rem;
         width: 100%;
     }
+
+    button[type="submit"].success-background .whatsapp-icon {
+        font-size: 2rem; /* Tamanho do ícone */
+    }
+
+    .success-alert {
+        padding: 20px 20px;
+        font-size: 13px;
+        text-align: center;
+        width: 50%;
+        left: 50%;
+        top: 10%;
+    }
     
     .form-submit{
         height: 7vh;
@@ -410,6 +548,19 @@
         width: 100%;
         padding: 15px;
         justify-content: space-evenly;
+    }
+
+    button[type="submit"].success-background .whatsapp-icon {
+        font-size: 2rem; /* Tamanho do ícone */
+    }
+
+    .success-alert {
+        padding: 20px 20px;
+        font-size: 13px;
+        text-align: center;
+        width: 50%;
+        left: 50%;
+        top: 10%;
     }
     
     .form-right-text{
@@ -503,6 +654,19 @@
         width: 100%;
         gap: 10px;
         padding: 5px;
+    }
+
+    button[type="submit"].success-background .whatsapp-icon {
+        font-size: 1.8rem; /* Tamanho do ícone */
+    }
+
+    .success-alert {
+        padding: 20px 20px;
+        font-size: 12px;
+        text-align: center;
+        width: 25%;
+        left: 70%;
+        top: 28%;
     }
     
     .form-input-nome,
@@ -651,6 +815,19 @@
         gap: 10px;
         padding: 5px;
     }
+
+    button[type="submit"].success-background .whatsapp-icon {
+        font-size: 2rem; /* Tamanho do ícone */
+    }
+
+    .success-alert {
+        padding: 20px 20px;
+        font-size: 13px;
+        text-align: center;
+        width: 20%;
+        left: 70%;
+        top: 13%;
+    }
     
     .form-input-nome,
     .form-input-email,
@@ -776,6 +953,14 @@
         height: 70vh;
     }
     
+    .success-alert {
+        padding: 25px 20px;
+        font-size: 17px;
+        text-align: center;
+        width: 20%;
+        left: 70%;
+        top: 27%;
+    }
     
     .form-right{
         width: 50%;
@@ -789,7 +974,7 @@
     }
     
     .form-right-text h2{
-        font-size: 2.4rem;
+        font-size: 2rem;
     }
     
     .form-inputs{
@@ -803,7 +988,7 @@
     .form-input-email,
     .form-input-tel{
         width: 100%;
-        padding: 15px;
+        padding: 30px;
     }
     
     .form-input-nome::placeholder,
@@ -824,8 +1009,8 @@
     }
     
     .form-right-direitos p{
-        font-size: 0.9rem;
-        width: 100%;
+        font-size: 1rem;
+        width: 80%;
     }
     
     .form-submit{
@@ -835,8 +1020,9 @@
     }
     
     .form-submit button{
-        padding: 15px;
+        padding: 30px;
         width: 100%;
+        font-size: 1.4rem;
     }
 
     .form-left{
@@ -870,7 +1056,7 @@
     }
     
     .form-contact-left i{
-        font-size: 20px;
+        font-size: 30px;
         height: 5vh;
     }
     
@@ -885,7 +1071,7 @@
     }
     
     .form-contact-right p{
-        font-size: 1rem;
+        font-size: 1.2rem;
         width: 90%;
     }
     
