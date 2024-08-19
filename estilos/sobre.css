@@ -118,18 +118,17 @@
     width: 100%;
     display: flex;
     align-items: center;
-    justify-content: flex-end;
-    flex-direction: column;
+    justify-content: center;
     height: 30vh;
+    gap: 20px;
 }
 
 .sobre-titles img{
-    width: 60px;
+    width: 55px;
     height: auto;
 }
 
 .sobre-titles h2{
-    width: 100%;
     text-align: center;
     height: 5vh;
     display: flex;
@@ -243,13 +242,13 @@
     .sobre-container{
         padding: 0 10%;
         width: 100%;
-        height: 235vh;
+        height: 255vh;
         overflow-x: hidden;
     }
     
     .sobre-container-div{
         width: 100%;
-        height: 225vh;
+        height: 245vh;
         gap: 10px;
         display: flex;
         align-items: center;
@@ -327,7 +326,6 @@
     }
     
     .sobre-titles h2{
-        width: 100%;
         height: 5vh;
         font-size: 1.4rem;
     }
@@ -336,7 +334,7 @@
     .sobre-topics{
         width: 100%;
         gap: 10px;
-        height: 75vh;
+        height: 95vh;
     }
     
     
@@ -402,13 +400,13 @@
     .sobre-container{
         padding: 0 10%;
         width: 100%;
-        height: 160vh;
+        height: 170vh;
         overflow-x: hidden;
     }
     
     .sobre-container-div{
         width: 100%;
-        height: 150vh;
+        height: 160vh;
         gap: 10px;
     }
     
@@ -487,7 +485,6 @@
     }
     
     .sobre-titles h2{
-        width: 100%;
         height: 5vh;
         font-size: 1.8rem;
     }
@@ -496,7 +493,7 @@
     .sobre-topics{
         width: 100%;
         gap: 5px;
-        height: 90vh;
+        height: 105vh;
         justify-content: space-between;
     }
     
@@ -646,7 +643,6 @@
     }
     
     .sobre-titles h2{
-        width: 100%;
         height: 5vh;
         font-size: 2.2rem;
     }
@@ -655,7 +651,7 @@
     .sobre-topics{
         width: 100%;
         gap: 5px;
-        height: 85vh;
+        height: 95vh;
         justify-content: space-between;
     }
     
@@ -798,9 +794,12 @@
         align-items: center;
         justify-content: center;
     }
+
+    .sobre-titles img{
+        width: 45px;
+    }
     
     .sobre-titles h2{
-        width: 100%;
         height: 5vh;
         font-size: 1.7rem;
     }
@@ -963,7 +962,6 @@
     }
     
     .sobre-titles h2{
-        width: 100%;
         height: 5vh;
         font-size: 2rem;
     }
@@ -1118,7 +1116,6 @@
     }
     
     .sobre-titles h2{
-        width: 100%;
         height: 5vh;
         font-size: 2.8rem;
     }
