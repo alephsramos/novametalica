@@ -2449,6 +2449,7 @@
     margin: 5% auto; 
     width: 80vw;
     height: 80vh;
+    border-radius: 15px 0px 0px 15px;
 }
 
 /* Estilo do botão de fechar */
@@ -2471,7 +2472,7 @@
 
 .modal-all-right{
     width: 60%;
-    height: 70vh;
+    height: 80vh;
     padding: 30px;
 }
 

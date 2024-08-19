@@ -505,14 +505,26 @@
 
 @media (min-width: 1200px) and (max-width: 1800px){
     .steelframe{
-        height: 115vh;
+        height: 100vh;
         width: 100%;
         padding: 0 10%;
+        border-bottom: 1px solid #35353520;
+    }
+
+    .steelframe::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 110vh;
+        background-color: #353535; /* Aqui você pode definir a cor ou imagem de fundo desejada */
+        clip-path: polygon(0 25%, 40% 25%, 40% 75%, 0 75%);
+        z-index: -1; /* Para garantir que o fundo fique atrás do conteúdo */
     }
     
     .steelframe-title{
         height: 10%;
-        margin-top: 5%;
         width: 100%;
         display: flex;
         align-items: center;
@@ -527,7 +539,7 @@
     }
     
     .steelframe-container{
-        height: 110vh;
+        height: 80vh;
         width: 100%;
     }
     
