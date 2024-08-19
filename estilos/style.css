@@ -24,7 +24,7 @@ html, body{
   
   @keyframes logoSlideIn {
     from { transform: translateY(-20px) scale(0.5); opacity: 0; }
-    to { transform: translateY(0) scale(2); opacity: 1; }
+    to { transform: translateY(0) scale(1.5); opacity: 1; }
   }
   
   @keyframes logoSlideOut {
