@@ -528,7 +528,7 @@
         float: right;
         position: relative;
         top: -80px;
-        width: 60px;
+        width: 40px;
     }
     
     .profissionais-texts{
@@ -624,6 +624,11 @@
         height: 10vh;
     }
     
+    .profissionais-logo-right img{
+        width: 70px;
+        top: -70px;
+    }
+
     .profissionais-texts h2{
         font-size: 2.5rem;
         height: 5vh;
