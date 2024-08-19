@@ -245,16 +245,28 @@
 
 @media (min-width: 576px) and (max-width: 769px){
     .steelframe{
-        height: 125vh;
+        height: 110vh;
         width: 100%;
         padding: 0 10%;
     }
+
+    .steelframe::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 110vh;
+        background-color: #353535; /* Aqui você pode definir a cor ou imagem de fundo desejada */
+        clip-path: polygon(0 25%, 100% 25%, 100% 55%, 0 55%);
+        z-index: -1; /* Para garantir que o fundo fique atrás do conteúdo */
+    }
     
     .steelframe-title{
-        height: 5%;
+        height: 12%;
         width: 100%;
         display: flex;
-        align-items: center;
+        align-items: flex-start;
     }
     
     .steelframe-title h2{
@@ -266,14 +278,14 @@
     }
     
     .steelframe-container{
-        height: 110vh;
+        height: 75%;
         width: 100%;
         flex-direction: column;
     }
     
     .steelframe-left{
         width: 100%;
-        height: 100%;
+        height: 40%;
         margin-right: 0px;
         margin-bottom: 5px;
     }
@@ -291,7 +303,7 @@
     
     .steelframe-right-line{
         width: 100%;
-        height: 33%;
+        height: 20%;
         gap: 10px;
     }
     
@@ -323,6 +335,19 @@
         height: 125vh;
         width: 100%;
         padding: 0 10%;
+        border-bottom: 1px solid #35353520;
+    }
+
+    .steelframe::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 110vh;
+        background-color: #353535; /* Aqui você pode definir a cor ou imagem de fundo desejada */
+        clip-path: polygon(0 15%, 100% 15%, 100% 65%, 0 65%);
+        z-index: -1; /* Para garantir que o fundo fique atrás do conteúdo */
     }
     
     .steelframe-title{
@@ -395,13 +420,26 @@
 
 @media (min-width: 992px) and (max-width: 1200px){
     .steelframe{
-        height: 125vh;
+        height: 105vh;
         width: 100%;
         padding: 0 10%;
+        border-bottom: 1px solid #35353525;
+    }
+
+    .steelframe::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 105vh;
+        background-color: #353535; /* Aqui você pode definir a cor ou imagem de fundo desejada */
+        clip-path: polygon(0 30%, 40% 30%, 40% 100%, 0 100%);
+        z-index: -1; /* Para garantir que o fundo fique atrás do conteúdo */
     }
     
     .steelframe-title{
-        height: 8%;
+        height: 10%;
         width: 100%;
         display: flex;
         align-items: center;
@@ -416,7 +454,7 @@
     }
     
     .steelframe-container{
-        height: 110vh;
+        height: 80vh;
         width: 100%;
     }
     

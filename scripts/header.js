@@ -1,7 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     // Função para atualizar o tamanho do background ao rolar
     function updateBackgroundSize() {
-        if (window.innerWidth > 768) {
+        if (window.innerWidth > 992) {
             let scrollTop = window.pageYOffset || document.documentElement.scrollTop;
             let header = document.querySelector('.header');
             let scale = 1 + scrollTop / 1000; // Ajuste esse valor conforme necessário
