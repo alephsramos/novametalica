@@ -727,6 +727,7 @@ button[type="submit"].success-background .whatsapp-icon {
 
     .form-left{
         width: 50%;
+        gap: 5px;
     }
     
     .form-text{
@@ -895,6 +896,7 @@ button[type="submit"].success-background .whatsapp-icon {
 
     .form-left{
         width: 50%;
+        gap: 5px;
     }
     
     .form-text{
@@ -1051,6 +1053,7 @@ button[type="submit"].success-background .whatsapp-icon {
 
     .form-left{
         width: 50%;
+        gap: 5px;
     }
     
     .form-text{
