@@ -140,6 +140,10 @@
     transition: all .3s;
 }
 
+.produto-card-img img{
+    object-fit: cover!important;
+}
+
 .produto-card-img:hover {
     background-color: #cfcfcf;
 }
