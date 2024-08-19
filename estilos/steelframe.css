@@ -533,7 +533,7 @@
     }
     
     .steelframe-title{
-        height: 10%;
+        height: 15%;
         margin-top: 2%;
         width: 100%;
         display: flex;
@@ -541,11 +541,11 @@
     }
     
     .steelframe-title h2{
-        font-size: 1.6rem;
+        font-size: 2.2rem;
     }
     
     .steelframe-title img{
-        width: 55px;
+        width: 60px;
     }
     
     .steelframe-container{
