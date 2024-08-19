@@ -138,9 +138,11 @@
     background-color: #eeeeee;
     border-radius: 5px;
     transition: all .3s;
+
 }
 
 .produto-card-img img{
+
     object-fit: cover!important;
 }
 
