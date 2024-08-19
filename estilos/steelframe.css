@@ -142,3 +142,444 @@
 #mainPhoto.fade-out {
     opacity: 0; /* Torna a imagem invisível quando a classe fade-out é aplicada */
 }
+
+@media (max-width: 576px){
+    .steelframe{
+        height: 110vh;
+        width: 100%;
+        padding: 0 10%;
+    }
+    
+    .steelframe-title{
+        height: 10%;
+        width: 100%;
+    }
+    
+    .steelframe-title h2{
+        font-size: 1rem;
+    }
+    
+    .steelframe-title img{
+        width: 35px;
+    }
+    
+    .steelframe-container{
+        height: 90vh;
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .steelframe-left{
+        width: 100%;
+        height: 100%;
+        margin-right: 0px;
+        margin-bottom: 5px;
+    }
+    
+    .steelframe-left img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .steelframe-right{
+        width: 100%;
+        height: 100%;
+        gap: 10px;
+    }
+    
+    .steelframe-right-line{
+        width: 100%;
+        height: 33%;
+        gap: 10px;
+    }
+    
+    .steelframe-right-div {
+        width: 33%;
+        height: 100%;
+    }
+    .steelframe-right-line {
+        width: 100%;
+        height: 100%;
+    }
+    .steelframe-right-line img {
+        height: 100%;
+        width: 100%;
+    }
+    .steelframe-info {
+        padding: 5px;
+    }
+    .steelframe-info p {
+        font-size: 8px;
+    }
+    .steelframe-info a {
+        font-size: 8px;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 769px){
+    .steelframe{
+        height: 125vh;
+        width: 100%;
+        padding: 0 10%;
+    }
+    
+    .steelframe-title{
+        height: 5%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .steelframe-title h2{
+        font-size: 1.6rem;
+    }
+    
+    .steelframe-title img{
+        width: 35px;
+    }
+    
+    .steelframe-container{
+        height: 110vh;
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .steelframe-left{
+        width: 100%;
+        height: 100%;
+        margin-right: 0px;
+        margin-bottom: 5px;
+    }
+    
+    .steelframe-left img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .steelframe-right{
+        width: 100%;
+        height: 100%;
+        gap: 10px;
+    }
+    
+    .steelframe-right-line{
+        width: 100%;
+        height: 33%;
+        gap: 10px;
+    }
+    
+    .steelframe-right-div {
+        width: 33%;
+        height: 100%;
+    }
+    .steelframe-right-line {
+        width: 100%;
+        height: 100%;
+    }
+    .steelframe-right-line img {
+        height: 100%;
+        width: 100%;
+    }
+    .steelframe-info {
+        padding: 5px;
+    }
+    .steelframe-info p {
+        font-size: 8px;
+    }
+    .steelframe-info a {
+        font-size: 8px;
+    }
+}
+
+@media (min-width: 769px) and (max-width: 992px){
+    .steelframe{
+        height: 125vh;
+        width: 100%;
+        padding: 0 10%;
+    }
+    
+    .steelframe-title{
+        height: 5%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .steelframe-title h2{
+        font-size: 1.6rem;
+    }
+    
+    .steelframe-title img{
+        width: 35px;
+    }
+    
+    .steelframe-container{
+        height: 110vh;
+        width: 100%;
+        flex-direction: column;
+    }
+    
+    .steelframe-left{
+        width: 100%;
+        height: 100%;
+        margin-right: 0px;
+        margin-bottom: 5px;
+    }
+    
+    .steelframe-left img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .steelframe-right{
+        width: 100%;
+        height: 100%;
+        gap: 10px;
+    }
+    
+    .steelframe-right-line{
+        width: 100%;
+        height: 33%;
+        gap: 10px;
+    }
+    
+    .steelframe-right-div {
+        width: 33%;
+        height: 100%;
+    }
+    .steelframe-right-line {
+        width: 100%;
+        height: 100%;
+    }
+    .steelframe-right-line img {
+        height: 100%;
+        width: 100%;
+    }
+    .steelframe-info {
+        padding: 5px;
+    }
+    .steelframe-info p {
+        font-size: 12px;
+    }
+    .steelframe-info a {
+        font-size: 12px;
+    }
+}
+
+@media (min-width: 992px) and (max-width: 1200px){
+    .steelframe{
+        height: 125vh;
+        width: 100%;
+        padding: 0 10%;
+    }
+    
+    .steelframe-title{
+        height: 8%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .steelframe-title h2{
+        font-size: 1.3rem;
+    }
+    
+    .steelframe-title img{
+        width: 45px;
+    }
+    
+    .steelframe-container{
+        height: 110vh;
+        width: 100%;
+    }
+    
+    .steelframe-left{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .steelframe-left img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .steelframe-right{
+        width: 100%;
+        height: 100%;
+        gap: 10px;
+    }
+    
+    .steelframe-right-line{
+        width: 100%;
+        height: 33%;
+        gap: 10px;
+    }
+    
+    .steelframe-right-div {
+        width: 33%;
+        height: 100%;
+    }
+    .steelframe-right-line {
+        width: 100%;
+        height: 100%;
+    }
+    .steelframe-right-line img {
+        height: 100%;
+        width: 100%;
+    }
+    .steelframe-info {
+        padding: 5px;
+    }
+    .steelframe-info p {
+        font-size: 13px;
+    }
+    .steelframe-info a {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 1200px) and (max-width: 1800px){
+    .steelframe{
+        height: 115vh;
+        width: 100%;
+        padding: 0 10%;
+    }
+    
+    .steelframe-title{
+        height: 10%;
+        margin-top: 5%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .steelframe-title h2{
+        font-size: 1.6rem;
+    }
+    
+    .steelframe-title img{
+        width: 45px;
+    }
+    
+    .steelframe-container{
+        height: 110vh;
+        width: 100%;
+    }
+    
+    .steelframe-left{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .steelframe-left img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .steelframe-right{
+        width: 100%;
+        height: 100%;
+        gap: 10px;
+    }
+    
+    .steelframe-right-line{
+        width: 100%;
+        height: 33%;
+        gap: 10px;
+    }
+    
+    .steelframe-right-div {
+        width: 33%;
+        height: 100%;
+    }
+    .steelframe-right-line {
+        width: 100%;
+        height: 100%;
+    }
+    .steelframe-right-line img {
+        height: 100%;
+        width: 100%;
+    }
+    .steelframe-info {
+        padding: 5px;
+    }
+    .steelframe-info p {
+        font-size: 13px;
+    }
+    .steelframe-info a {
+        font-size: 13px;
+    }
+}
+
+@media (min-width: 1800px){
+    .steelframe{
+        height: 105vh;
+        width: 100%;
+        padding: 0 10%;
+    }
+    
+    .steelframe-title{
+        height: 10%;
+        margin-top: 2%;
+        width: 100%;
+        display: flex;
+        align-items: center;
+    }
+    
+    .steelframe-title h2{
+        font-size: 1.6rem;
+    }
+    
+    .steelframe-title img{
+        width: 55px;
+    }
+    
+    .steelframe-container{
+        height: 110vh;
+        width: 100%;
+    }
+    
+    .steelframe-left{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .steelframe-left img{
+        width: 100%;
+        height: 100%;
+    }
+    
+    .steelframe-right{
+        width: 100%;
+        height: 100%;
+        gap: 10px;
+    }
+    
+    .steelframe-right-line{
+        width: 100%;
+        height: 33%;
+        gap: 10px;
+    }
+    
+    .steelframe-right-div {
+        width: 33%;
+        height: 100%;
+    }
+    .steelframe-right-line {
+        width: 100%;
+        height: 100%;
+    }
+    .steelframe-right-line img {
+        height: 100%;
+        width: 100%;
+    }
+    .steelframe-info {
+        padding: 5px;
+    }
+    .steelframe-info p {
+        font-size: 16px;
+    }
+    .steelframe-info a {
+        font-size: 16px;
+    }
+}
