@@ -104,6 +104,13 @@
     color: #353535;
 }
 
+.profissionais-logo-right img{
+    float: right;
+    position: relative;
+    top: -100px;
+    width: 100px;
+}
+
 .prof-right-links a{
     font-size: 30px;
 }
@@ -131,6 +138,13 @@
         padding: 0 10%;
         height: 160vh;
         width: 100%;
+    }
+
+    .profissionais-logo-right img{
+        float: right;
+        position: relative;
+        top: -100px;
+        width: 30px;
     }
     
     .profissionais-div-container{
@@ -215,6 +229,13 @@
         padding: 0 10%;
         height: 160vh;
         width: 100%;
+    }
+
+    .profissionais-logo-right img{
+        float: right;
+        position: relative;
+        top: -70px;
+        width:50px;
     }
     
     .profissionais-div-container{
@@ -304,6 +325,13 @@
         padding: 0 10%;
         height: 160vh;
         width: 100%;
+    }
+
+    .profissionais-logo-right img{
+        float: right;
+        position: relative;
+        top: -120px;
+        width: 60px;
     }
     
     .profissionais-div-container{
@@ -399,6 +427,13 @@
         width: 100%;
         gap: 10px;
     }
+
+    .profissionais-logo-right img{
+        float: right;
+        position: relative;
+        top: -60px;
+        width: 60px;
+    }
     
     .profissionais-texts{
         height: 10vh;
@@ -487,6 +522,13 @@
     .profissionais-div-container{
         width: 100%;
         gap: 10px;
+    }
+    
+    .profissionais-logo-right img{
+        float: right;
+        position: relative;
+        top: -80px;
+        width: 60px;
     }
     
     .profissionais-texts{

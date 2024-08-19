@@ -4,8 +4,8 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    background-image: url('../imagens/qualidades-fundo.webp');
-    background-position: center;
+    background-image: url('../imagens/qualidades.jpg');
+    background-position: top;
     background-size: cover;
     border-image: fill 0 linear-gradient(#0001, #353535);
     clip-path: polygon(0 3%, 100% 0, 100% 97%, 0% 100%);

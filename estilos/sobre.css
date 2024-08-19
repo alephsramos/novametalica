@@ -123,6 +123,11 @@
     height: 30vh;
 }
 
+.sobre-titles img{
+    width: 60px;
+    height: auto;
+}
+
 .sobre-titles h2{
     width: 100%;
     text-align: center;
@@ -261,6 +266,11 @@
         gap: 10px;
         flex-wrap: wrap!important;
         overflow-x: hidden;
+    }
+
+    .sobre-titles img{
+        width: 40px;
+        height: auto;
     }
     
     .sobre-card{
@@ -878,6 +888,10 @@
         align-items: center;
         justify-content: center;
         flex-direction: column;
+    }
+    .sobre-titles img{
+        width: 50px;
+        height: auto;
     }
     
     .sobre-cards{

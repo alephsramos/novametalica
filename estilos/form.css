@@ -333,6 +333,13 @@ button[type="submit"].success-background .whatsapp-icon {
     }
 }
 
+.form-logo{
+    width: 100%;
+}
+
+.form-logo img{
+    width: 80px;
+}
 
 
 
@@ -535,6 +542,7 @@ button[type="submit"].success-background .whatsapp-icon {
         width: 100%;
     }
     
+    
     .form-container-div{
         width: 100%;
         height: 50vh;
@@ -631,6 +639,14 @@ button[type="submit"].success-background .whatsapp-icon {
     .form-container-div{
         width: 100%;
         height: 70vh;
+    }
+
+    .form-logo{
+        width: 100%;
+    }
+    
+    .form-logo img{
+        width: 50px;
     }
     
     
@@ -786,6 +802,14 @@ button[type="submit"].success-background .whatsapp-icon {
         padding: 0 10%;
         height: 80vh;
         width: 100%;
+    }
+
+    .form-logo{
+        width: 100%;
+    }
+    
+    .form-logo img{
+        width: 50px;
     }
     
     .form-container-div{
