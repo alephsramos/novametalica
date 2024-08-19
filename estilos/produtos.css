@@ -902,6 +902,7 @@
     width: 90vw;
     height: 90vh;
     flex-direction: column;
+    border-radius: 10px 10px 0px 0px;
 }
 
 /* Estilo do botão de fechar */
@@ -924,13 +925,13 @@
 
 .modal-all-right{
     width: 100%;
-    height: 50vh;
+    height: 70vh;
     padding: 30px;
 }
 
 .modal-titles-right{
     width: 100%;
-    height: 30vh;
+    height: 40vh;
     gap: 10px;
 }
 

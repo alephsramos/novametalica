@@ -162,6 +162,19 @@
         height: 110vh;
         width: 100%;
         padding: 0 10%;
+        border-bottom: 1px solid #35353520;
+    }
+
+    .steelframe::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 110vh;
+        background-color: #353535; /* Aqui você pode definir a cor ou imagem de fundo desejada */
+        clip-path: polygon(0 25%, 100% 25%, 100% 45%, 0 45%);
+        z-index: -1; /* Para garantir que o fundo fique atrás do conteúdo */
     }
     
     .steelframe-title{
@@ -170,7 +183,7 @@
     }
     
     .steelframe-title h2{
-        font-size: 1rem;
+        font-size: 1.2rem;
     }
     
     .steelframe-title img{
