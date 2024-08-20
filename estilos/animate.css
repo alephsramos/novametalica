@@ -112,3 +112,41 @@
 }
 
   
+/* Detecta iPhone/iOS e redefine as animações */
+@supports (-webkit-touch-callout: none) {
+  
+  /* Desativa as animações */
+  .animate,
+  .animate-left,
+  .animate-right,
+  .animate-fade-in,
+  .animate-up,
+  .animate-down,
+  .animate-zoom-in,
+  .animate-rotate,
+  .animate-fade-up,
+  .animate-scale-rotate,
+  .animate-bounce {
+    opacity: 1 !important;
+    transform: none !important;
+    transition: none !important;
+    animation: none !important;
+  }
+
+  /* Remove as animações ao entrar na tela */
+  .animate.in-view,
+  .animate-left.in-view,
+  .animate-right.in-view,
+  .animate-fade-in.in-view,
+  .animate-up.in-view,
+  .animate-down.in-view,
+  .animate-zoom-in.in-view,
+  .animate-rotate.in-view,
+  .animate-fade-up.in-view,
+  .animate-scale-rotate.in-view,
+  .animate-bounce.in-view {
+    opacity: 1 !important;
+    transform: none !important;
+    animation: none !important;
+  }
+}
