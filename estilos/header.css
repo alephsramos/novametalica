@@ -81,8 +81,7 @@
 
 @media (max-width: 576px){
     .header{
-        background-position: right!important;
-        background-image: url('../imagens/fundo-header-teste.webp')!important;
+        background-position: left!important;
         background-size: cover;
         height: 100dvh;
         background-attachment: fixed;
@@ -121,7 +120,7 @@
         text-align: left;
         font-weight: 500!important;
         height: 35vh;
-        background-color: #fff;
+        color: #fff;
         padding: 10px;
         border-radius: 10px;
     }
