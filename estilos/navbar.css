@@ -216,7 +216,7 @@
 }
 
 .nav-sidebar-logo{
-    height: 15dvh;
+    height: 20%;
     margin-bottom: 25px;
     width: 100%;
     display: flex;
@@ -241,9 +241,9 @@
 .nav-sidebar-links {
     display: flex;
     flex-direction: column;
-    height: 35dvh;
+    height: 60%;
     align-items: center;
-    justify-content: space-evenly;
+    justify-content: space-between;
     width: 100%; /* Para que os links ocupem a largura total */
 }
 
@@ -271,7 +271,7 @@
     margin-top: auto; /* Empurra o botão para o final da sidebar */
     width: 100%; /* Para que o botão ocupe a largura total */
     text-align: center; /* Centraliza o botão */
-    height: 10dvh;
+    height: 10%;
     display: flex;
     align-items: flex-end;
     justify-content: center;
