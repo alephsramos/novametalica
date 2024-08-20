@@ -209,10 +209,11 @@ html, body{
 
     .nav-image{
         width: 100px;
+
     }
     
     .fundo-produtos::before {
-        clip-path: polygon(0 15%, 40% 15%, 70% 100%, 0% 100%);
+        clip-path: polygon(0 10%, 40% 10%, 70% 100%, 0% 100%);
     }
 
     .nav-links{
@@ -225,7 +226,7 @@ html, body{
     align-items: center;
     justify-content: center;
     display: flex;
-    height: 10%;
+    height: 5%;
 }
 
 .nav-image{
