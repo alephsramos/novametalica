@@ -12,19 +12,36 @@ document.addEventListener('DOMContentLoaded', function () {
     let currentPage = 0;
     let filteredCards = productCards;
     let savedProductsCount = 0;
-    let itemsPerPage = 1; // Para passar 1 produto por vez
+    let itemsPerPage = 4; // Valor padrão
 
     const leftButton = document.getElementById('produto_btn_left');
     const rightButton = document.getElementById('produto_btn_right');
 
+    function updateItemsPerPage() {
+        if (window.matchMedia("(max-width: 568px)").matches) {
+            itemsPerPage = 1; // Menor tela
+        } else if (window.matchMedia("(max-width: 992px)").matches) {
+            itemsPerPage = 2; // Tela intermediária
+        } else {
+            itemsPerPage = 4; // Tela maior
+        }
+        currentPage = 0;
+        showPage(currentPage); // Atualiza a exibição após a atualização
+    }
+
     function showPage(pageIndex) {
+        // Oculta todos os cards
         productCards.forEach(card => card.style.display = 'none');
+        // Exibe os cards filtrados para a página atual
         filteredCards.forEach((card, index) => {
             if (index >= pageIndex * itemsPerPage && index < (pageIndex + 1) * itemsPerPage) {
                 card.style.display = 'block';
             }
         });
     }
+
+    window.addEventListener('resize', updateItemsPerPage);
+    updateItemsPerPage(); // Verificação inicial
 
     heartButtons.forEach(button => {
         button.addEventListener('click', function () {
@@ -133,6 +150,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
         const formElement = document.getElementById("contactForm");
         if (formElement) {
+            // Apenas rolar para baixo
             window.scrollTo({
                 top: formElement.offsetTop,
                 behavior: 'smooth'
@@ -153,7 +171,7 @@ document.addEventListener('DOMContentLoaded', function () {
     
         products.forEach(product => {
             const productName = product.querySelector('.sidebar-product-details h6').textContent;
-            text += `${productName}\n`;
+            text += `${productName}\n`; // Adiciona o nome do produto e pula uma linha
         });
     
         return text;
@@ -161,12 +179,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     function handleSwipe(startX, endX) {
         if (endX < startX) {
+            // Swipe left (move para o próximo item)
             const totalPages = Math.ceil(filteredCards.length / itemsPerPage);
             if (currentPage < totalPages - 1) {
                 currentPage++;
                 showPage(currentPage);
             }
         } else if (endX > startX) {
+            // Swipe right (voltar ao item anterior)
             if (currentPage > 0) {
                 currentPage--;
                 showPage(currentPage);
@@ -188,7 +208,7 @@ document.addEventListener('DOMContentLoaded', function () {
         document.addEventListener('touchmove', (e) => {
             if (isSwiping) {
                 handleSwipe(startX, e.touches[0].clientX);
-                startX = e.touches[0].clientX;
+                startX = e.touches[0].clientX; // Atualiza startX para navegação contínua
             }
         });
 
@@ -216,7 +236,10 @@ document.addEventListener('DOMContentLoaded', function () {
 
     filterButtons.forEach(button => {
         button.addEventListener('click', function () {
+            // Remove a classe active de todos os botões
             filterButtons.forEach(btn => btn.classList.remove('active'));
+
+            // Adiciona a classe active ao botão clicado
             this.classList.add('active');
 
             const category = this.getAttribute('data-category');
@@ -228,6 +251,4 @@ document.addEventListener('DOMContentLoaded', function () {
             showPage(currentPage);
         });
     });
-
-    showPage(currentPage); // Mostrar a página inicial
 });
