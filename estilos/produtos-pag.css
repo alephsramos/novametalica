@@ -225,7 +225,6 @@ html, body{
     align-items: center;
     justify-content: center;
     display: flex;
-    border: 1px solid red;
     height: 10%;
 }
 
@@ -247,20 +246,17 @@ html, body{
     .nav-all-elements{
     width: 100%;
     height: 100%;
-    border: 1px solid red;
 }
 
     
     .produto-pag-container{
         height: 90%;
-        border: 1px solid red;
         padding: 0 10%;
     }
     
     .produto-pag-container-div{
         width: 100%;
         height: 80%;
-        border: 1px solid red;
         padding: 10px;
         flex-direction: column;
     }
