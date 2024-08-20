@@ -246,7 +246,7 @@
     }
     
     .projetos-cards{
-        height: 75vh;
+        height: 70vh;
         padding: 0px;
         flex: 0 0 100%; /* Ocupa 100% da largura do contêiner por padrão */
         opacity: 1;
@@ -640,7 +640,7 @@
     }
     
     .projetos-cards{
-        height: 70vh;
+        height: 65vh;
         padding: 0px;
         width: 40%;
         opacity: 1;
@@ -773,7 +773,7 @@
     }
     
     .projetos-cards{
-        height: 70vh;
+        height: 65vh;
         padding: 0px;
         width: 40%;
         opacity: 1;
@@ -906,7 +906,7 @@
     }
     
     .projetos-cards{
-        height: 70vh;
+        height: 65vh;
         padding: 0px;
         width: 40%;
         opacity: 1;
