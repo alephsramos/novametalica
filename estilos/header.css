@@ -78,13 +78,18 @@
     }
 }
 
+@supports (-webkit-touch-callout: none) {
+    .header {
+        background-attachment: local;
+    }
+}
 
 @media (max-width: 576px){
     .header{
         background-position: left!important;
         background-size: cover;
         height: 100dvh;
-        background-attachment: fixed;
+        background-attachment: local;
         background-repeat: no-repeat;
         clip-path: polygon(0 0%, 100% 0, 100% 100%, 0 98%)!important;
     }
