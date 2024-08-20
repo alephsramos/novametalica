@@ -82,7 +82,7 @@
 @media (max-width: 576px){
     .header{
         background-position: right!important;
-        background-image: url('../imagens/header-background-mobile.webp')!important;
+        background-image: url('../imagens/fundo-header-teste.webp')!important;
         background-size: cover;
         height: 100dvh;
         background-attachment: fixed;
@@ -109,7 +109,8 @@
         font-size: 1.8rem!important;
         height: 20vh;
         line-height: 30px;
-        text-align: left;
+        text-align: center;
+        color: #fff;
         font-weight: 800;
         width: 100%;
     }
@@ -119,7 +120,10 @@
         width: 100%!important;
         text-align: left;
         font-weight: 500!important;
-        height: 30vh;
+        height: 35vh;
+        background-color: #fff;
+        padding: 10px;
+        border-radius: 10px;
     }
     
     .header-texts-btn{
@@ -132,8 +136,10 @@
     
     .header-texts-btn button{
         padding: 10px 30px;
-        background-color: #353535;
-        color: #fff;
+        background-color: #fff;
+        border: none;
+        border-radius: 10px;
+        color: #353535;
         width: 100%;
     }
 

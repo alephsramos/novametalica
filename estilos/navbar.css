@@ -313,6 +313,11 @@
     .nav-top {
         display: none;
     }
+    .nav-hamburger .bar {
+        height: 4px;
+        background: #fff;
+    }
+
     .nav-desktop {
         display: none;
     }
