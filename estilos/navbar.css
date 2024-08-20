@@ -216,7 +216,7 @@
 }
 
 .nav-sidebar-logo{
-    height: 10dvh;
+    height: 15dvh;
     margin-bottom: 25px;
     width: 100%;
     display: flex;
@@ -252,7 +252,7 @@
     text-decoration: none;
     font-family: "Poppins", sans-serif;
     font-weight: 300;
-    margin: 10px 0;
+    margin: 5px 0;
     width: 100%; /* Para que os links ocupem a largura total */
     text-align: center; /* Centraliza o texto dos links */
     border: 1px solid rgba(255, 255, 255, 0.1);
