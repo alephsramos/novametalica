@@ -1,0 +1,98 @@
+.produtos-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .produtos-header h2 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .produtos-header p {
+    font-size: 1.2rem;
+    color: #777;
+    margin-bottom: 40px;
+  }
+  
+  /* Cards Container */
+  .produtos-cards-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px;
+    width: 100%;
+  }
+  
+  /* Individual Card Styling */
+  .produtos-card {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: calc(25% - 20px); /* 4 cards por linha com espaço entre eles */
+    min-width: 250px; /* Garante que os cards não fiquem muito pequenos */
+    overflow: hidden;
+    transition: transform 0.3s;
+  }
+  
+  .produtos-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .produtos-card-img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .produtos-card-info {
+    padding: 20px;
+  }
+  
+  .produtos-card-info h3 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-bottom: 10px;
+  }
+  
+  .produtos-card-info p {
+    font-size: 1rem;
+    color: #666;
+    margin-bottom: 20px;
+  }
+  
+  .produtos-card-info button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+  }
+  
+  .produtos-card-info button:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Responsividade */
+  @media (max-width: 992px) {
+    .produtos-card {
+      width: calc(33.33% - 20px); /* 3 cards por linha */
+    }
+  }
+  
+  @media (max-width: 768px) {
+    .produtos-card {
+      width: calc(50% - 20px); /* 2 cards por linha */
+    }
+  }
+  
+  @media (max-width: 576px) {
+    .produtos-card {
+      width: 100%; /* 1 card por linha */
+    }
+  }
